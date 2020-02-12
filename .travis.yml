@@ -1,0 +1,13 @@
+os: osx
+language: swift
+osx_image: xcode11.3
+xcode_project: Half.xcodeproj
+
+script:
+  - set -o pipefail && travis_retry xcodebuild -scheme "Half" -destination "platform=iOS Simulator,name=iPhone 11 Pro Max" -configuration Debug ONLY_ACTIVE_ARCH=YES -enableCodeCoverage YES test
+  - set -o pipefail && travis_retry xcodebuild -scheme "Half macOS" -destination "platform=macOS" -configuration Debug ONLY_ACTIVE_ARCH=YES -enableCodeCoverage YES test
+  - set -o pipefail && travis_retry xcodebuild -scheme "Half tvOS" -destination "platform=tvOS Simulator,name=Apple TV 4K" -configuration Debug ONLY_ACTIVE_ARCH=YES -enableCodeCoverage YES test
+  - set -o pipefail && travis_retry xcodebuild -scheme "Half watchOS" -destination "platform=watchOS Simulator,name=Apple Watch Series 5 - 44mm" -configuration Debug ONLY_ACTIVE_ARCH=YES
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
