@@ -158,7 +158,7 @@ class HalfTests: XCTestCase {
         XCTAssertEqual(Half(uint), 1.0)
         XCTAssertEqual(Half(uint), 1)
 
-        try XCTAssertEqual(XCTUnwrap(Half(exactly: 8)), 8.0)
+        XCTAssertEqual(Half(exactly: 8), 8.0)
         XCTAssertNil(Half(exactly: Int64.max))
     }
 

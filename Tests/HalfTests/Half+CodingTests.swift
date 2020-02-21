@@ -31,7 +31,7 @@ class HalfCodingTests: XCTestCase {
 
             XCTAssertNoThrow(data = try JSONEncoder().encode(simple))
             XCTAssertNoThrow(decoded = try JSONDecoder().decode(Simple.self, from: data))
-            try XCTAssertEqual(XCTUnwrap(decoded), simple)
+            XCTAssertEqual(decoded, simple)
         }
         do {
             let values: [Half] = [1.0, 2.0, 3.0]
@@ -40,7 +40,7 @@ class HalfCodingTests: XCTestCase {
 
             XCTAssertNoThrow(data = try JSONEncoder().encode(values))
             XCTAssertNoThrow(decoded = try JSONDecoder().decode([Half].self, from: data))
-            try XCTAssertEqual(XCTUnwrap(decoded), values)
+            XCTAssertEqual(decoded, values)
         }
         do {
             let values: [Simple] = [Simple(half: 1.5, int: 1), Simple(half: 2.5, int: 2), Simple(half: 3.5, int: 3)]
@@ -49,7 +49,7 @@ class HalfCodingTests: XCTestCase {
 
             XCTAssertNoThrow(data = try JSONEncoder().encode(values))
             XCTAssertNoThrow(decoded = try JSONDecoder().decode([Simple].self, from: data))
-            try XCTAssertEqual(XCTUnwrap(decoded), values)
+            XCTAssertEqual(decoded, values)
         }
         do {
             let simple = Simple(half: .infinity, int: 0)
@@ -65,8 +65,8 @@ class HalfCodingTests: XCTestCase {
             XCTAssertNoThrow(data = try encoder.encode(simple))
             XCTAssertNoThrow(decoded = try decoder.decode(Simple.self, from: data))
 
-            try XCTAssertEqual(XCTUnwrap(decoded).int, simple.int)
-            try XCTAssertTrue(XCTUnwrap(decoded).half.isInfinite)
+            XCTAssertEqual(decoded.int, simple.int)
+            XCTAssertTrue(decoded.half.isInfinite)
         }
         do {
             let simple = Simple(half: -.infinity, int: 0)
@@ -82,8 +82,8 @@ class HalfCodingTests: XCTestCase {
             XCTAssertNoThrow(data = try encoder.encode(simple))
             XCTAssertNoThrow(decoded = try decoder.decode(Simple.self, from: data))
 
-            try XCTAssertEqual(XCTUnwrap(decoded).int, simple.int)
-            try XCTAssertTrue(XCTUnwrap(decoded).half.isInfinite)
+            XCTAssertEqual(decoded.int, simple.int)
+            XCTAssertTrue(decoded.half.isInfinite)
         }
         do {
             let simple = Simple(half: .nan, int: 0)
@@ -99,8 +99,8 @@ class HalfCodingTests: XCTestCase {
             XCTAssertNoThrow(data = try encoder.encode(simple))
             XCTAssertNoThrow(decoded = try decoder.decode(Simple.self, from: data))
 
-            try XCTAssertEqual(XCTUnwrap(decoded).int, simple.int)
-            try XCTAssertTrue(XCTUnwrap(decoded).half.isNaN)
+            XCTAssertEqual(decoded.int, simple.int)
+            XCTAssertTrue(decoded.half.isNaN)
         }
         do {
             let simple = Simple(half: .signalingNaN, int: 0)
@@ -116,8 +116,8 @@ class HalfCodingTests: XCTestCase {
             XCTAssertNoThrow(data = try encoder.encode(simple))
             XCTAssertNoThrow(decoded = try decoder.decode(Simple.self, from: data))
 
-            try XCTAssertEqual(XCTUnwrap(decoded).int, simple.int)
-            try XCTAssertTrue(XCTUnwrap(decoded).half.isNaN)
+            XCTAssertEqual(decoded.int, simple.int)
+            XCTAssertTrue(decoded.half.isNaN)
         }
     }
 
