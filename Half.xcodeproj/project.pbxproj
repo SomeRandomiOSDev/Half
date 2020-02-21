@@ -87,6 +87,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DD6F08D124008A7400749359 /* codecov.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = codecov.yml; sourceTree = "<group>"; };
 		DDFEEC3323EF13900096015C /* Half.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Half.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDFEEC3723EF13900096015C /* Half-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Half-Info.plist"; path = "Info/Half-Info.plist"; sourceTree = "<group>"; };
 		DDFEEC3C23EF13910096015C /* HalfTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HalfTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -235,6 +236,7 @@
 			children = (
 				DDFEECAB23F1BA550096015C /* Half.podspec */,
 				DDFEECAC23F1BA550096015C /* Package.swift */,
+				DD6F08D124008A7400749359 /* codecov.yml */,
 				DDFEECAE23F1BA5E0096015C /* .swiftlint.yml */,
 				DDFEECAD23F1BA5E0096015C /* .travis.yml */,
 				DDFEECAF23F1BA680096015C /* README.md */,
