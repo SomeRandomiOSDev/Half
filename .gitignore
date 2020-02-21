@@ -1,2 +1,4 @@
 Half.xcodeproj/project.xcworkspace
 Half.xcodeproj/xcuserdata
+.swiftpm
+.build
