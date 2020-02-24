@@ -17,7 +17,7 @@ extension Half: Codable {
         let float = try container.decode(Float.self)
 
         guard float.isInfinite || float.isNaN || abs(float) <= Float(Half.greatestFiniteMagnitude) else {
-            throw DecodingError.dataCorrupted(DecodingError.Context(codingPath: container.codingPath, debugDescription: "Parsed JSON number \(float) does not fit in \(type(of: self))."))
+            throw DecodingError.dataCorrupted(DecodingError.Context(codingPath: container.codingPath, debugDescription: "Parsed number \(float) does not fit in \(type(of: self))."))
         }
 
         self.init(float)
