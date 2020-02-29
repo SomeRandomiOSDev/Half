@@ -9,7 +9,7 @@ Half
 [![Build](https://travis-ci.com/SomeRandomiOSDev/Half.svg?branch=master)](https://travis-ci.com/SomeRandomiOSDev/Half)
 [![Code Coverage](https://codecov.io/gh/SomeRandomiOSDev/Half/branch/master/graph/badge.svg)](https://codecov.io/gh/SomeRandomiOSDev/Half)
 [![Codacy](https://api.codacy.com/project/badge/Grade/8ad52c117e4a46d9aa4699d22fc0bf49)](https://app.codacy.com/app/SomeRandomiOSDev/Half?utm_source=github.com&utm_medium=referral&utm_content=SomeRandomiOSDev/Half&utm_campaign=Badge_Grade_Dashboard)
-![Swift](https://github.com/SomeRandomiOSDev/HalfTest/workflows/Swift/badge.svg)
+![Test](https://github.com/SomeRandomiOSDev/Half/workflows/Test/badge.svg)
 
 **Half** is a lightweight framework containing a Swift implementation for a half-precision floating point type for iOS, macOS, tvOS, and watchOS.
 
