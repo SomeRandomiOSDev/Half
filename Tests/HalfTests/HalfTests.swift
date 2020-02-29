@@ -5,9 +5,12 @@
 //  Copyright © 2020 SomeRandomiOSDev. All rights reserved.
 //
 
-import CoreGraphics.CGBase
 @testable import Half
 import XCTest
+
+#if canImport(CoreGraphics)
+import CoreGraphics.CGBase
+#endif // #if canImport(CoreGraphics)
 
 class HalfTests: XCTestCase {
 
@@ -54,22 +57,28 @@ class HalfTests: XCTestCase {
     func testConvertFromOtherFloatTypes() {
         let float: Float = 3.14
         let double: Double = 3.14
+#if canImport(CoreGraphics)
         let cgfloat: CGFloat = 3.14
+#endif // #if canImport(CoreGraphics)
 #if !(os(Windows) || os(Android)) && (arch(i386) || arch(x86_64))
         let float80: Float80 = 3.14
 #endif
 
         let half1 = Half(float)
         let half2 = Half(double)
+#if canImport(CoreGraphics)
         let half3 = Half(cgfloat)
+#endif // #if canImport(CoreGraphics)
 #if !(os(Windows) || os(Android)) && (arch(i386) || arch(x86_64))
         let half4 = Half(float80)
 #endif
 
         XCTAssertEqual(half1, half2)
+#if canImport(CoreGraphics)
         XCTAssertEqual(half2, half3)
+#endif // #if canImport(CoreGraphics)
 #if !(os(Windows) || os(Android)) && (arch(i386) || arch(x86_64))
-        XCTAssertEqual(half3, half4)
+        XCTAssertEqual(half2, half4)
 #endif
 
         binaryFloatingPoint(Double(1.0)) { XCTAssertEqual($0, $1) }

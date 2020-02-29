@@ -25,6 +25,9 @@
 		DD94FBF923F3C5BB0041D4EC /* half.h in Headers */ = {isa = PBXBuildFile; fileRef = DDFEEC8423F0B6FF0096015C /* half.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DD94FBFA23F3C5BC0041D4EC /* half.h in Headers */ = {isa = PBXBuildFile; fileRef = DDFEEC8423F0B6FF0096015C /* half.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DD94FBFB23F3C5BD0041D4EC /* half.h in Headers */ = {isa = PBXBuildFile; fileRef = DDFEEC8423F0B6FF0096015C /* half.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DDB8120323F587890079FEB5 /* CHalfTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB8120223F587890079FEB5 /* CHalfTests.swift */; };
+		DDB8120423F587890079FEB5 /* CHalfTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB8120223F587890079FEB5 /* CHalfTests.swift */; };
+		DDB8120523F587890079FEB5 /* CHalfTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB8120223F587890079FEB5 /* CHalfTests.swift */; };
 		DDFEEC3D23EF13910096015C /* Half.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDFEEC3323EF13900096015C /* Half.framework */; };
 		DDFEEC4223EF13910096015C /* HalfTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFEEC4123EF13910096015C /* HalfTests.swift */; };
 		DDFEECC723F2001A0096015C /* Half.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDFEECBE23F2001A0096015C /* Half.framework */; };
@@ -88,11 +91,14 @@
 
 /* Begin PBXFileReference section */
 		DD6F08D124008A7400749359 /* codecov.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = codecov.yml; sourceTree = "<group>"; };
+		DDB1DF3F240A25D900C20FED /* fp_extend.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fp_extend.cpp; sourceTree = "<group>"; };
+		DDB1DF40240A25D900C20FED /* fp_trunc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fp_trunc.cpp; sourceTree = "<group>"; };
+		DDB8120223F587890079FEB5 /* CHalfTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CHalfTests.swift; sourceTree = "<group>"; };
 		DDFEEC3323EF13900096015C /* Half.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Half.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DDFEEC3723EF13900096015C /* Half-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Half-Info.plist"; path = "Info/Half-Info.plist"; sourceTree = "<group>"; };
+		DDFEEC3723EF13900096015C /* Half-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Half-Info.plist"; path = "Plists/Half-Info.plist"; sourceTree = "<group>"; };
 		DDFEEC3C23EF13910096015C /* HalfTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HalfTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDFEEC4123EF13910096015C /* HalfTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalfTests.swift; sourceTree = "<group>"; };
-		DDFEEC4323EF13910096015C /* HalfTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "HalfTests-Info.plist"; path = "../../Info/HalfTests-Info.plist"; sourceTree = "<group>"; };
+		DDFEEC4323EF13910096015C /* HalfTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "HalfTests-Info.plist"; path = "Plists/HalfTests-Info.plist"; sourceTree = "<group>"; };
 		DDFEEC8423F0B6FF0096015C /* half.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = half.h; sourceTree = "<group>"; };
 		DDFEECAB23F1BA550096015C /* Half.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = Half.podspec; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		DDFEECAC23F1BA550096015C /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = SOURCE_ROOT; };
@@ -174,9 +180,18 @@
 		DD94FBF723F3C50E0041D4EC /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				DDB1DF43240A279300C20FED /* CHalfTests */,
 				DDFEEC4023EF13910096015C /* HalfTests */,
 			);
 			path = Tests;
+			sourceTree = "<group>";
+		};
+		DDB1DF43240A279300C20FED /* CHalfTests */ = {
+			isa = PBXGroup;
+			children = (
+				DDB8120223F587890079FEB5 /* CHalfTests.swift */,
+			);
+			path = CHalfTests;
 			sourceTree = "<group>";
 		};
 		DDFEEC2923EF13900096015C = {
@@ -217,7 +232,6 @@
 				DDFEEC4123EF13910096015C /* HalfTests.swift */,
 				DDFEED4D23F26F170096015C /* Half+CodingTests.swift */,
 				DDFEED5123F2737B0096015C /* FunctionsTests.swift */,
-				DDFEEC4323EF13910096015C /* HalfTests-Info.plist */,
 			);
 			path = HalfTests;
 			sourceTree = "<group>";
@@ -243,6 +257,7 @@
 				DDFEECB023F1BA6E0096015C /* ATTRIBUTIONS */,
 				DDFEECB123F1BA730096015C /* LICENSE */,
 				DDFEEC3723EF13900096015C /* Half-Info.plist */,
+				DDFEEC4323EF13910096015C /* HalfTests-Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -279,6 +294,8 @@
 			isa = PBXGroup;
 			children = (
 				DDFEED8223F345690096015C /* half.c */,
+				DDB1DF3F240A25D900C20FED /* fp_extend.cpp */,
+				DDB1DF40240A25D900C20FED /* fp_trunc.cpp */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -603,6 +620,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDB8120323F587890079FEB5 /* CHalfTests.swift in Sources */,
 				DDFEED4E23F26F170096015C /* Half+CodingTests.swift in Sources */,
 				DDFEED5223F2737B0096015C /* FunctionsTests.swift in Sources */,
 				DDFEEC4223EF13910096015C /* HalfTests.swift in Sources */,
@@ -624,6 +642,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDB8120423F587890079FEB5 /* CHalfTests.swift in Sources */,
 				DDFEED4F23F26F170096015C /* Half+CodingTests.swift in Sources */,
 				DDFEED5323F2737B0096015C /* FunctionsTests.swift in Sources */,
 				DDFEED0A23F200FE0096015C /* HalfTests.swift in Sources */,
@@ -645,6 +664,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDB8120523F587890079FEB5 /* CHalfTests.swift in Sources */,
 				DDFEED5023F26F170096015C /* Half+CodingTests.swift in Sources */,
 				DDFEED5423F2737B0096015C /* FunctionsTests.swift in Sources */,
 				DDFEED0B23F200FF0096015C /* HalfTests.swift in Sources */,
@@ -827,7 +847,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Info/Half-Info.plist";
+				INFOPLIST_FILE = "Plists/Half-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -852,7 +872,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Info/Half-Info.plist";
+				INFOPLIST_FILE = "Plists/Half-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -873,7 +893,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Info/HalfTests-Info.plist";
+				INFOPLIST_FILE = "Plists/HalfTests-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -892,7 +912,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Info/HalfTests-Info.plist";
+				INFOPLIST_FILE = "Plists/HalfTests-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -930,7 +950,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Info/Half-Info.plist";
+				INFOPLIST_FILE = "Plists/Half-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -956,7 +976,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Info/Half-Info.plist";
+				INFOPLIST_FILE = "Plists/Half-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -977,7 +997,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = "Info/HalfTests-Info.plist";
+				INFOPLIST_FILE = "Plists/HalfTests-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -995,7 +1015,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = "Info/HalfTests-Info.plist";
+				INFOPLIST_FILE = "Plists/HalfTests-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -1016,7 +1036,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Info/Half-Info.plist";
+				INFOPLIST_FILE = "Plists/Half-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1042,7 +1062,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Info/Half-Info.plist";
+				INFOPLIST_FILE = "Plists/Half-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1063,7 +1083,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Info/HalfTests-Info.plist";
+				INFOPLIST_FILE = "Plists/HalfTests-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1081,7 +1101,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Info/HalfTests-Info.plist";
+				INFOPLIST_FILE = "Plists/HalfTests-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1104,7 +1124,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Info/Half-Info.plist";
+				INFOPLIST_FILE = "Plists/Half-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1131,7 +1151,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Info/Half-Info.plist";
+				INFOPLIST_FILE = "Plists/Half-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
