@@ -7,21 +7,12 @@ jobs:
     strategy:
       matrix:
         os: [macOS-latest, ubuntu-latest]
-        swift: ["5.0"]
     runs-on: ${{ matrix.os }}
-    env:
-      SWIFT_VERSION: ${{ matrix.swift }}
-      SWIFT_EXEC: .swiftenv/shims/swift
     steps:
     - uses: actions/checkout@v2
-    - name: Install Swift
-      run: |
-        git clone https://github.com/kylef/swiftenv.git ~/.swiftenv
-        ~/.swiftenv/bin/swiftenv install $SWIFT_VERSION
     - name: Build
       run: |
-        ~/$SWIFT_EXEC --version
-        ~/$SWIFT_EXEC build -v
+        swift build -v
     - name: Test
       run: |
-        ~/$SWIFT_EXEC test -v
+        swift test -v

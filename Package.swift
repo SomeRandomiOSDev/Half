@@ -23,5 +23,5 @@ let package = Package(
         .testTarget(name: "HalfTests", dependencies: ["Half"])
     ],
 
-    swiftLanguageVersions: [.version("4"), .version("4.2"), .version("5")]
+    swiftLanguageVersions: [.version("5")]
 )
