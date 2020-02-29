@@ -249,7 +249,7 @@ extension Half: BinaryFloatingPoint {
         #if !arch(arm)
         if isSubnormal {
             let bitPattern = (self * 0x1p10).bitPattern & (-Half.infinity).bitPattern
-            return Half(bitPattern: bitPattern) * 0x1p-10
+            return Half(bitPattern: bitPattern) * .ulpOfOne
         }
         #endif
 
@@ -446,10 +446,10 @@ extension Half: FloatingPoint {
         guard isFinite else { return .nan }
         if isNormal {
             let bitPattern = self.bitPattern & Half.infinity.bitPattern
-            return Half(bitPattern: bitPattern) * 0x1p-10
+            return Half(bitPattern: bitPattern) * .ulpOfOne
         }
 
-        return .leastNormalMagnitude * 0x1p-10
+        return .leastNormalMagnitude * .ulpOfOne
     }
 
     //
@@ -491,6 +491,11 @@ extension Half: FloatingPoint {
     @inlinable
     public static var signalingNaN: Half {
         return Half(nan: 0, signaling: true)
+    }
+
+    @inlinable
+    public static var ulpOfOne: Half {
+        return Half(_half_epsilon())
     }
 
     //

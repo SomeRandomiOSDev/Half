@@ -12,11 +12,13 @@ let package = Package(
     ],
 
     products: [
-        .library(name: "Half", type: .dynamic, targets: ["Half"])
+        .library(name: "Half", targets: ["Half", "CHalf"])
     ],
 
     targets: [
         .target(name: "CHalf"),
+        .testTarget(name: "CHalfTests", dependencies: ["CHalf"]),
+
         .target(name: "Half", dependencies: ["CHalf"]),
         .testTarget(name: "HalfTests", dependencies: ["Half"])
     ],
