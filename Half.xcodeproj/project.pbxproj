@@ -91,6 +91,8 @@
 
 /* Begin PBXFileReference section */
 		DD6F08D124008A7400749359 /* codecov.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = codecov.yml; sourceTree = "<group>"; };
+		DDB1DF3F240A25D900C20FED /* fp_extend.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fp_extend.cpp; sourceTree = "<group>"; };
+		DDB1DF40240A25D900C20FED /* fp_trunc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fp_trunc.cpp; sourceTree = "<group>"; };
 		DDB8120223F587890079FEB5 /* CHalfTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CHalfTests.swift; sourceTree = "<group>"; };
 		DDFEEC3323EF13900096015C /* Half.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Half.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDFEEC3723EF13900096015C /* Half-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Half-Info.plist"; path = "Plists/Half-Info.plist"; sourceTree = "<group>"; };
@@ -292,6 +294,8 @@
 			isa = PBXGroup;
 			children = (
 				DDFEED8223F345690096015C /* half.c */,
+				DDB1DF3F240A25D900C20FED /* fp_extend.cpp */,
+				DDB1DF40240A25D900C20FED /* fp_trunc.cpp */,
 			);
 			path = src;
 			sourceTree = "<group>";
