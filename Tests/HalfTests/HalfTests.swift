@@ -55,6 +55,7 @@ class HalfTests: XCTestCase {
     }
 
     func testConvertFromOtherFloatTypes() {
+        let half: Half = 3.14
         let float: Float = 3.14
         let double: Double = 3.14
 #if canImport(CoreGraphics)
@@ -73,6 +74,7 @@ class HalfTests: XCTestCase {
         let half4 = Half(float80)
 #endif
 
+        XCTAssertEqual(half, Half(half))
         XCTAssertEqual(half1, half2)
 #if canImport(CoreGraphics)
         XCTAssertEqual(half2, half3)
@@ -440,8 +442,10 @@ class HalfTests: XCTestCase {
     }
 
     func testOutputStreamable() {
+        #if swift(>=5.0)
         var tests = self
         Half(2.5).write(to: &tests)
+        #endif // #if swift(>=5.0)
     }
 
     // MARK: Private Methods

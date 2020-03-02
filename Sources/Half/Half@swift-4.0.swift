@@ -14,29 +14,10 @@ import Foundation
 import CoreGraphics.CGBase
 #endif // #if os(iOS) || os(macOS) || os(tvOS) || os(watchOS)
 
-#if swift(>=5.0)
+#if swift(>=4.2)
+#else // swift(<4.2)
 // MARK: - Half Definition
 
-#if swift(>=5.1)
-@frozen public struct Half {
-
-    // MARK: Public Properties
-
-    public var _value: half_t
-
-    // MARK: Initialization
-
-    @_transparent
-    public init() {
-        self._value = _half_zero()
-    }
-
-    @_transparent
-    public init(_ _value: half_t) {
-        self._value = _value
-    }
-}
-#else
 public struct Half {
 
     // MARK: Public Properties
@@ -55,23 +36,19 @@ public struct Half {
         self._value = _value
     }
 }
-#endif
 
 // MARK: - Half Extension
 
 extension Half {
 
-    @inlinable
     public var bitPattern: UInt16 {
         return _half_to_raw(_value)
     }
 
-    @inlinable
     public init(bitPattern: UInt16) {
         self._value = _half_from_raw(bitPattern)
     }
 
-    @inlinable
     public init(nan payload: UInt16, signaling: Bool) {
         precondition(payload < (Half.quietNaNMask &>> 1), "NaN payload is not encodable.")
 
@@ -104,35 +81,22 @@ extension Half: CustomDebugStringConvertible {
     }
 }
 
-// MARK: - TextOutputStreamable Protocol Conformance
-
-extension Half: TextOutputStreamable {
-
-    public func write<Target>(to target: inout Target) where Target: TextOutputStream {
-        _half_to_float(_value).write(to: &target)
-    }
-}
-
 // MARK: - Internal Constants
 
 extension Half {
 
-    @inlinable @inline(__always)
     internal static var significandMask: UInt16 {
         return 1 &<< UInt16(significandBitCount) - 1
     }
 
-    @inlinable @inline(__always)
     internal static var infinityExponent: UInt {
         return 1 &<< UInt(exponentBitCount) - 1
     }
 
-    @inlinable @inline(__always)
     internal static var exponentBias: UInt {
         return infinityExponent &>> 1
     }
 
-    @inlinable @inline(__always)
     internal static var quietNaNMask: UInt16 {
         return 1 &<< UInt16(significandBitCount - 1)
     }
@@ -142,29 +106,24 @@ extension Half {
 
 extension Half: BinaryFloatingPoint {
 
-    @inlinable
     public static var exponentBitCount: Int {
         return 5
     }
 
-    @inlinable
     public static var significandBitCount: Int {
         return 10
     }
 
-    @inlinable
     public var exponentBitPattern: UInt {
         return UInt(bitPattern &>> UInt16(Half.significandBitCount)) & Half.infinityExponent
     }
 
-    @inlinable
     public var significandBitPattern: UInt16 {
         return bitPattern & Half.significandMask
     }
 
     //
 
-    @inlinable
     public init(sign: FloatingPointSign, exponentBitPattern: UInt, significandBitPattern: UInt16) {
         let signBits: UInt16 = (sign == .minus ? 1 : 0) &<< (Half.exponentBitCount + Half.significandBitCount)
         let exponentBits = UInt16((exponentBitPattern & Half.infinityExponent) &<< Half.significandBitCount)
@@ -173,7 +132,6 @@ extension Half: BinaryFloatingPoint {
         self.init(bitPattern: signBits | exponentBits | significandBits)
     }
 
-    @inlinable @inline(__always)
     public init(_ other: Float) {
         if other.isInfinite {
             let infinity = Half.infinity
@@ -189,7 +147,6 @@ extension Half: BinaryFloatingPoint {
         }
     }
 
-    @inlinable @inline(__always)
     public init(_ other: Double) {
         if other.isInfinite {
             let infinity = Half.infinity
@@ -206,7 +163,6 @@ extension Half: BinaryFloatingPoint {
     }
 
 #if !(os(Windows) || os(Android)) && (arch(i386) || arch(x86_64))
-    @inlinable @inline(__always)
     public init(_ other: Float80) {
         if other.isInfinite {
             let infinity = Half.infinity
@@ -225,22 +181,25 @@ extension Half: BinaryFloatingPoint {
 
 #if os(iOS) || os(macOS) || os(tvOS) || os(watchOS)
     // Not part of the protocol
-    @inlinable @inline(__always)
     public init(_ other: CGFloat) {
         self.init(other.native)
     }
 #endif // #if os(iOS) || os(macOS) || os(tvOS) || os(watchOS)
 
-    @inlinable @inline(__always)
     public init<Source>(_ value: Source) where Source: BinaryFloatingPoint {
         if let half = value as? Half {
             self.init(half._value)
         } else {
-            self.init(Float(value))
+            let shift = (Source.significandBitCount - Half.significandBitCount)
+            let significandBitPattern = UInt16(shift < 0 ? (UInt(value.significandBitPattern) &<< shift) : (UInt(value.significandBitPattern) &>> shift))
+
+            let exponentBias = Int((1 &<< UInt(Source.exponentBitCount) - 1) &>> 1)
+            let exponentBitPattern = UInt(truncatingIfNeeded: Int(truncatingIfNeeded: value.exponentBitPattern) - Int(exponentBias) + Int(Half.exponentBias))
+
+            self.init(sign: value.sign, exponentBitPattern: exponentBitPattern, significandBitPattern: significandBitPattern)
         }
     }
 
-    @inlinable
     public init?<Source>(exactly value: Source) where Source: BinaryFloatingPoint {
         self.init(value)
 
@@ -260,15 +219,23 @@ extension Half: BinaryFloatingPoint {
                 // If source isn't NaN but this is
                 return nil
             }
-        } else if Source(self) != value {
-            // If casting half back to source isn't equal to original source
-            return nil
+        } else {
+            guard self.sign == value.sign else { return nil }
+
+            let shift = (Source.significandBitCount - Half.significandBitCount)
+            let significandBitPattern = Source.RawSignificand(shift < 0 ? (UInt(value.significandBitPattern) &>> shift) : (UInt(value.significandBitPattern) &<< shift))
+
+            guard significandBitPattern == value.significandBitPattern else { return nil }
+
+            let exponentBias = Int((1 &<< UInt(Source.exponentBitCount) - 1) &>> 1)
+            let exponentBitPattern = UInt(truncatingIfNeeded: Int(truncatingIfNeeded: value.exponentBitPattern) - Int(Half.exponentBias) + Int(exponentBias))
+
+            guard exponentBitPattern == value.exponentBitPattern else { return nil }
         }
     }
 
     //
 
-    @inlinable
     public var binade: Half {
         guard isFinite else { return .nan }
 
@@ -282,7 +249,6 @@ extension Half: BinaryFloatingPoint {
         return Half(bitPattern: bitPattern & (-Half.infinity).bitPattern)
     }
 
-    @inlinable
     public var significandWidth: Int {
         let trailingZeroBits = significandBitPattern.trailingZeroBitCount
         if isNormal {
@@ -311,7 +277,6 @@ extension Half: ExpressibleByFloatLiteral {
 
 extension Half: FloatingPoint {
 
-    @inlinable
     public init(sign: FloatingPointSign, exponent: Int, significand: Half) {
         var result = significand
         if sign == .minus { result = -result }
@@ -350,24 +315,18 @@ extension Half: FloatingPoint {
         _value = _half_from(value)
     }
 
-    @inlinable @inline(__always)
     public init<Source: BinaryInteger>(_ value: Source) {
-        if value.bitWidth <= MemoryLayout<Int>.size * 8 {
-            if Source.isSigned {
-                let asInt = Int(truncatingIfNeeded: value)
-                self.init(_half_from(asInt))
-            } else {
-                let asUInt = UInt(truncatingIfNeeded: value)
-                self.init(_half_from(asUInt))
-            }
+        if Source.isSigned {
+            let asInt = Int(truncatingIfNeeded: value)
+            self.init(_half_from(asInt))
         } else {
-            self.init(Float(value))
+            let asUInt = UInt(truncatingIfNeeded: value)
+            self.init(_half_from(asUInt))
         }
     }
 
     //
 
-    @inlinable
     public var exponent: Int {
         if !isFinite { return .max }
         if isZero { return .min }
@@ -375,11 +334,10 @@ extension Half: FloatingPoint {
         let provisional = Int(exponentBitPattern) - Int(Half.exponentBias)
         if isNormal { return provisional }
 
-        let shift = Half.significandBitCount - Int(significandBitPattern._binaryLogarithm())
+        let shift = Half.significandBitCount - Int(log2(Double(significandBitPattern)))
         return provisional + 1 - shift
     }
 
-    @inlinable
     public var isCanonical: Bool {
         #if arch(arm)
         if exponentBitPattern == 0 && significandBitPattern != 0 {
@@ -390,42 +348,34 @@ extension Half: FloatingPoint {
         return true
     }
 
-    @inlinable @inline(__always)
     public var isFinite: Bool {
         return exponentBitPattern < Half.infinityExponent
     }
 
-    @inlinable @inline(__always)
     public var isInfinite: Bool {
         return !isFinite && significandBitPattern == 0
     }
 
-    @inlinable @inline(__always)
     public var isNaN: Bool {
         return !isFinite && significandBitPattern != 0
     }
 
-    @inlinable @inline(__always)
     public var isNormal: Bool {
         return exponentBitPattern > 0 && isFinite
     }
 
-    @inlinable @inline(__always)
     public var isSignalingNaN: Bool {
         return isNaN && (significandBitPattern & Half.quietNaNMask) == 0
     }
 
-    @inlinable @inline(__always)
     public var isSubnormal: Bool {
         return exponentBitPattern == 0 && significandBitPattern != 0
     }
 
-    @inlinable @inline(__always)
     public var isZero: Bool {
         return exponentBitPattern == 0 && significandBitPattern == 0
     }
 
-    @inlinable
     public var nextUp: Half {
         let next = self + 0
 
@@ -444,7 +394,6 @@ extension Half: FloatingPoint {
         return next
     }
 
-    @inlinable
     public var sign: FloatingPointSign {
         let shift = Half.significandBitCount + Half.exponentBitCount
         //swiftlint:disable force_unwrapping
@@ -452,7 +401,6 @@ extension Half: FloatingPoint {
         //swiftlint:enable force_unwrapping
     }
 
-    @inlinable
     public var significand: Half {
         if isNaN { return self }
         if isNormal {
@@ -460,14 +408,13 @@ extension Half: FloatingPoint {
         }
 
         if isSubnormal {
-            let shift = Half.significandBitCount - Int(significandBitPattern._binaryLogarithm())
+            let shift = Half.significandBitCount - Int(log2(Double(significandBitPattern)))
             return Half(sign: .plus, exponentBitPattern: Half.exponentBias, significandBitPattern: significandBitPattern &<< shift)
         }
 
         return Half(sign: .plus, exponentBitPattern: exponentBitPattern, significandBitPattern: 0)
     }
 
-    @inlinable
     public var ulp: Half {
         guard isFinite else { return .nan }
         if isNormal {
@@ -480,17 +427,14 @@ extension Half: FloatingPoint {
 
     //
 
-    @inlinable
     public static var greatestFiniteMagnitude: Half {
         return Half(bitPattern: 0x7BFF)
     }
 
-    @inlinable
     public static var infinity: Half {
         return Half(bitPattern: 0x7C00)
     }
 
-    @inlinable
     public static var leastNonzeroMagnitude: Half {
         #if arch(arm)
         return leastNormalMagnitude
@@ -499,27 +443,22 @@ extension Half: FloatingPoint {
         #endif
     }
 
-    @inlinable
     public static var leastNormalMagnitude: Half {
         return Half(sign: .plus, exponentBitPattern: 1, significandBitPattern: 0)
     }
 
-    @inlinable
     public static var nan: Half {
         return Half(_half_nan())
     }
 
-    @inlinable
     public static var pi: Half {
         return Half(_half_pi())
     }
 
-    @inlinable
     public static var signalingNaN: Half {
         return Half(nan: 0, signaling: true)
     }
 
-    @inlinable
     public static var ulpOfOne: Half {
         return Half(_half_epsilon())
     }
@@ -531,7 +470,6 @@ extension Half: FloatingPoint {
         _value = _half_fma(_value, lhs._value, rhs._value)
     }
 
-    @inlinable @inline(__always)
     public mutating func formRemainder(dividingBy other: Half) {
         self = Half(Float(self).remainder(dividingBy: Float(other)))
     }
@@ -541,7 +479,6 @@ extension Half: FloatingPoint {
         _value = _half_sqrt(_value)
     }
 
-    @inlinable @inline(__always)
     public mutating func formTruncatingRemainder(dividingBy other: Half) {
         self = Half(Float(self).truncatingRemainder(dividingBy: Float(other)))
     }
@@ -583,15 +520,11 @@ extension Half: FloatingPoint {
 
 extension Half: Hashable {
 
-    @inlinable
-    public func hash(into hasher: inout Hasher) {
-        var value = self
-        if isZero {
-            value = 0 // to reconcile -0.0 and +0.0
-        }
-
-        hasher.combine(value.bitPattern)
+    //swiftlint:disable legacy_hashing
+    public var hashValue: Int {
+        return Int(bitPattern)
     }
+    //swiftlint:enable legacy_hashing
 }
 
 // MARK: - Strideable Protocol Conformance
@@ -628,12 +561,10 @@ extension Half: SignedNumeric {
 
 extension Half: Numeric {
 
-    @inlinable @inline(__always)
     public var magnitude: Half {
         return Half(_half_abs(_value))
     }
 
-    @inlinable @inline(__always)
     public init?<Source>(exactly value: Source) where Source: BinaryInteger {
         self.init(value)
 
@@ -663,9 +594,9 @@ extension Half: ExpressibleByIntegerLiteral {
     }
 }
 
-// MARK: - AdditiveArithmetic Protocol Conformance
+// MARK: - Half Extension
 
-extension Half: AdditiveArithmetic {
+extension Half {
 
     @_transparent
     public static func + (lhs: Half, rhs: Half) -> Half {
@@ -696,11 +627,35 @@ extension Half: CustomReflectable {
     }
 }
 
-extension Half: CustomPlaygroundDisplayConvertible {
+extension Float {
 
-    @_transparent
-    public var playgroundDescription: Any {
-        return Float(self)
+    public init(_ other: Half) {
+        self = _half_to_float(other._value)
     }
 }
-#endif // #if swift(>=5.0)
+
+extension Double {
+
+    public init(_ other: Half) {
+        self = _half_to_double(other._value)
+    }
+}
+
+#if !(os(Windows) || os(Android)) && (arch(i386) || arch(x86_64))
+extension Float80 {
+
+    public init(_ other: Half) {
+        self = Float80(_half_to_double(other._value))
+    }
+}
+#endif
+
+#if os(iOS) || os(macOS) || os(tvOS) || os(watchOS)
+extension CGFloat {
+
+    public init(_ other: Half) {
+        self.init(NativeType(other))
+    }
+}
+#endif // #if os(iOS) || os(macOS) || os(tvOS) || os(watchOS)
+#endif // #if swift(<4.2)

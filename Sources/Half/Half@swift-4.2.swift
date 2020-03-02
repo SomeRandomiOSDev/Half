@@ -15,28 +15,9 @@ import CoreGraphics.CGBase
 #endif // #if os(iOS) || os(macOS) || os(tvOS) || os(watchOS)
 
 #if swift(>=5.0)
+#elseif swift(>=4.2)
 // MARK: - Half Definition
 
-#if swift(>=5.1)
-@frozen public struct Half {
-
-    // MARK: Public Properties
-
-    public var _value: half_t
-
-    // MARK: Initialization
-
-    @_transparent
-    public init() {
-        self._value = _half_zero()
-    }
-
-    @_transparent
-    public init(_ _value: half_t) {
-        self._value = _value
-    }
-}
-#else
 public struct Half {
 
     // MARK: Public Properties
@@ -55,7 +36,6 @@ public struct Half {
         self._value = _value
     }
 }
-#endif
 
 // MARK: - Half Extension
 
@@ -104,35 +84,26 @@ extension Half: CustomDebugStringConvertible {
     }
 }
 
-// MARK: - TextOutputStreamable Protocol Conformance
-
-extension Half: TextOutputStreamable {
-
-    public func write<Target>(to target: inout Target) where Target: TextOutputStream {
-        _half_to_float(_value).write(to: &target)
-    }
-}
-
 // MARK: - Internal Constants
 
 extension Half {
 
-    @inlinable @inline(__always)
+    @inlinable
     internal static var significandMask: UInt16 {
         return 1 &<< UInt16(significandBitCount) - 1
     }
 
-    @inlinable @inline(__always)
+    @inlinable
     internal static var infinityExponent: UInt {
         return 1 &<< UInt(exponentBitCount) - 1
     }
 
-    @inlinable @inline(__always)
+    @inlinable
     internal static var exponentBias: UInt {
         return infinityExponent &>> 1
     }
 
-    @inlinable @inline(__always)
+    @inlinable
     internal static var quietNaNMask: UInt16 {
         return 1 &<< UInt16(significandBitCount - 1)
     }
@@ -173,7 +144,7 @@ extension Half: BinaryFloatingPoint {
         self.init(bitPattern: signBits | exponentBits | significandBits)
     }
 
-    @inlinable @inline(__always)
+    @inlinable
     public init(_ other: Float) {
         if other.isInfinite {
             let infinity = Half.infinity
@@ -189,7 +160,7 @@ extension Half: BinaryFloatingPoint {
         }
     }
 
-    @inlinable @inline(__always)
+    @inlinable
     public init(_ other: Double) {
         if other.isInfinite {
             let infinity = Half.infinity
@@ -206,7 +177,7 @@ extension Half: BinaryFloatingPoint {
     }
 
 #if !(os(Windows) || os(Android)) && (arch(i386) || arch(x86_64))
-    @inlinable @inline(__always)
+    @inlinable
     public init(_ other: Float80) {
         if other.isInfinite {
             let infinity = Half.infinity
@@ -225,13 +196,13 @@ extension Half: BinaryFloatingPoint {
 
 #if os(iOS) || os(macOS) || os(tvOS) || os(watchOS)
     // Not part of the protocol
-    @inlinable @inline(__always)
+    @inlinable
     public init(_ other: CGFloat) {
         self.init(other.native)
     }
 #endif // #if os(iOS) || os(macOS) || os(tvOS) || os(watchOS)
 
-    @inlinable @inline(__always)
+    @inlinable
     public init<Source>(_ value: Source) where Source: BinaryFloatingPoint {
         if let half = value as? Half {
             self.init(half._value)
@@ -350,7 +321,7 @@ extension Half: FloatingPoint {
         _value = _half_from(value)
     }
 
-    @inlinable @inline(__always)
+    @inlinable
     public init<Source: BinaryInteger>(_ value: Source) {
         if value.bitWidth <= MemoryLayout<Int>.size * 8 {
             if Source.isSigned {
@@ -390,37 +361,37 @@ extension Half: FloatingPoint {
         return true
     }
 
-    @inlinable @inline(__always)
+    @inlinable
     public var isFinite: Bool {
         return exponentBitPattern < Half.infinityExponent
     }
 
-    @inlinable @inline(__always)
+    @inlinable
     public var isInfinite: Bool {
         return !isFinite && significandBitPattern == 0
     }
 
-    @inlinable @inline(__always)
+    @inlinable
     public var isNaN: Bool {
         return !isFinite && significandBitPattern != 0
     }
 
-    @inlinable @inline(__always)
+    @inlinable
     public var isNormal: Bool {
         return exponentBitPattern > 0 && isFinite
     }
 
-    @inlinable @inline(__always)
+    @inlinable
     public var isSignalingNaN: Bool {
         return isNaN && (significandBitPattern & Half.quietNaNMask) == 0
     }
 
-    @inlinable @inline(__always)
+    @inlinable
     public var isSubnormal: Bool {
         return exponentBitPattern == 0 && significandBitPattern != 0
     }
 
-    @inlinable @inline(__always)
+    @inlinable
     public var isZero: Bool {
         return exponentBitPattern == 0 && significandBitPattern == 0
     }
@@ -531,7 +502,7 @@ extension Half: FloatingPoint {
         _value = _half_fma(_value, lhs._value, rhs._value)
     }
 
-    @inlinable @inline(__always)
+    @inlinable
     public mutating func formRemainder(dividingBy other: Half) {
         self = Half(Float(self).remainder(dividingBy: Float(other)))
     }
@@ -541,7 +512,7 @@ extension Half: FloatingPoint {
         _value = _half_sqrt(_value)
     }
 
-    @inlinable @inline(__always)
+    @inlinable
     public mutating func formTruncatingRemainder(dividingBy other: Half) {
         self = Half(Float(self).truncatingRemainder(dividingBy: Float(other)))
     }
@@ -628,12 +599,12 @@ extension Half: SignedNumeric {
 
 extension Half: Numeric {
 
-    @inlinable @inline(__always)
+    @inlinable
     public var magnitude: Half {
         return Half(_half_abs(_value))
     }
 
-    @inlinable @inline(__always)
+    @inlinable
     public init?<Source>(exactly value: Source) where Source: BinaryInteger {
         self.init(value)
 
@@ -663,9 +634,9 @@ extension Half: ExpressibleByIntegerLiteral {
     }
 }
 
-// MARK: - AdditiveArithmetic Protocol Conformance
+// MARK: - Half Extension
 
-extension Half: AdditiveArithmetic {
+extension Half {
 
     @_transparent
     public static func + (lhs: Half, rhs: Half) -> Half {
@@ -703,4 +674,4 @@ extension Half: CustomPlaygroundDisplayConvertible {
         return Float(self)
     }
 }
-#endif // #if swift(>=5.0)
+#endif // #if swift(>=4.2) && swift(<5.0)

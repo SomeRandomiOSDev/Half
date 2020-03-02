@@ -1,15 +1,8 @@
-// swift-tools-version:5.0
+// swift-tools-version:4.2
 import PackageDescription
 
 let package = Package(
     name: "Half",
-
-    platforms: [
-        .iOS("8.0"),
-        .macOS("10.10"),
-        .tvOS("9.0"),
-        .watchOS("2.0")
-    ],
 
     products: [
         .library(name: "Half", targets: ["Half", "CHalf"])
@@ -23,5 +16,5 @@ let package = Package(
         .testTarget(name: "HalfTests", dependencies: ["Half"])
     ],
 
-    swiftLanguageVersions: [.version("4"), .version("4.2"), .version("5")]
+    swiftLanguageVersions: [.v4, .v4_2]
 )
