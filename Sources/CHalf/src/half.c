@@ -13,6 +13,16 @@
 #define HALF_FROM_FP16(x) (half_t){ ._fp = (x) }
 #define FP16_FROM_HALF(x) x._fp
 
+// On Linux platforms the casting sometimes gets wacky, so we need to first promote
+// the incoming value before storing it in the __fp16 type.
+#if defined(__linux__)
+#   define PROMOTE_SIGNED(x)   (long long)x
+#   define PROMOTE_UNSIGNED(x) (unsigned long long)x
+#else
+#   define PROMOTE_SIGNED(x)   x
+#   define PROMOTE_UNSIGNED(x) x
+#endif
+
 HALF_FUNC half_t _half_zero(void)    { return HALF_FROM_FP16(0.0); }
 HALF_FUNC half_t _half_epsilon(void) { return HALF_FROM_FP16(0x1p-10); }
 HALF_FUNC half_t _half_pi(void)      { return HALF_FROM_FP16(0x1.92p1); }
@@ -23,16 +33,16 @@ HALF_FUNC half_t _half_from_raw(const uint16_t val) { return HALF_FROM_RAW(val);
 
 HALF_OFUNC half_t _half_from(const double val)             { const __fp16 fpval = (__fp16)val; return HALF_FROM_FP16(fpval); }
 HALF_OFUNC half_t _half_from(const float val)              { const __fp16 fpval = (__fp16)val; return HALF_FROM_FP16(fpval); }
-HALF_OFUNC half_t _half_from(const long long val)          { const __fp16 fpval = (__fp16)val; return HALF_FROM_FP16(fpval); }
-HALF_OFUNC half_t _half_from(const long val)               { const __fp16 fpval = (__fp16)val; return HALF_FROM_FP16(fpval); }
-HALF_OFUNC half_t _half_from(const int val)                { const __fp16 fpval = (__fp16)val; return HALF_FROM_FP16(fpval); }
-HALF_OFUNC half_t _half_from(const short val)              { const __fp16 fpval = (__fp16)val; return HALF_FROM_FP16(fpval); }
-HALF_OFUNC half_t _half_from(const char val)               { const __fp16 fpval = (__fp16)val; return HALF_FROM_FP16(fpval); }
-HALF_OFUNC half_t _half_from(const unsigned long long val) { const __fp16 fpval = (__fp16)val; return HALF_FROM_FP16(fpval); }
-HALF_OFUNC half_t _half_from(const unsigned long val)      { const __fp16 fpval = (__fp16)val; return HALF_FROM_FP16(fpval); }
-HALF_OFUNC half_t _half_from(const unsigned int val)       { const __fp16 fpval = (__fp16)val; return HALF_FROM_FP16(fpval); }
-HALF_OFUNC half_t _half_from(const unsigned short val)     { const __fp16 fpval = (__fp16)val; return HALF_FROM_FP16(fpval); }
-HALF_OFUNC half_t _half_from(const unsigned char val)      { const __fp16 fpval = (__fp16)val; return HALF_FROM_FP16(fpval); }
+HALF_OFUNC half_t _half_from(const long long val)          { const __fp16 fpval = (__fp16)PROMOTE_SIGNED(val); return HALF_FROM_FP16(fpval); }
+HALF_OFUNC half_t _half_from(const long val)               { const __fp16 fpval = (__fp16)PROMOTE_SIGNED(val); return HALF_FROM_FP16(fpval); }
+HALF_OFUNC half_t _half_from(const int val)                { const __fp16 fpval = (__fp16)PROMOTE_SIGNED(val); return HALF_FROM_FP16(fpval); }
+HALF_OFUNC half_t _half_from(const short val)              { const __fp16 fpval = (__fp16)PROMOTE_SIGNED(val); return HALF_FROM_FP16(fpval); }
+HALF_OFUNC half_t _half_from(const char val)               { const __fp16 fpval = (__fp16)PROMOTE_SIGNED(val); return HALF_FROM_FP16(fpval); }
+HALF_OFUNC half_t _half_from(const unsigned long long val) { const __fp16 fpval = (__fp16)PROMOTE_UNSIGNED(val); return HALF_FROM_FP16(fpval); }
+HALF_OFUNC half_t _half_from(const unsigned long val)      { const __fp16 fpval = (__fp16)PROMOTE_UNSIGNED(val); return HALF_FROM_FP16(fpval); }
+HALF_OFUNC half_t _half_from(const unsigned int val)       { const __fp16 fpval = (__fp16)PROMOTE_UNSIGNED(val); return HALF_FROM_FP16(fpval); }
+HALF_OFUNC half_t _half_from(const unsigned short val)     { const __fp16 fpval = (__fp16)PROMOTE_UNSIGNED(val); return HALF_FROM_FP16(fpval); }
+HALF_OFUNC half_t _half_from(const unsigned char val)      { const __fp16 fpval = (__fp16)PROMOTE_UNSIGNED(val); return HALF_FROM_FP16(fpval); }
 
 HALF_FUNC double             _half_to_double(const half_t val)    { return (double)FP16_FROM_HALF(val); }
 HALF_FUNC float              _half_to_float(const half_t val)     { return (float)FP16_FROM_HALF(val); }
