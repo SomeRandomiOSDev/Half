@@ -54,10 +54,10 @@ let squareRoot = sqrt(value)
 ...
 ```
 
-TODO
+NOTE
 --------
 
-* Add support for SIMD functions & types with half-precision
+* [[SE-0277]](https://github.com/apple/swift-evolution/blob/master/proposals/0277-float16.md) added support for a native `Float16` type starting with Swift 5.3, therefore, this library is no longer recommended for projects using Swift 5.3 or later.  
 
 Contributing
 --------
