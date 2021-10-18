@@ -1,15 +1,17 @@
 Half
 ========
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/d30d31c29f17449481b97a04610ff5b9)](https://app.codacy.com/app/SomeRandomiOSDev/Half?utm_source=github.com&utm_medium=referral&utm_content=SomeRandomiOSDev/Half&utm_campaign=Badge_Grade_Dashboard)
 [![License MIT](https://img.shields.io/cocoapods/l/Half.svg)](https://cocoapods.org/pods/Half)
 [![CocoaPods Compatible](https://img.shields.io/cocoapods/v/Half.svg)](https://cocoapods.org/pods/Half) 
 [![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage) 
 [![Platform](https://img.shields.io/cocoapods/p/Half.svg)](https://cocoapods.org/pods/Half)
-![Linux](https://img.shields.io/badge/platform-linux-lightgrey)
-[![Build](https://travis-ci.com/SomeRandomiOSDev/Half.svg?branch=master)](https://travis-ci.com/SomeRandomiOSDev/Half)
 [![Code Coverage](https://codecov.io/gh/SomeRandomiOSDev/Half/branch/master/graph/badge.svg)](https://codecov.io/gh/SomeRandomiOSDev/Half)
-[![Codacy](https://api.codacy.com/project/badge/Grade/8ad52c117e4a46d9aa4699d22fc0bf49)](https://app.codacy.com/app/SomeRandomiOSDev/Half?utm_source=github.com&utm_medium=referral&utm_content=SomeRandomiOSDev/Half&utm_campaign=Badge_Grade_Dashboard)
-![Test](https://github.com/SomeRandomiOSDev/Half/workflows/Test/badge.svg)
+
+![Swift Package](https://github.com/SomeRandomiOSDev/Half/workflows/Swift%20Package/badge.svg)
+![Xcode Project](https://github.com/SomeRandomiOSDev/Half/workflows/Xcode%20Project/badge.svg)
+![Cocoapods](https://github.com/SomeRandomiOSDev/Half/workflows/Cocoapods/badge.svg)
+![Carthage](https://github.com/SomeRandomiOSDev/Half/workflows/Carthage/badge.svg)
 
 **Half** is a lightweight framework containing a Swift implementation for a half-precision floating point type for iOS, macOS, tvOS, and watchOS.
 
@@ -59,15 +61,10 @@ NOTE
 
 * [[SE-0277]](https://github.com/apple/swift-evolution/blob/master/proposals/0277-float16.md) added support for a native `Float16` type starting with Swift 5.3, therefore, this library is no longer recommended for projects using Swift 5.3 or later.  
 
-Contributing
---------
-
-If you have need for a specific feature or you encounter a bug, please open an issue. If you extend the functionality of **Half** yourself or you feel like fixing a bug yourself, please submit a pull request.
-
 Author
 --------
 
-Joseph Newton, somerandomiosdev@gmail.com
+Joe Newton, somerandomiosdev@gmail.com
 
 Credits
 --------

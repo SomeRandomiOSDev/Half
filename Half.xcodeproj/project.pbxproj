@@ -7,242 +7,287 @@
 	objects = {
 
 /* Begin PBXAggregateTarget section */
-		DDB1DF77240B7F4700C20FED /* Generate Sources */ = {
+		DD2FBC27258BE8BB00DB3211 /* XCFramework */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = DDB1DF78240B7F4700C20FED /* Build configuration list for PBXAggregateTarget "Generate Sources" */;
+			buildConfigurationList = DD2FBC2A258BE8BB00DB3211 /* Build configuration list for PBXAggregateTarget "XCFramework" */;
 			buildPhases = (
-				DDB1DF7B240B7F5000C20FED /* Generate Sources */,
+				DD2FBC33258BE8C600DB3211 /* Build XCFramework */,
 			);
 			dependencies = (
 			);
-			name = "Generate Sources";
-			productName = "Generate Sources";
+			name = XCFramework;
+			productName = XCFramework;
 		};
-		DDFEECA423F1BA0B0096015C /* Run SwiftLint */ = {
+		DD86D56423D11C4B0046E63E /* Run SwiftLint */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = DDFEECA523F1BA0B0096015C /* Build configuration list for PBXAggregateTarget "Run SwiftLint" */;
+			buildConfigurationList = DD86D56523D11C4B0046E63E /* Build configuration list for PBXAggregateTarget "Run SwiftLint" */;
 			buildPhases = (
-				DDFEECA923F1BA160096015C /* Run SwiftLint */,
+				DD86D56823D11C550046E63E /* Run SwiftLint */,
 			);
 			dependencies = (
 			);
 			name = "Run SwiftLint";
 			productName = "Run SwiftLint";
 		};
+		DD9E302F271DBFF500C6D170 /* Generate Sources */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = DD9E3030271DBFF500C6D170 /* Build configuration list for PBXAggregateTarget "Generate Sources" */;
+			buildPhases = (
+				DD9E3033271DC00700C6D170 /* Generate Sources */,
+			);
+			dependencies = (
+			);
+			name = "Generate Sources";
+			productName = "Generate Sources";
+		};
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		DD94FBF823F3C5BB0041D4EC /* half.h in Headers */ = {isa = PBXBuildFile; fileRef = DDFEEC8423F0B6FF0096015C /* half.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DD94FBF923F3C5BB0041D4EC /* half.h in Headers */ = {isa = PBXBuildFile; fileRef = DDFEEC8423F0B6FF0096015C /* half.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DD94FBFA23F3C5BC0041D4EC /* half.h in Headers */ = {isa = PBXBuildFile; fileRef = DDFEEC8423F0B6FF0096015C /* half.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DD94FBFB23F3C5BD0041D4EC /* half.h in Headers */ = {isa = PBXBuildFile; fileRef = DDFEEC8423F0B6FF0096015C /* half.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DDB1DF9A240CCA5A00C20FED /* Half@swift-4.2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB1DF98240CCA5900C20FED /* Half@swift-4.2.swift */; };
-		DDB1DF9B240CCA5A00C20FED /* Half@swift-4.2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB1DF98240CCA5900C20FED /* Half@swift-4.2.swift */; };
-		DDB1DF9C240CCA5A00C20FED /* Half@swift-4.2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB1DF98240CCA5900C20FED /* Half@swift-4.2.swift */; };
-		DDB1DF9D240CCA5A00C20FED /* Half@swift-4.2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB1DF98240CCA5900C20FED /* Half@swift-4.2.swift */; };
-		DDB1DF9E240CCA5A00C20FED /* Half@swift-4.0.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB1DF99240CCA5900C20FED /* Half@swift-4.0.swift */; };
-		DDB1DF9F240CCA5A00C20FED /* Half@swift-4.0.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB1DF99240CCA5900C20FED /* Half@swift-4.0.swift */; };
-		DDB1DFA0240CCA5A00C20FED /* Half@swift-4.0.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB1DF99240CCA5900C20FED /* Half@swift-4.0.swift */; };
-		DDB1DFA1240CCA5A00C20FED /* Half@swift-4.0.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB1DF99240CCA5900C20FED /* Half@swift-4.0.swift */; };
-		DDB8120323F587890079FEB5 /* CHalfTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB8120223F587890079FEB5 /* CHalfTests.swift */; };
-		DDB8120423F587890079FEB5 /* CHalfTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB8120223F587890079FEB5 /* CHalfTests.swift */; };
-		DDB8120523F587890079FEB5 /* CHalfTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB8120223F587890079FEB5 /* CHalfTests.swift */; };
-		DDFEEC3D23EF13910096015C /* Half.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDFEEC3323EF13900096015C /* Half.framework */; };
-		DDFEEC4223EF13910096015C /* HalfTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFEEC4123EF13910096015C /* HalfTests.swift */; };
-		DDFEECC723F2001A0096015C /* Half.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDFEECBE23F2001A0096015C /* Half.framework */; };
-		DDFEECE323F2003E0096015C /* Half.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDFEECDA23F2003E0096015C /* Half.framework */; };
-		DDFEED0A23F200FE0096015C /* HalfTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFEEC4123EF13910096015C /* HalfTests.swift */; };
-		DDFEED0B23F200FF0096015C /* HalfTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFEEC4123EF13910096015C /* HalfTests.swift */; };
-		DDFEED4E23F26F170096015C /* Half+CodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFEED4D23F26F170096015C /* Half+CodingTests.swift */; };
-		DDFEED4F23F26F170096015C /* Half+CodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFEED4D23F26F170096015C /* Half+CodingTests.swift */; };
-		DDFEED5023F26F170096015C /* Half+CodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFEED4D23F26F170096015C /* Half+CodingTests.swift */; };
-		DDFEED5223F2737B0096015C /* FunctionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFEED5123F2737B0096015C /* FunctionsTests.swift */; };
-		DDFEED5323F2737B0096015C /* FunctionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFEED5123F2737B0096015C /* FunctionsTests.swift */; };
-		DDFEED5423F2737B0096015C /* FunctionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFEED5123F2737B0096015C /* FunctionsTests.swift */; };
-		DDFEED8323F345690096015C /* half.c in Sources */ = {isa = PBXBuildFile; fileRef = DDFEED8223F345690096015C /* half.c */; };
-		DDFEED8423F345690096015C /* half.c in Sources */ = {isa = PBXBuildFile; fileRef = DDFEED8223F345690096015C /* half.c */; };
-		DDFEED8523F345690096015C /* half.c in Sources */ = {isa = PBXBuildFile; fileRef = DDFEED8223F345690096015C /* half.c */; };
-		DDFEED8623F345690096015C /* half.c in Sources */ = {isa = PBXBuildFile; fileRef = DDFEED8223F345690096015C /* half.c */; };
-		DDFEEDAB23F3593B0096015C /* Half+Coding.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFEEDA823F3593B0096015C /* Half+Coding.swift */; };
-		DDFEEDAC23F3593B0096015C /* Half+Coding.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFEEDA823F3593B0096015C /* Half+Coding.swift */; };
-		DDFEEDAD23F3593B0096015C /* Half+Coding.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFEEDA823F3593B0096015C /* Half+Coding.swift */; };
-		DDFEEDAE23F3593B0096015C /* Half+Coding.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFEEDA823F3593B0096015C /* Half+Coding.swift */; };
-		DDFEEDAF23F3593B0096015C /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFEEDA923F3593B0096015C /* Functions.swift */; };
-		DDFEEDB023F3593B0096015C /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFEEDA923F3593B0096015C /* Functions.swift */; };
-		DDFEEDB123F3593B0096015C /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFEEDA923F3593B0096015C /* Functions.swift */; };
-		DDFEEDB223F3593B0096015C /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFEEDA923F3593B0096015C /* Functions.swift */; };
-		DDFEEDB323F3593B0096015C /* Half.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFEEDAA23F3593B0096015C /* Half.swift */; };
-		DDFEEDB423F3593B0096015C /* Half.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFEEDAA23F3593B0096015C /* Half.swift */; };
-		DDFEEDB523F3593B0096015C /* Half.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFEEDAA23F3593B0096015C /* Half.swift */; };
-		DDFEEDB623F3593B0096015C /* Half.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFEEDAA23F3593B0096015C /* Half.swift */; };
+		DD48BC98270E0DE800D842BC /* Half.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD86D5C423D11D140046E63E /* Half.framework */; };
+		DD86D54723D11B3E0046E63E /* Half.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD86D53D23D11B3E0046E63E /* Half.framework */; };
+		DD86D57923D11C860046E63E /* Half.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD86D57023D11C860046E63E /* Half.framework */; };
+		DD86D59523D11CA00046E63E /* Half.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD86D58C23D11CA00046E63E /* Half.framework */; };
+		DD9E2FC3271DBEE700C6D170 /* HalfTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9E2FC0271DBEE700C6D170 /* HalfTests.swift */; };
+		DD9E2FC4271DBEE700C6D170 /* HalfTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9E2FC0271DBEE700C6D170 /* HalfTests.swift */; };
+		DD9E2FC5271DBEE700C6D170 /* HalfTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9E2FC0271DBEE700C6D170 /* HalfTests.swift */; };
+		DD9E2FC6271DBEE700C6D170 /* HalfTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9E2FC0271DBEE700C6D170 /* HalfTests.swift */; };
+		DD9E2FC7271DBEE800C6D170 /* FunctionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9E2FC1271DBEE700C6D170 /* FunctionsTests.swift */; };
+		DD9E2FC8271DBEE800C6D170 /* FunctionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9E2FC1271DBEE700C6D170 /* FunctionsTests.swift */; };
+		DD9E2FC9271DBEE800C6D170 /* FunctionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9E2FC1271DBEE700C6D170 /* FunctionsTests.swift */; };
+		DD9E2FCA271DBEE800C6D170 /* FunctionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9E2FC1271DBEE700C6D170 /* FunctionsTests.swift */; };
+		DD9E2FCB271DBEE800C6D170 /* Half+CodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9E2FC2271DBEE700C6D170 /* Half+CodingTests.swift */; };
+		DD9E2FCC271DBEE800C6D170 /* Half+CodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9E2FC2271DBEE700C6D170 /* Half+CodingTests.swift */; };
+		DD9E2FCD271DBEE800C6D170 /* Half+CodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9E2FC2271DBEE700C6D170 /* Half+CodingTests.swift */; };
+		DD9E2FCE271DBEE800C6D170 /* Half+CodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9E2FC2271DBEE700C6D170 /* Half+CodingTests.swift */; };
+		DD9E2FD6271DBEF900C6D170 /* CHalfTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9E2FD1271DBEF900C6D170 /* CHalfTests.swift */; };
+		DD9E2FD7271DBEF900C6D170 /* CHalfTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9E2FD1271DBEF900C6D170 /* CHalfTests.swift */; };
+		DD9E2FD8271DBEF900C6D170 /* CHalfTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9E2FD1271DBEF900C6D170 /* CHalfTests.swift */; };
+		DD9E2FD9271DBEF900C6D170 /* CHalfTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9E2FD1271DBEF900C6D170 /* CHalfTests.swift */; };
+		DD9E2FFF271DBF5100C6D170 /* Half@swift-4.0.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9E2FF9271DBF5100C6D170 /* Half@swift-4.0.swift */; };
+		DD9E3000271DBF5100C6D170 /* Half@swift-4.0.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9E2FF9271DBF5100C6D170 /* Half@swift-4.0.swift */; };
+		DD9E3001271DBF5100C6D170 /* Half@swift-4.0.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9E2FF9271DBF5100C6D170 /* Half@swift-4.0.swift */; };
+		DD9E3002271DBF5100C6D170 /* Half@swift-4.0.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9E2FF9271DBF5100C6D170 /* Half@swift-4.0.swift */; };
+		DD9E3003271DBF5100C6D170 /* Half@swift-4.2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9E2FFA271DBF5100C6D170 /* Half@swift-4.2.swift */; };
+		DD9E3004271DBF5100C6D170 /* Half@swift-4.2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9E2FFA271DBF5100C6D170 /* Half@swift-4.2.swift */; };
+		DD9E3005271DBF5100C6D170 /* Half@swift-4.2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9E2FFA271DBF5100C6D170 /* Half@swift-4.2.swift */; };
+		DD9E3006271DBF5100C6D170 /* Half@swift-4.2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9E2FFA271DBF5100C6D170 /* Half@swift-4.2.swift */; };
+		DD9E3007271DBF5100C6D170 /* Half.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9E2FFB271DBF5100C6D170 /* Half.swift */; };
+		DD9E3008271DBF5100C6D170 /* Half.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9E2FFB271DBF5100C6D170 /* Half.swift */; };
+		DD9E3009271DBF5100C6D170 /* Half.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9E2FFB271DBF5100C6D170 /* Half.swift */; };
+		DD9E300A271DBF5100C6D170 /* Half.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9E2FFB271DBF5100C6D170 /* Half.swift */; };
+		DD9E300B271DBF5100C6D170 /* Half+Coding.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9E2FFC271DBF5100C6D170 /* Half+Coding.swift */; };
+		DD9E300C271DBF5100C6D170 /* Half+Coding.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9E2FFC271DBF5100C6D170 /* Half+Coding.swift */; };
+		DD9E300D271DBF5100C6D170 /* Half+Coding.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9E2FFC271DBF5100C6D170 /* Half+Coding.swift */; };
+		DD9E300E271DBF5100C6D170 /* Half+Coding.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9E2FFC271DBF5100C6D170 /* Half+Coding.swift */; };
+		DD9E300F271DBF5100C6D170 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9E2FFD271DBF5100C6D170 /* Functions.swift */; };
+		DD9E3010271DBF5100C6D170 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9E2FFD271DBF5100C6D170 /* Functions.swift */; };
+		DD9E3011271DBF5100C6D170 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9E2FFD271DBF5100C6D170 /* Functions.swift */; };
+		DD9E3012271DBF5100C6D170 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9E2FFD271DBF5100C6D170 /* Functions.swift */; };
+		DD9E301F271DBF7200C6D170 /* half.h in Headers */ = {isa = PBXBuildFile; fileRef = DD9E3019271DBF7200C6D170 /* half.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD9E3020271DBF7200C6D170 /* half.h in Headers */ = {isa = PBXBuildFile; fileRef = DD9E3019271DBF7200C6D170 /* half.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD9E3021271DBF7200C6D170 /* half.h in Headers */ = {isa = PBXBuildFile; fileRef = DD9E3019271DBF7200C6D170 /* half.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD9E3022271DBF7200C6D170 /* half.h in Headers */ = {isa = PBXBuildFile; fileRef = DD9E3019271DBF7200C6D170 /* half.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD9E3023271DBF7200C6D170 /* fp_extend.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DD9E301C271DBF7200C6D170 /* fp_extend.cpp */; };
+		DD9E3024271DBF7200C6D170 /* fp_extend.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DD9E301C271DBF7200C6D170 /* fp_extend.cpp */; };
+		DD9E3025271DBF7200C6D170 /* fp_extend.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DD9E301C271DBF7200C6D170 /* fp_extend.cpp */; };
+		DD9E3026271DBF7200C6D170 /* fp_extend.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DD9E301C271DBF7200C6D170 /* fp_extend.cpp */; };
+		DD9E3027271DBF7200C6D170 /* fp_trunc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DD9E301D271DBF7200C6D170 /* fp_trunc.cpp */; };
+		DD9E3028271DBF7200C6D170 /* fp_trunc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DD9E301D271DBF7200C6D170 /* fp_trunc.cpp */; };
+		DD9E3029271DBF7200C6D170 /* fp_trunc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DD9E301D271DBF7200C6D170 /* fp_trunc.cpp */; };
+		DD9E302A271DBF7200C6D170 /* fp_trunc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DD9E301D271DBF7200C6D170 /* fp_trunc.cpp */; };
+		DD9E302B271DBF7200C6D170 /* half.c in Sources */ = {isa = PBXBuildFile; fileRef = DD9E301E271DBF7200C6D170 /* half.c */; };
+		DD9E302C271DBF7200C6D170 /* half.c in Sources */ = {isa = PBXBuildFile; fileRef = DD9E301E271DBF7200C6D170 /* half.c */; };
+		DD9E302D271DBF7200C6D170 /* half.c in Sources */ = {isa = PBXBuildFile; fileRef = DD9E301E271DBF7200C6D170 /* half.c */; };
+		DD9E302E271DBF7200C6D170 /* half.c in Sources */ = {isa = PBXBuildFile; fileRef = DD9E301E271DBF7200C6D170 /* half.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		DDB1DF7C240B7FA000C20FED /* PBXContainerItemProxy */ = {
+		DD48BC99270E0DE800D842BC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = DDFEEC2A23EF13900096015C /* Project object */;
+			containerPortal = DD86D53423D11B3E0046E63E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = DDB1DF77240B7F4700C20FED;
-			remoteInfo = "Generate Sources";
+			remoteGlobalIDString = DD86D5C323D11D140046E63E;
+			remoteInfo = "Half watchOS";
 		};
-		DDB1DF7E240B7FA400C20FED /* PBXContainerItemProxy */ = {
+		DD86D54823D11B3E0046E63E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = DDFEEC2A23EF13900096015C /* Project object */;
+			containerPortal = DD86D53423D11B3E0046E63E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = DDB1DF77240B7F4700C20FED;
-			remoteInfo = "Generate Sources";
-		};
-		DDB1DF80240B7FB100C20FED /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DDFEEC2A23EF13900096015C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DDFEECA423F1BA0B0096015C;
-			remoteInfo = "Run SwiftLint";
-		};
-		DDB1DF82240B7FB900C20FED /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DDFEEC2A23EF13900096015C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DDB1DF77240B7F4700C20FED;
-			remoteInfo = "Generate Sources";
-		};
-		DDB1DF84240B7FB900C20FED /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DDFEEC2A23EF13900096015C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DDFEECA423F1BA0B0096015C;
-			remoteInfo = "Run SwiftLint";
-		};
-		DDB1DF86240B7FBF00C20FED /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DDFEEC2A23EF13900096015C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DDB1DF77240B7F4700C20FED;
-			remoteInfo = "Generate Sources";
-		};
-		DDB1DF88240B7FBF00C20FED /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DDFEEC2A23EF13900096015C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DDFEECA423F1BA0B0096015C;
-			remoteInfo = "Run SwiftLint";
-		};
-		DDFEEC3E23EF13910096015C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DDFEEC2A23EF13900096015C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DDFEEC3223EF13900096015C;
+			remoteGlobalIDString = DD86D53C23D11B3E0046E63E;
 			remoteInfo = Half;
 		};
-		DDFEECB223F1BB5B0096015C /* PBXContainerItemProxy */ = {
+		DD86D56923D11C6C0046E63E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = DDFEEC2A23EF13900096015C /* Project object */;
+			containerPortal = DD86D53423D11B3E0046E63E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = DDFEECA423F1BA0B0096015C;
+			remoteGlobalIDString = DD86D56423D11C4B0046E63E;
 			remoteInfo = "Run SwiftLint";
 		};
-		DDFEECC823F2001A0096015C /* PBXContainerItemProxy */ = {
+		DD86D57A23D11C860046E63E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = DDFEEC2A23EF13900096015C /* Project object */;
+			containerPortal = DD86D53423D11B3E0046E63E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = DDFEECBD23F2001A0096015C;
+			remoteGlobalIDString = DD86D56F23D11C860046E63E;
 			remoteInfo = "Half macOS";
 		};
-		DDFEECE423F2003E0096015C /* PBXContainerItemProxy */ = {
+		DD86D59623D11CA00046E63E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = DDFEEC2A23EF13900096015C /* Project object */;
+			containerPortal = DD86D53423D11B3E0046E63E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = DDFEECD923F2003E0096015C;
+			remoteGlobalIDString = DD86D58B23D11CA00046E63E;
 			remoteInfo = "Half tvOS";
+		};
+		DD86D5D823D11DC60046E63E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD86D53423D11B3E0046E63E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD86D56423D11C4B0046E63E;
+			remoteInfo = "Run SwiftLint";
+		};
+		DD86D5DA23D11DC90046E63E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD86D53423D11B3E0046E63E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD86D56423D11C4B0046E63E;
+			remoteInfo = "Run SwiftLint";
+		};
+		DD86D5DC23D11DCC0046E63E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD86D53423D11B3E0046E63E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD86D56423D11C4B0046E63E;
+			remoteInfo = "Run SwiftLint";
+		};
+		DD9E3036271DC32200C6D170 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD86D53423D11B3E0046E63E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD9E302F271DBFF500C6D170;
+			remoteInfo = "Generate Sources";
+		};
+		DD9E3038271DC32800C6D170 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD86D53423D11B3E0046E63E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD9E302F271DBFF500C6D170;
+			remoteInfo = "Generate Sources";
+		};
+		DD9E303A271DC32C00C6D170 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD86D53423D11B3E0046E63E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD9E302F271DBFF500C6D170;
+			remoteInfo = "Generate Sources";
+		};
+		DD9E303C271DC32F00C6D170 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD86D53423D11B3E0046E63E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD9E302F271DBFF500C6D170;
+			remoteInfo = "Generate Sources";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		DD6F08D124008A7400749359 /* codecov.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = codecov.yml; sourceTree = "<group>"; };
-		DDB1DF3F240A25D900C20FED /* fp_extend.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fp_extend.cpp; sourceTree = "<group>"; };
-		DDB1DF40240A25D900C20FED /* fp_trunc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fp_trunc.cpp; sourceTree = "<group>"; };
-		DDB1DF76240B7EFD00C20FED /* Half.swift.gyb */ = {isa = PBXFileReference; explicitFileType = text.script.python; path = Half.swift.gyb; sourceTree = "<group>"; };
-		DDB1DF94240CC4DC00C20FED /* gyb.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = gyb.py; sourceTree = "<group>"; };
-		DDB1DF95240CC4DC00C20FED /* gyb */ = {isa = PBXFileReference; lastKnownFileType = text; path = gyb; sourceTree = "<group>"; };
-		DDB1DF96240CC5A200C20FED /* Package@swift-4.2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Package@swift-4.2.swift"; sourceTree = "<group>"; };
-		DDB1DF97240CC5A200C20FED /* Package@swift-4.0.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Package@swift-4.0.swift"; sourceTree = "<group>"; };
-		DDB1DF98240CCA5900C20FED /* Half@swift-4.2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Half@swift-4.2.swift"; sourceTree = "<group>"; };
-		DDB1DF99240CCA5900C20FED /* Half@swift-4.0.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Half@swift-4.0.swift"; sourceTree = "<group>"; };
-		DDB8120223F587890079FEB5 /* CHalfTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CHalfTests.swift; sourceTree = "<group>"; };
-		DDFEEC3323EF13900096015C /* Half.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Half.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DDFEEC3723EF13900096015C /* Half-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Half-Info.plist"; path = "Plists/Half-Info.plist"; sourceTree = "<group>"; };
-		DDFEEC3C23EF13910096015C /* HalfTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HalfTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DDFEEC4123EF13910096015C /* HalfTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalfTests.swift; sourceTree = "<group>"; };
-		DDFEEC4323EF13910096015C /* HalfTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "HalfTests-Info.plist"; path = "Plists/HalfTests-Info.plist"; sourceTree = "<group>"; };
-		DDFEEC8423F0B6FF0096015C /* half.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = half.h; sourceTree = "<group>"; };
-		DDFEECAB23F1BA550096015C /* Half.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = Half.podspec; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		DDFEECAC23F1BA550096015C /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = SOURCE_ROOT; };
-		DDFEECAD23F1BA5E0096015C /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .travis.yml; sourceTree = SOURCE_ROOT; };
-		DDFEECAE23F1BA5E0096015C /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = SOURCE_ROOT; };
-		DDFEECAF23F1BA680096015C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
-		DDFEECB023F1BA6E0096015C /* ATTRIBUTIONS */ = {isa = PBXFileReference; lastKnownFileType = text; path = ATTRIBUTIONS; sourceTree = SOURCE_ROOT; };
-		DDFEECB123F1BA730096015C /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
-		DDFEECBE23F2001A0096015C /* Half.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Half.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DDFEECC623F2001A0096015C /* HalfTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HalfTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DDFEECDA23F2003E0096015C /* Half.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Half.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DDFEECE223F2003E0096015C /* HalfTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HalfTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DDFEECF623F2004D0096015C /* Half.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Half.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DDFEED4D23F26F170096015C /* Half+CodingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Half+CodingTests.swift"; sourceTree = "<group>"; };
-		DDFEED5123F2737B0096015C /* FunctionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionsTests.swift; sourceTree = "<group>"; };
-		DDFEED8223F345690096015C /* half.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = half.c; sourceTree = "<group>"; };
-		DDFEEDA823F3593B0096015C /* Half+Coding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Half+Coding.swift"; sourceTree = "<group>"; };
-		DDFEEDA923F3593B0096015C /* Functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
-		DDFEEDAA23F3593B0096015C /* Half.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Half.swift; sourceTree = "<group>"; };
-		DDFEEDC623F35F110096015C /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		DD17A9F9257744BC00D30599 /* scripts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = scripts; sourceTree = "<group>"; };
+		DD48BC94270E0DE800D842BC /* HalfTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HalfTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD48BC9F270E0F4500D842BC /* HalfTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = HalfTests.xctestplan; sourceTree = "<group>"; };
+		DD48BCA0270E0F9A00D842BC /* Half macOS Tests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Half macOS Tests.xctestplan"; sourceTree = "<group>"; };
+		DD48BCA1270E0FE200D842BC /* Half tvOS Tests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Half tvOS Tests.xctestplan"; sourceTree = "<group>"; };
+		DD48BCA2270E101D00D842BC /* Half watchOS Tests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Half watchOS Tests.xctestplan"; sourceTree = "<group>"; };
+		DD5D044A261FA56400BA0FC2 /* HalfTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "HalfTests-Info.plist"; path = "Plists/HalfTests-Info.plist"; sourceTree = "<group>"; };
+		DD86D53D23D11B3E0046E63E /* Half.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Half.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD86D54123D11B3E0046E63E /* Half-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Half-Info.plist"; path = "Plists/Half-Info.plist"; sourceTree = "<group>"; };
+		DD86D54623D11B3E0046E63E /* HalfTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HalfTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD86D57023D11C860046E63E /* Half.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Half.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD86D57823D11C860046E63E /* HalfTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HalfTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD86D58C23D11CA00046E63E /* Half.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Half.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD86D59423D11CA00046E63E /* HalfTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HalfTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD86D5C423D11D140046E63E /* Half.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Half.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD86D5DE23D22DB90046E63E /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
+		DD86D5DF23D22DB90046E63E /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = SOURCE_ROOT; };
+		DD86D5E023D22DB90046E63E /* Half.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; path = Half.podspec; sourceTree = SOURCE_ROOT; };
+		DD86D5E123D22DB90046E63E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		DD86D5E323D22DC30046E63E /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = SOURCE_ROOT; };
+		DD9E2FBD271DBE8600C6D170 /* gyb.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = gyb.py; sourceTree = "<group>"; };
+		DD9E2FBE271DBE8600C6D170 /* gyb */ = {isa = PBXFileReference; lastKnownFileType = text; path = gyb; sourceTree = "<group>"; };
+		DD9E2FC0271DBEE700C6D170 /* HalfTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HalfTests.swift; sourceTree = "<group>"; };
+		DD9E2FC1271DBEE700C6D170 /* FunctionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionsTests.swift; sourceTree = "<group>"; };
+		DD9E2FC2271DBEE700C6D170 /* Half+CodingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Half+CodingTests.swift"; sourceTree = "<group>"; };
+		DD9E2FD1271DBEF900C6D170 /* CHalfTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHalfTests.swift; sourceTree = "<group>"; };
+		DD9E2FF9271DBF5100C6D170 /* Half@swift-4.0.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Half@swift-4.0.swift"; sourceTree = "<group>"; };
+		DD9E2FFA271DBF5100C6D170 /* Half@swift-4.2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Half@swift-4.2.swift"; sourceTree = "<group>"; };
+		DD9E2FFB271DBF5100C6D170 /* Half.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Half.swift; sourceTree = "<group>"; };
+		DD9E2FFC271DBF5100C6D170 /* Half+Coding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Half+Coding.swift"; sourceTree = "<group>"; };
+		DD9E2FFD271DBF5100C6D170 /* Functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
+		DD9E2FFE271DBF5100C6D170 /* Half.swift.gyb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Half.swift.gyb; sourceTree = "<group>"; };
+		DD9E3019271DBF7200C6D170 /* half.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = half.h; sourceTree = "<group>"; };
+		DD9E301A271DBF7200C6D170 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		DD9E301C271DBF7200C6D170 /* fp_extend.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fp_extend.cpp; sourceTree = "<group>"; };
+		DD9E301D271DBF7200C6D170 /* fp_trunc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fp_trunc.cpp; sourceTree = "<group>"; };
+		DD9E301E271DBF7200C6D170 /* half.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = half.c; sourceTree = "<group>"; };
+		DD9E3034271DC0FF00C6D170 /* Package@swift-4.0.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Package@swift-4.0.swift"; sourceTree = "<group>"; };
+		DD9E3035271DC0FF00C6D170 /* Package@swift-4.2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Package@swift-4.2.swift"; sourceTree = "<group>"; };
+		DD9E303E271DCF9900C6D170 /* ATTRIBUTIONS */ = {isa = PBXFileReference; lastKnownFileType = text; path = ATTRIBUTIONS; sourceTree = "<group>"; };
+		DDA26DBD256EA4D700E1C6D7 /* workflows */ = {isa = PBXFileReference; lastKnownFileType = folder; name = workflows; path = .github/workflows; sourceTree = "<group>"; };
+		DDB1DE5C2405EEE300C20FED /* codecov.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = codecov.yml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		DDFEEC3023EF13900096015C /* Frameworks */ = {
+		DD48BC91270E0DE800D842BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD48BC98270E0DE800D842BC /* Half.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD86D53A23D11B3E0046E63E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DDFEEC3923EF13910096015C /* Frameworks */ = {
+		DD86D54323D11B3E0046E63E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDFEEC3D23EF13910096015C /* Half.framework in Frameworks */,
+				DD86D54723D11B3E0046E63E /* Half.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DDFEECBB23F2001A0096015C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DDFEECC323F2001A0096015C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DDFEECC723F2001A0096015C /* Half.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DDFEECD723F2003E0096015C /* Frameworks */ = {
+		DD86D56D23D11C860046E63E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DDFEECDF23F2003E0096015C /* Frameworks */ = {
+		DD86D57523D11C860046E63E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDFEECE323F2003E0096015C /* Half.framework in Frameworks */,
+				DD86D57923D11C860046E63E /* Half.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DDFEECF323F2004D0096015C /* Frameworks */ = {
+		DD86D58923D11CA00046E63E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD86D59123D11CA00046E63E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD86D59523D11CA00046E63E /* Half.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD86D5C123D11D140046E63E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -252,361 +297,404 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DD94FBF723F3C50E0041D4EC /* Tests */ = {
+		DD48BC9E270E0F1300D842BC /* Test Plans */ = {
 			isa = PBXGroup;
 			children = (
-				DDB1DF43240A279300C20FED /* CHalfTests */,
-				DDFEEC4023EF13910096015C /* HalfTests */,
+				DD48BC9F270E0F4500D842BC /* HalfTests.xctestplan */,
+				DD48BCA0270E0F9A00D842BC /* Half macOS Tests.xctestplan */,
+				DD48BCA1270E0FE200D842BC /* Half tvOS Tests.xctestplan */,
+				DD48BCA2270E101D00D842BC /* Half watchOS Tests.xctestplan */,
 			);
-			path = Tests;
+			path = "Test Plans";
 			sourceTree = "<group>";
 		};
-		DDB1DF43240A279300C20FED /* CHalfTests */ = {
+		DD5D04E52621361600BA0FC2 /* Half */ = {
 			isa = PBXGroup;
 			children = (
-				DDB8120223F587890079FEB5 /* CHalfTests.swift */,
-			);
-			path = CHalfTests;
-			sourceTree = "<group>";
-		};
-		DDB1DF93240CC4DC00C20FED /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				DDB1DF94240CC4DC00C20FED /* gyb.py */,
-				DDB1DF95240CC4DC00C20FED /* gyb */,
-			);
-			path = Utils;
-			sourceTree = "<group>";
-		};
-		DDFEEC2923EF13900096015C = {
-			isa = PBXGroup;
-			children = (
-				DDFEEC3523EF13900096015C /* Half */,
-				DDFEEC3423EF13900096015C /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		DDFEEC3423EF13900096015C /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				DDFEEC3323EF13900096015C /* Half.framework */,
-				DDFEEC3C23EF13910096015C /* HalfTests.xctest */,
-				DDFEECBE23F2001A0096015C /* Half.framework */,
-				DDFEECC623F2001A0096015C /* HalfTests.xctest */,
-				DDFEECDA23F2003E0096015C /* Half.framework */,
-				DDFEECE223F2003E0096015C /* HalfTests.xctest */,
-				DDFEECF623F2004D0096015C /* Half.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		DDFEEC3523EF13900096015C /* Half */ = {
-			isa = PBXGroup;
-			children = (
-				DDFEEC8E23F0B9F90096015C /* Sources */,
-				DDFEECAA23F1BA280096015C /* Supporting Files */,
-				DD94FBF723F3C50E0041D4EC /* Tests */,
-				DDB1DF93240CC4DC00C20FED /* Utils */,
-			);
-			name = Half;
-			sourceTree = "<group>";
-		};
-		DDFEEC4023EF13910096015C /* HalfTests */ = {
-			isa = PBXGroup;
-			children = (
-				DDFEEC4123EF13910096015C /* HalfTests.swift */,
-				DDFEED4D23F26F170096015C /* Half+CodingTests.swift */,
-				DDFEED5123F2737B0096015C /* FunctionsTests.swift */,
-			);
-			path = HalfTests;
-			sourceTree = "<group>";
-		};
-		DDFEEC8E23F0B9F90096015C /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-				DDFEEDA723F359280096015C /* Half */,
-				DDFEED8123F3454C0096015C /* CHalf */,
-			);
-			path = Sources;
-			sourceTree = "<group>";
-		};
-		DDFEECAA23F1BA280096015C /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				DDFEECAB23F1BA550096015C /* Half.podspec */,
-				DDFEECAC23F1BA550096015C /* Package.swift */,
-				DDB1DF97240CC5A200C20FED /* Package@swift-4.0.swift */,
-				DDB1DF96240CC5A200C20FED /* Package@swift-4.2.swift */,
-				DD6F08D124008A7400749359 /* codecov.yml */,
-				DDFEECAE23F1BA5E0096015C /* .swiftlint.yml */,
-				DDFEECAD23F1BA5E0096015C /* .travis.yml */,
-				DDFEECAF23F1BA680096015C /* README.md */,
-				DDFEECB023F1BA6E0096015C /* ATTRIBUTIONS */,
-				DDFEECB123F1BA730096015C /* LICENSE */,
-				DDFEEC3723EF13900096015C /* Half-Info.plist */,
-				DDFEEC4323EF13910096015C /* HalfTests-Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		DDFEED8123F3454C0096015C /* CHalf */ = {
-			isa = PBXGroup;
-			children = (
-				DDFEEDC423F35ED70096015C /* include */,
-				DDFEEDC523F35EE00096015C /* src */,
-			);
-			path = CHalf;
-			sourceTree = "<group>";
-		};
-		DDFEEDA723F359280096015C /* Half */ = {
-			isa = PBXGroup;
-			children = (
-				DDFEEDA923F3593B0096015C /* Functions.swift */,
-				DDFEEDAA23F3593B0096015C /* Half.swift */,
-				DDB1DF98240CCA5900C20FED /* Half@swift-4.2.swift */,
-				DDB1DF99240CCA5900C20FED /* Half@swift-4.0.swift */,
-				DDB1DF76240B7EFD00C20FED /* Half.swift.gyb */,
-				DDFEEDA823F3593B0096015C /* Half+Coding.swift */,
+				DD9E2FFD271DBF5100C6D170 /* Functions.swift */,
+				DD9E2FFB271DBF5100C6D170 /* Half.swift */,
+				DD9E2FF9271DBF5100C6D170 /* Half@swift-4.0.swift */,
+				DD9E2FFA271DBF5100C6D170 /* Half@swift-4.2.swift */,
+				DD9E2FFE271DBF5100C6D170 /* Half.swift.gyb */,
+				DD9E2FFC271DBF5100C6D170 /* Half+Coding.swift */,
 			);
 			path = Half;
 			sourceTree = "<group>";
 		};
-		DDFEEDC423F35ED70096015C /* include */ = {
+		DD5D04F22621362400BA0FC2 /* HalfTests */ = {
 			isa = PBXGroup;
 			children = (
-				DDFEEDC623F35F110096015C /* module.modulemap */,
-				DDFEEC8423F0B6FF0096015C /* half.h */,
+				DD9E2FC1271DBEE700C6D170 /* FunctionsTests.swift */,
+				DD9E2FC2271DBEE700C6D170 /* Half+CodingTests.swift */,
+				DD9E2FC0271DBEE700C6D170 /* HalfTests.swift */,
+			);
+			path = HalfTests;
+			sourceTree = "<group>";
+		};
+		DD86D53323D11B3E0046E63E = {
+			isa = PBXGroup;
+			children = (
+				DD86D53F23D11B3E0046E63E /* Half */,
+				DD86D53E23D11B3E0046E63E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DD86D53E23D11B3E0046E63E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DD86D53D23D11B3E0046E63E /* Half.framework */,
+				DD86D54623D11B3E0046E63E /* HalfTests.xctest */,
+				DD86D57023D11C860046E63E /* Half.framework */,
+				DD86D57823D11C860046E63E /* HalfTests.xctest */,
+				DD86D58C23D11CA00046E63E /* Half.framework */,
+				DD86D59423D11CA00046E63E /* HalfTests.xctest */,
+				DD86D5C423D11D140046E63E /* Half.framework */,
+				DD48BC94270E0DE800D842BC /* HalfTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DD86D53F23D11B3E0046E63E /* Half */ = {
+			isa = PBXGroup;
+			children = (
+				DDB1DE252405EE5F00C20FED /* Sources */,
+				DDB1DE502405EE9900C20FED /* Tests */,
+				DD9E2FBC271DBE8600C6D170 /* Utils */,
+				DD86D55B23D11BA80046E63E /* Supporting Files */,
+			);
+			name = Half;
+			sourceTree = "<group>";
+		};
+		DD86D55B23D11BA80046E63E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DD17A9F9257744BC00D30599 /* scripts */,
+				DDA26DBD256EA4D700E1C6D7 /* workflows */,
+				DD86D5E023D22DB90046E63E /* Half.podspec */,
+				DD86D5DF23D22DB90046E63E /* Package.swift */,
+				DD9E3035271DC0FF00C6D170 /* Package@swift-4.2.swift */,
+				DD9E3034271DC0FF00C6D170 /* Package@swift-4.0.swift */,
+				DDB1DE5C2405EEE300C20FED /* codecov.yml */,
+				DD86D5E323D22DC30046E63E /* .swiftlint.yml */,
+				DD86D5E123D22DB90046E63E /* README.md */,
+				DD9E303E271DCF9900C6D170 /* ATTRIBUTIONS */,
+				DD86D5DE23D22DB90046E63E /* LICENSE */,
+				DD86D54123D11B3E0046E63E /* Half-Info.plist */,
+				DD5D044A261FA56400BA0FC2 /* HalfTests-Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DD9E2FBC271DBE8600C6D170 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				DD9E2FBD271DBE8600C6D170 /* gyb.py */,
+				DD9E2FBE271DBE8600C6D170 /* gyb */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		DD9E2FCF271DBEF900C6D170 /* CHalfTests */ = {
+			isa = PBXGroup;
+			children = (
+				DD9E2FD1271DBEF900C6D170 /* CHalfTests.swift */,
+			);
+			path = CHalfTests;
+			sourceTree = "<group>";
+		};
+		DD9E3017271DBF7200C6D170 /* CHalf */ = {
+			isa = PBXGroup;
+			children = (
+				DD9E3018271DBF7200C6D170 /* include */,
+				DD9E301B271DBF7200C6D170 /* src */,
+			);
+			path = CHalf;
+			sourceTree = "<group>";
+		};
+		DD9E3018271DBF7200C6D170 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				DD9E3019271DBF7200C6D170 /* half.h */,
+				DD9E301A271DBF7200C6D170 /* module.modulemap */,
 			);
 			path = include;
 			sourceTree = "<group>";
 		};
-		DDFEEDC523F35EE00096015C /* src */ = {
+		DD9E301B271DBF7200C6D170 /* src */ = {
 			isa = PBXGroup;
 			children = (
-				DDFEED8223F345690096015C /* half.c */,
-				DDB1DF3F240A25D900C20FED /* fp_extend.cpp */,
-				DDB1DF40240A25D900C20FED /* fp_trunc.cpp */,
+				DD9E301C271DBF7200C6D170 /* fp_extend.cpp */,
+				DD9E301D271DBF7200C6D170 /* fp_trunc.cpp */,
+				DD9E301E271DBF7200C6D170 /* half.c */,
 			);
 			path = src;
+			sourceTree = "<group>";
+		};
+		DDB1DE252405EE5F00C20FED /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				DD9E3017271DBF7200C6D170 /* CHalf */,
+				DD5D04E52621361600BA0FC2 /* Half */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		DDB1DE502405EE9900C20FED /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				DD9E2FCF271DBEF900C6D170 /* CHalfTests */,
+				DD5D04F22621362400BA0FC2 /* HalfTests */,
+				DD48BC9E270E0F1300D842BC /* Test Plans */,
+			);
+			path = Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		DDFEEC2E23EF13900096015C /* Headers */ = {
+		DD86D53823D11B3E0046E63E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD94FBF823F3C5BB0041D4EC /* half.h in Headers */,
+				DD9E301F271DBF7200C6D170 /* half.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DDFEECB923F2001A0096015C /* Headers */ = {
+		DD86D56B23D11C860046E63E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD94FBF923F3C5BB0041D4EC /* half.h in Headers */,
+				DD9E3020271DBF7200C6D170 /* half.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DDFEECD523F2003E0096015C /* Headers */ = {
+		DD86D58723D11CA00046E63E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD94FBFA23F3C5BC0041D4EC /* half.h in Headers */,
+				DD9E3021271DBF7200C6D170 /* half.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DDFEECF123F2004D0096015C /* Headers */ = {
+		DD86D5BF23D11D140046E63E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD94FBFB23F3C5BD0041D4EC /* half.h in Headers */,
+				DD9E3022271DBF7200C6D170 /* half.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		DDFEEC3223EF13900096015C /* Half */ = {
+		DD48BC93270E0DE800D842BC /* Half watchOS Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DDFEEC4723EF13910096015C /* Build configuration list for PBXNativeTarget "Half" */;
+			buildConfigurationList = DD48BC9D270E0DE800D842BC /* Build configuration list for PBXNativeTarget "Half watchOS Tests" */;
 			buildPhases = (
-				DDFEEC2E23EF13900096015C /* Headers */,
-				DDFEEC2F23EF13900096015C /* Sources */,
-				DDFEEC3023EF13900096015C /* Frameworks */,
-				DDFEEC3123EF13900096015C /* Resources */,
+				DD48BC90270E0DE800D842BC /* Sources */,
+				DD48BC91270E0DE800D842BC /* Frameworks */,
+				DD48BC92270E0DE800D842BC /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				DDB1DF7D240B7FA000C20FED /* PBXTargetDependency */,
-				DDFEECB323F1BB5B0096015C /* PBXTargetDependency */,
+				DD48BC9A270E0DE800D842BC /* PBXTargetDependency */,
+			);
+			name = "Half watchOS Tests";
+			productName = "Half watchOS Tests";
+			productReference = DD48BC94270E0DE800D842BC /* HalfTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DD86D53C23D11B3E0046E63E /* Half */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD86D55123D11B3E0046E63E /* Build configuration list for PBXNativeTarget "Half" */;
+			buildPhases = (
+				DD86D53823D11B3E0046E63E /* Headers */,
+				DD86D53923D11B3E0046E63E /* Sources */,
+				DD86D53A23D11B3E0046E63E /* Frameworks */,
+				DD86D53B23D11B3E0046E63E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD9E3037271DC32200C6D170 /* PBXTargetDependency */,
+				DD86D56A23D11C6C0046E63E /* PBXTargetDependency */,
 			);
 			name = Half;
 			productName = Half;
-			productReference = DDFEEC3323EF13900096015C /* Half.framework */;
+			productReference = DD86D53D23D11B3E0046E63E /* Half.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		DDFEEC3B23EF13910096015C /* HalfTests */ = {
+		DD86D54523D11B3E0046E63E /* HalfTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DDFEEC4A23EF13910096015C /* Build configuration list for PBXNativeTarget "HalfTests" */;
+			buildConfigurationList = DD86D55423D11B3E0046E63E /* Build configuration list for PBXNativeTarget "HalfTests" */;
 			buildPhases = (
-				DDFEEC3823EF13910096015C /* Sources */,
-				DDFEEC3923EF13910096015C /* Frameworks */,
-				DDFEEC3A23EF13910096015C /* Resources */,
+				DD86D54223D11B3E0046E63E /* Sources */,
+				DD86D54323D11B3E0046E63E /* Frameworks */,
+				DD86D54423D11B3E0046E63E /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				DDFEEC3F23EF13910096015C /* PBXTargetDependency */,
+				DD86D54923D11B3E0046E63E /* PBXTargetDependency */,
 			);
 			name = HalfTests;
 			productName = HalfTests;
-			productReference = DDFEEC3C23EF13910096015C /* HalfTests.xctest */;
+			productReference = DD86D54623D11B3E0046E63E /* HalfTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		DDFEECBD23F2001A0096015C /* Half macOS */ = {
+		DD86D56F23D11C860046E63E /* Half macOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DDFEECCF23F2001A0096015C /* Build configuration list for PBXNativeTarget "Half macOS" */;
+			buildConfigurationList = DD86D58123D11C870046E63E /* Build configuration list for PBXNativeTarget "Half macOS" */;
 			buildPhases = (
-				DDFEECB923F2001A0096015C /* Headers */,
-				DDFEECBA23F2001A0096015C /* Sources */,
-				DDFEECBB23F2001A0096015C /* Frameworks */,
-				DDFEECBC23F2001A0096015C /* Resources */,
+				DD86D56B23D11C860046E63E /* Headers */,
+				DD86D56C23D11C860046E63E /* Sources */,
+				DD86D56D23D11C860046E63E /* Frameworks */,
+				DD86D56E23D11C860046E63E /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				DDB1DF7F240B7FA400C20FED /* PBXTargetDependency */,
-				DDB1DF81240B7FB100C20FED /* PBXTargetDependency */,
+				DD9E3039271DC32800C6D170 /* PBXTargetDependency */,
+				DD86D5D923D11DC60046E63E /* PBXTargetDependency */,
 			);
 			name = "Half macOS";
 			productName = "Half macOS";
-			productReference = DDFEECBE23F2001A0096015C /* Half.framework */;
+			productReference = DD86D57023D11C860046E63E /* Half.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		DDFEECC523F2001A0096015C /* Half macOS Tests */ = {
+		DD86D57723D11C860046E63E /* Half macOS Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DDFEECD223F2001A0096015C /* Build configuration list for PBXNativeTarget "Half macOS Tests" */;
+			buildConfigurationList = DD86D58423D11C870046E63E /* Build configuration list for PBXNativeTarget "Half macOS Tests" */;
 			buildPhases = (
-				DDFEECC223F2001A0096015C /* Sources */,
-				DDFEECC323F2001A0096015C /* Frameworks */,
-				DDFEECC423F2001A0096015C /* Resources */,
+				DD86D57423D11C860046E63E /* Sources */,
+				DD86D57523D11C860046E63E /* Frameworks */,
+				DD86D57623D11C860046E63E /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				DDFEECC923F2001A0096015C /* PBXTargetDependency */,
+				DD86D57B23D11C860046E63E /* PBXTargetDependency */,
 			);
 			name = "Half macOS Tests";
 			productName = "Half macOSTests";
-			productReference = DDFEECC623F2001A0096015C /* HalfTests.xctest */;
+			productReference = DD86D57823D11C860046E63E /* HalfTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		DDFEECD923F2003E0096015C /* Half tvOS */ = {
+		DD86D58B23D11CA00046E63E /* Half tvOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DDFEECEB23F2003E0096015C /* Build configuration list for PBXNativeTarget "Half tvOS" */;
+			buildConfigurationList = DD86D59D23D11CA00046E63E /* Build configuration list for PBXNativeTarget "Half tvOS" */;
 			buildPhases = (
-				DDFEECD523F2003E0096015C /* Headers */,
-				DDFEECD623F2003E0096015C /* Sources */,
-				DDFEECD723F2003E0096015C /* Frameworks */,
-				DDFEECD823F2003E0096015C /* Resources */,
+				DD86D58723D11CA00046E63E /* Headers */,
+				DD86D58823D11CA00046E63E /* Sources */,
+				DD86D58923D11CA00046E63E /* Frameworks */,
+				DD86D58A23D11CA00046E63E /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				DDB1DF83240B7FB900C20FED /* PBXTargetDependency */,
-				DDB1DF85240B7FB900C20FED /* PBXTargetDependency */,
+				DD9E303B271DC32C00C6D170 /* PBXTargetDependency */,
+				DD86D5DB23D11DC90046E63E /* PBXTargetDependency */,
 			);
 			name = "Half tvOS";
 			productName = "Half tvOS";
-			productReference = DDFEECDA23F2003E0096015C /* Half.framework */;
+			productReference = DD86D58C23D11CA00046E63E /* Half.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		DDFEECE123F2003E0096015C /* Half tvOS Tests */ = {
+		DD86D59323D11CA00046E63E /* Half tvOS Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DDFEECEE23F2003E0096015C /* Build configuration list for PBXNativeTarget "Half tvOS Tests" */;
+			buildConfigurationList = DD86D5A023D11CA00046E63E /* Build configuration list for PBXNativeTarget "Half tvOS Tests" */;
 			buildPhases = (
-				DDFEECDE23F2003E0096015C /* Sources */,
-				DDFEECDF23F2003E0096015C /* Frameworks */,
-				DDFEECE023F2003E0096015C /* Resources */,
+				DD86D59023D11CA00046E63E /* Sources */,
+				DD86D59123D11CA00046E63E /* Frameworks */,
+				DD86D59223D11CA00046E63E /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				DDFEECE523F2003E0096015C /* PBXTargetDependency */,
+				DD86D59723D11CA00046E63E /* PBXTargetDependency */,
 			);
 			name = "Half tvOS Tests";
 			productName = "Half tvOSTests";
-			productReference = DDFEECE223F2003E0096015C /* HalfTests.xctest */;
+			productReference = DD86D59423D11CA00046E63E /* HalfTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		DDFEECF523F2004D0096015C /* Half watchOS */ = {
+		DD86D5C323D11D140046E63E /* Half watchOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DDFEECFB23F2004D0096015C /* Build configuration list for PBXNativeTarget "Half watchOS" */;
+			buildConfigurationList = DD86D5C923D11D140046E63E /* Build configuration list for PBXNativeTarget "Half watchOS" */;
 			buildPhases = (
-				DDFEECF123F2004D0096015C /* Headers */,
-				DDFEECF223F2004D0096015C /* Sources */,
-				DDFEECF323F2004D0096015C /* Frameworks */,
-				DDFEECF423F2004D0096015C /* Resources */,
+				DD86D5BF23D11D140046E63E /* Headers */,
+				DD86D5C023D11D140046E63E /* Sources */,
+				DD86D5C123D11D140046E63E /* Frameworks */,
+				DD86D5C223D11D140046E63E /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				DDB1DF87240B7FBF00C20FED /* PBXTargetDependency */,
-				DDB1DF89240B7FBF00C20FED /* PBXTargetDependency */,
+				DD9E303D271DC32F00C6D170 /* PBXTargetDependency */,
+				DD86D5DD23D11DCC0046E63E /* PBXTargetDependency */,
 			);
 			name = "Half watchOS";
 			productName = "Half watchOS";
-			productReference = DDFEECF623F2004D0096015C /* Half.framework */;
+			productReference = DD86D5C423D11D140046E63E /* Half.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		DDFEEC2A23EF13900096015C /* Project object */ = {
+		DD86D53423D11B3E0046E63E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1130;
-				LastUpgradeCheck = 1130;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
 				ORGANIZATIONNAME = SomeRandomiOSDev;
 				TargetAttributes = {
-					DDB1DF77240B7F4700C20FED = {
-						CreatedOnToolsVersion = 11.3.1;
+					DD2FBC27258BE8BB00DB3211 = {
+						CreatedOnToolsVersion = 13.0;
+						LastSwiftMigration = 1300;
 					};
-					DDFEEC3223EF13900096015C = {
-						CreatedOnToolsVersion = 11.3.1;
-						LastSwiftMigration = 1130;
+					DD48BC93270E0DE800D842BC = {
+						CreatedOnToolsVersion = 13.0;
+						LastSwiftMigration = 1300;
 					};
-					DDFEEC3B23EF13910096015C = {
-						CreatedOnToolsVersion = 11.3.1;
-						LastSwiftMigration = 1130;
+					DD86D53C23D11B3E0046E63E = {
+						CreatedOnToolsVersion = 13.0;
+						LastSwiftMigration = 1300;
 					};
-					DDFEECA423F1BA0B0096015C = {
-						CreatedOnToolsVersion = 11.3.1;
+					DD86D54523D11B3E0046E63E = {
+						CreatedOnToolsVersion = 13.0;
+						LastSwiftMigration = 1300;
 					};
-					DDFEECBD23F2001A0096015C = {
-						CreatedOnToolsVersion = 11.3.1;
-						LastSwiftMigration = 1130;
+					DD86D56423D11C4B0046E63E = {
+						CreatedOnToolsVersion = 13.0;
+						LastSwiftMigration = 1300;
 					};
-					DDFEECC523F2001A0096015C = {
-						CreatedOnToolsVersion = 11.3.1;
+					DD86D56F23D11C860046E63E = {
+						CreatedOnToolsVersion = 13.0;
+						LastSwiftMigration = 1300;
 					};
-					DDFEECD923F2003E0096015C = {
-						CreatedOnToolsVersion = 11.3.1;
-						LastSwiftMigration = 1130;
+					DD86D57723D11C860046E63E = {
+						CreatedOnToolsVersion = 13.0;
+						LastSwiftMigration = 1300;
 					};
-					DDFEECE123F2003E0096015C = {
-						CreatedOnToolsVersion = 11.3.1;
+					DD86D58B23D11CA00046E63E = {
+						CreatedOnToolsVersion = 13.0;
+						LastSwiftMigration = 1300;
 					};
-					DDFEECF523F2004D0096015C = {
-						CreatedOnToolsVersion = 11.3.1;
-						LastSwiftMigration = 1130;
+					DD86D59323D11CA00046E63E = {
+						CreatedOnToolsVersion = 13.0;
+						LastSwiftMigration = 1300;
+					};
+					DD86D5C323D11D140046E63E = {
+						CreatedOnToolsVersion = 13.0;
+						LastSwiftMigration = 1300;
+					};
+					DD9E302F271DBFF500C6D170 = {
+						CreatedOnToolsVersion = 13.0;
 					};
 				};
 			};
-			buildConfigurationList = DDFEEC2D23EF13900096015C /* Build configuration list for PBXProject "Half" */;
+			buildConfigurationList = DD86D53723D11B3E0046E63E /* Build configuration list for PBXProject "Half" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -614,68 +702,77 @@
 				en,
 				Base,
 			);
-			mainGroup = DDFEEC2923EF13900096015C;
-			productRefGroup = DDFEEC3423EF13900096015C /* Products */;
+			mainGroup = DD86D53323D11B3E0046E63E;
+			productRefGroup = DD86D53E23D11B3E0046E63E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DDFEEC3223EF13900096015C /* Half */,
-				DDFEEC3B23EF13910096015C /* HalfTests */,
-				DDFEECBD23F2001A0096015C /* Half macOS */,
-				DDFEECC523F2001A0096015C /* Half macOS Tests */,
-				DDFEECD923F2003E0096015C /* Half tvOS */,
-				DDFEECE123F2003E0096015C /* Half tvOS Tests */,
-				DDFEECF523F2004D0096015C /* Half watchOS */,
-				DDB1DF77240B7F4700C20FED /* Generate Sources */,
-				DDFEECA423F1BA0B0096015C /* Run SwiftLint */,
+				DD86D53C23D11B3E0046E63E /* Half */,
+				DD86D54523D11B3E0046E63E /* HalfTests */,
+				DD86D56F23D11C860046E63E /* Half macOS */,
+				DD86D57723D11C860046E63E /* Half macOS Tests */,
+				DD86D58B23D11CA00046E63E /* Half tvOS */,
+				DD86D59323D11CA00046E63E /* Half tvOS Tests */,
+				DD86D5C323D11D140046E63E /* Half watchOS */,
+				DD48BC93270E0DE800D842BC /* Half watchOS Tests */,
+				DD9E302F271DBFF500C6D170 /* Generate Sources */,
+				DD86D56423D11C4B0046E63E /* Run SwiftLint */,
+				DD2FBC27258BE8BB00DB3211 /* XCFramework */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		DDFEEC3123EF13900096015C /* Resources */ = {
+		DD48BC92270E0DE800D842BC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DDFEEC3A23EF13910096015C /* Resources */ = {
+		DD86D53B23D11B3E0046E63E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DDFEECBC23F2001A0096015C /* Resources */ = {
+		DD86D54423D11B3E0046E63E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DDFEECC423F2001A0096015C /* Resources */ = {
+		DD86D56E23D11C860046E63E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DDFEECD823F2003E0096015C /* Resources */ = {
+		DD86D57623D11C860046E63E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DDFEECE023F2003E0096015C /* Resources */ = {
+		DD86D58A23D11CA00046E63E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DDFEECF423F2004D0096015C /* Resources */ = {
+		DD86D59223D11CA00046E63E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD86D5C223D11D140046E63E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -685,7 +782,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		DDB1DF7B240B7F5000C20FED /* Generate Sources */ = {
+		DD2FBC33258BE8C600DB3211 /* Build XCFramework */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -693,19 +790,17 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"$(SRCROOT)/Sources/Half/Half.swift.gyb",
 			);
-			name = "Generate Sources";
+			name = "Build XCFramework";
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(SRCROOT)/Sources/Half/Half.swift",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "./utils/gyb --line-directive '' -Dswift_version='5.0' -o ./Sources/Half/Half.swift ./Sources/Half/Half.swift.gyb\n./utils/gyb --line-directive '' -Dswift_version='4.2' -o ./Sources/Half/Half@swift-4.2.swift ./Sources/Half/Half.swift.gyb\n./utils/gyb --line-directive '' -Dswift_version='4.0' -o ./Sources/Half/Half@swift-4.0.swift ./Sources/Half/Half.swift.gyb\n";
+			shellScript = "${PROJECT_DIR}/scripts/xcframework.sh -configuration ${CONFIGURATION} -output \"${BUILD_DIR}/${CONFIGURATION}-universal/Half.xcframework\" \n";
 		};
-		DDFEECA923F1BA160096015C /* Run SwiftLint */ = {
+		DD86D56823D11C550046E63E /* Run SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -723,156 +818,199 @@
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
+		DD9E3033271DC00700C6D170 /* Generate Sources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Sources/Half/Half.swift.gyb",
+			);
+			name = "Generate Sources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./utils/gyb --line-directive '' -Dswift_version='5.0' -o ./Sources/Half/Half.swift ./Sources/Half/Half.swift.gyb\n./utils/gyb --line-directive '' -Dswift_version='4.2' -o ./Sources/Half/Half@swift-4.2.swift ./Sources/Half/Half.swift.gyb\n./utils/gyb --line-directive '' -Dswift_version='4.0' -o ./Sources/Half/Half@swift-4.0.swift ./Sources/Half/Half.swift.gyb\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		DDFEEC2F23EF13900096015C /* Sources */ = {
+		DD48BC90270E0DE800D842BC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDB1DF9A240CCA5A00C20FED /* Half@swift-4.2.swift in Sources */,
-				DDFEEDB323F3593B0096015C /* Half.swift in Sources */,
-				DDB1DF9E240CCA5A00C20FED /* Half@swift-4.0.swift in Sources */,
-				DDFEED8323F345690096015C /* half.c in Sources */,
-				DDFEEDAB23F3593B0096015C /* Half+Coding.swift in Sources */,
-				DDFEEDAF23F3593B0096015C /* Functions.swift in Sources */,
+				DD9E2FD9271DBEF900C6D170 /* CHalfTests.swift in Sources */,
+				DD9E2FCE271DBEE800C6D170 /* Half+CodingTests.swift in Sources */,
+				DD9E2FC6271DBEE700C6D170 /* HalfTests.swift in Sources */,
+				DD9E2FCA271DBEE800C6D170 /* FunctionsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DDFEEC3823EF13910096015C /* Sources */ = {
+		DD86D53923D11B3E0046E63E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDB8120323F587890079FEB5 /* CHalfTests.swift in Sources */,
-				DDFEED4E23F26F170096015C /* Half+CodingTests.swift in Sources */,
-				DDFEED5223F2737B0096015C /* FunctionsTests.swift in Sources */,
-				DDFEEC4223EF13910096015C /* HalfTests.swift in Sources */,
+				DD9E3003271DBF5100C6D170 /* Half@swift-4.2.swift in Sources */,
+				DD9E3023271DBF7200C6D170 /* fp_extend.cpp in Sources */,
+				DD9E302B271DBF7200C6D170 /* half.c in Sources */,
+				DD9E2FFF271DBF5100C6D170 /* Half@swift-4.0.swift in Sources */,
+				DD9E300B271DBF5100C6D170 /* Half+Coding.swift in Sources */,
+				DD9E300F271DBF5100C6D170 /* Functions.swift in Sources */,
+				DD9E3007271DBF5100C6D170 /* Half.swift in Sources */,
+				DD9E3027271DBF7200C6D170 /* fp_trunc.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DDFEECBA23F2001A0096015C /* Sources */ = {
+		DD86D54223D11B3E0046E63E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDB1DF9B240CCA5A00C20FED /* Half@swift-4.2.swift in Sources */,
-				DDFEEDB423F3593B0096015C /* Half.swift in Sources */,
-				DDB1DF9F240CCA5A00C20FED /* Half@swift-4.0.swift in Sources */,
-				DDFEED8423F345690096015C /* half.c in Sources */,
-				DDFEEDAC23F3593B0096015C /* Half+Coding.swift in Sources */,
-				DDFEEDB023F3593B0096015C /* Functions.swift in Sources */,
+				DD9E2FD6271DBEF900C6D170 /* CHalfTests.swift in Sources */,
+				DD9E2FCB271DBEE800C6D170 /* Half+CodingTests.swift in Sources */,
+				DD9E2FC3271DBEE700C6D170 /* HalfTests.swift in Sources */,
+				DD9E2FC7271DBEE800C6D170 /* FunctionsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DDFEECC223F2001A0096015C /* Sources */ = {
+		DD86D56C23D11C860046E63E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDB8120423F587890079FEB5 /* CHalfTests.swift in Sources */,
-				DDFEED4F23F26F170096015C /* Half+CodingTests.swift in Sources */,
-				DDFEED5323F2737B0096015C /* FunctionsTests.swift in Sources */,
-				DDFEED0A23F200FE0096015C /* HalfTests.swift in Sources */,
+				DD9E3004271DBF5100C6D170 /* Half@swift-4.2.swift in Sources */,
+				DD9E3024271DBF7200C6D170 /* fp_extend.cpp in Sources */,
+				DD9E302C271DBF7200C6D170 /* half.c in Sources */,
+				DD9E3000271DBF5100C6D170 /* Half@swift-4.0.swift in Sources */,
+				DD9E300C271DBF5100C6D170 /* Half+Coding.swift in Sources */,
+				DD9E3010271DBF5100C6D170 /* Functions.swift in Sources */,
+				DD9E3008271DBF5100C6D170 /* Half.swift in Sources */,
+				DD9E3028271DBF7200C6D170 /* fp_trunc.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DDFEECD623F2003E0096015C /* Sources */ = {
+		DD86D57423D11C860046E63E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDB1DF9C240CCA5A00C20FED /* Half@swift-4.2.swift in Sources */,
-				DDFEEDB523F3593B0096015C /* Half.swift in Sources */,
-				DDB1DFA0240CCA5A00C20FED /* Half@swift-4.0.swift in Sources */,
-				DDFEED8523F345690096015C /* half.c in Sources */,
-				DDFEEDAD23F3593B0096015C /* Half+Coding.swift in Sources */,
-				DDFEEDB123F3593B0096015C /* Functions.swift in Sources */,
+				DD9E2FD7271DBEF900C6D170 /* CHalfTests.swift in Sources */,
+				DD9E2FCC271DBEE800C6D170 /* Half+CodingTests.swift in Sources */,
+				DD9E2FC4271DBEE700C6D170 /* HalfTests.swift in Sources */,
+				DD9E2FC8271DBEE800C6D170 /* FunctionsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DDFEECDE23F2003E0096015C /* Sources */ = {
+		DD86D58823D11CA00046E63E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDB8120523F587890079FEB5 /* CHalfTests.swift in Sources */,
-				DDFEED5023F26F170096015C /* Half+CodingTests.swift in Sources */,
-				DDFEED5423F2737B0096015C /* FunctionsTests.swift in Sources */,
-				DDFEED0B23F200FF0096015C /* HalfTests.swift in Sources */,
+				DD9E3005271DBF5100C6D170 /* Half@swift-4.2.swift in Sources */,
+				DD9E3025271DBF7200C6D170 /* fp_extend.cpp in Sources */,
+				DD9E302D271DBF7200C6D170 /* half.c in Sources */,
+				DD9E3001271DBF5100C6D170 /* Half@swift-4.0.swift in Sources */,
+				DD9E300D271DBF5100C6D170 /* Half+Coding.swift in Sources */,
+				DD9E3011271DBF5100C6D170 /* Functions.swift in Sources */,
+				DD9E3009271DBF5100C6D170 /* Half.swift in Sources */,
+				DD9E3029271DBF7200C6D170 /* fp_trunc.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DDFEECF223F2004D0096015C /* Sources */ = {
+		DD86D59023D11CA00046E63E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDB1DF9D240CCA5A00C20FED /* Half@swift-4.2.swift in Sources */,
-				DDFEEDB623F3593B0096015C /* Half.swift in Sources */,
-				DDB1DFA1240CCA5A00C20FED /* Half@swift-4.0.swift in Sources */,
-				DDFEED8623F345690096015C /* half.c in Sources */,
-				DDFEEDAE23F3593B0096015C /* Half+Coding.swift in Sources */,
-				DDFEEDB223F3593B0096015C /* Functions.swift in Sources */,
+				DD9E2FD8271DBEF900C6D170 /* CHalfTests.swift in Sources */,
+				DD9E2FCD271DBEE800C6D170 /* Half+CodingTests.swift in Sources */,
+				DD9E2FC5271DBEE700C6D170 /* HalfTests.swift in Sources */,
+				DD9E2FC9271DBEE800C6D170 /* FunctionsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD86D5C023D11D140046E63E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD9E3006271DBF5100C6D170 /* Half@swift-4.2.swift in Sources */,
+				DD9E3026271DBF7200C6D170 /* fp_extend.cpp in Sources */,
+				DD9E302E271DBF7200C6D170 /* half.c in Sources */,
+				DD9E3002271DBF5100C6D170 /* Half@swift-4.0.swift in Sources */,
+				DD9E300E271DBF5100C6D170 /* Half+Coding.swift in Sources */,
+				DD9E3012271DBF5100C6D170 /* Functions.swift in Sources */,
+				DD9E300A271DBF5100C6D170 /* Half.swift in Sources */,
+				DD9E302A271DBF7200C6D170 /* fp_trunc.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		DDB1DF7D240B7FA000C20FED /* PBXTargetDependency */ = {
+		DD48BC9A270E0DE800D842BC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DDB1DF77240B7F4700C20FED /* Generate Sources */;
-			targetProxy = DDB1DF7C240B7FA000C20FED /* PBXContainerItemProxy */;
+			target = DD86D5C323D11D140046E63E /* Half watchOS */;
+			targetProxy = DD48BC99270E0DE800D842BC /* PBXContainerItemProxy */;
 		};
-		DDB1DF7F240B7FA400C20FED /* PBXTargetDependency */ = {
+		DD86D54923D11B3E0046E63E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DDB1DF77240B7F4700C20FED /* Generate Sources */;
-			targetProxy = DDB1DF7E240B7FA400C20FED /* PBXContainerItemProxy */;
+			target = DD86D53C23D11B3E0046E63E /* Half */;
+			targetProxy = DD86D54823D11B3E0046E63E /* PBXContainerItemProxy */;
 		};
-		DDB1DF81240B7FB100C20FED /* PBXTargetDependency */ = {
+		DD86D56A23D11C6C0046E63E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DDFEECA423F1BA0B0096015C /* Run SwiftLint */;
-			targetProxy = DDB1DF80240B7FB100C20FED /* PBXContainerItemProxy */;
+			target = DD86D56423D11C4B0046E63E /* Run SwiftLint */;
+			targetProxy = DD86D56923D11C6C0046E63E /* PBXContainerItemProxy */;
 		};
-		DDB1DF83240B7FB900C20FED /* PBXTargetDependency */ = {
+		DD86D57B23D11C860046E63E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DDB1DF77240B7F4700C20FED /* Generate Sources */;
-			targetProxy = DDB1DF82240B7FB900C20FED /* PBXContainerItemProxy */;
+			target = DD86D56F23D11C860046E63E /* Half macOS */;
+			targetProxy = DD86D57A23D11C860046E63E /* PBXContainerItemProxy */;
 		};
-		DDB1DF85240B7FB900C20FED /* PBXTargetDependency */ = {
+		DD86D59723D11CA00046E63E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DDFEECA423F1BA0B0096015C /* Run SwiftLint */;
-			targetProxy = DDB1DF84240B7FB900C20FED /* PBXContainerItemProxy */;
+			target = DD86D58B23D11CA00046E63E /* Half tvOS */;
+			targetProxy = DD86D59623D11CA00046E63E /* PBXContainerItemProxy */;
 		};
-		DDB1DF87240B7FBF00C20FED /* PBXTargetDependency */ = {
+		DD86D5D923D11DC60046E63E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DDB1DF77240B7F4700C20FED /* Generate Sources */;
-			targetProxy = DDB1DF86240B7FBF00C20FED /* PBXContainerItemProxy */;
+			target = DD86D56423D11C4B0046E63E /* Run SwiftLint */;
+			targetProxy = DD86D5D823D11DC60046E63E /* PBXContainerItemProxy */;
 		};
-		DDB1DF89240B7FBF00C20FED /* PBXTargetDependency */ = {
+		DD86D5DB23D11DC90046E63E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DDFEECA423F1BA0B0096015C /* Run SwiftLint */;
-			targetProxy = DDB1DF88240B7FBF00C20FED /* PBXContainerItemProxy */;
+			target = DD86D56423D11C4B0046E63E /* Run SwiftLint */;
+			targetProxy = DD86D5DA23D11DC90046E63E /* PBXContainerItemProxy */;
 		};
-		DDFEEC3F23EF13910096015C /* PBXTargetDependency */ = {
+		DD86D5DD23D11DCC0046E63E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DDFEEC3223EF13900096015C /* Half */;
-			targetProxy = DDFEEC3E23EF13910096015C /* PBXContainerItemProxy */;
+			target = DD86D56423D11C4B0046E63E /* Run SwiftLint */;
+			targetProxy = DD86D5DC23D11DCC0046E63E /* PBXContainerItemProxy */;
 		};
-		DDFEECB323F1BB5B0096015C /* PBXTargetDependency */ = {
+		DD9E3037271DC32200C6D170 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DDFEECA423F1BA0B0096015C /* Run SwiftLint */;
-			targetProxy = DDFEECB223F1BB5B0096015C /* PBXContainerItemProxy */;
+			target = DD9E302F271DBFF500C6D170 /* Generate Sources */;
+			targetProxy = DD9E3036271DC32200C6D170 /* PBXContainerItemProxy */;
 		};
-		DDFEECC923F2001A0096015C /* PBXTargetDependency */ = {
+		DD9E3039271DC32800C6D170 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DDFEECBD23F2001A0096015C /* Half macOS */;
-			targetProxy = DDFEECC823F2001A0096015C /* PBXContainerItemProxy */;
+			target = DD9E302F271DBFF500C6D170 /* Generate Sources */;
+			targetProxy = DD9E3038271DC32800C6D170 /* PBXContainerItemProxy */;
 		};
-		DDFEECE523F2003E0096015C /* PBXTargetDependency */ = {
+		DD9E303B271DC32C00C6D170 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DDFEECD923F2003E0096015C /* Half tvOS */;
-			targetProxy = DDFEECE423F2003E0096015C /* PBXContainerItemProxy */;
+			target = DD9E302F271DBFF500C6D170 /* Generate Sources */;
+			targetProxy = DD9E303A271DC32C00C6D170 /* PBXContainerItemProxy */;
+		};
+		DD9E303D271DC32F00C6D170 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD9E302F271DBFF500C6D170 /* Generate Sources */;
+			targetProxy = DD9E303C271DC32F00C6D170 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		DDB1DF79240B7F4700C20FED /* Debug */ = {
+		DD2FBC28258BE8BB00DB3211 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -880,7 +1018,7 @@
 			};
 			name = Debug;
 		};
-		DDB1DF7A240B7F4700C20FED /* Release */ = {
+		DD2FBC29258BE8BB00DB3211 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -888,7 +1026,54 @@
 			};
 			name = Release;
 		};
-		DDFEEC4523EF13910096015C /* Debug */ = {
+		DD48BC9B270E0DE800D842BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Plists/HalfTests-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.somerandomiosdev.halftests;
+				PRODUCT_NAME = HalfTests;
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Debug;
+		};
+		DD48BC9C270E0DE800D842BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Plists/TestProjectTests-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.somerandomiosdev.testprojecttests;
+				PRODUCT_NAME = TestProjectTests;
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Release;
+		};
+		DD86D54F23D11B3E0046E63E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -914,12 +1099,14 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -930,9 +1117,8 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
-					"$(inherited)",
 					"DEBUG=1",
-					"SUPPRESS_HALF_NATIVE_HEADER_ERROR=1",
+					"$(inherited)",
 				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -940,7 +1126,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -949,14 +1135,14 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
+				TVOS_DEPLOYMENT_TARGET = 12.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
 		};
-		DDFEEC4623EF13910096015C /* Release */ = {
+		DD86D55023D11B3E0046E63E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -982,12 +1168,14 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -995,14 +1183,13 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = "SUPPRESS_HALF_NATIVE_HEADER_ERROR=1";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -1010,7 +1197,7 @@
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
+				TVOS_DEPLOYMENT_TARGET = 12.0;
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1018,10 +1205,11 @@
 			};
 			name = Release;
 		};
-		DDFEEC4823EF13910096015C /* Debug */ = {
+		DD86D55223D11B3E0046E63E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -1034,19 +1222,20 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = mh_dylib;
 				PRODUCT_BUNDLE_IDENTIFIER = com.somerandomiosdev.half;
 				PRODUCT_NAME = Half;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,6";
 			};
 			name = Debug;
 		};
-		DDFEEC4923EF13910096015C /* Release */ = {
+		DD86D55323D11B3E0046E63E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -1059,19 +1248,20 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = mh_dylib;
 				PRODUCT_BUNDLE_IDENTIFIER = com.somerandomiosdev.half;
 				PRODUCT_NAME = Half;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,6";
 			};
 			name = Release;
 		};
-		DDFEEC4B23EF13910096015C /* Debug */ = {
+		DD86D55523D11B3E0046E63E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Plists/HalfTests-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1079,18 +1269,20 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.somerandomiosdev.half.tests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.somerandomiosdev.halftests;
 				PRODUCT_NAME = HalfTests;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,6";
 			};
 			name = Debug;
 		};
-		DDFEEC4C23EF13910096015C /* Release */ = {
+		DD86D55623D11B3E0046E63E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Plists/HalfTests-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1098,13 +1290,14 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.somerandomiosdev.half.tests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.somerandomiosdev.halftests;
 				PRODUCT_NAME = HalfTests;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,6";
 			};
 			name = Release;
 		};
-		DDFEECA623F1BA0B0096015C /* Debug */ = {
+		DD86D56623D11C4B0046E63E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -1112,7 +1305,7 @@
 			};
 			name = Debug;
 		};
-		DDFEECA723F1BA0B0096015C /* Release */ = {
+		DD86D56723D11C4B0046E63E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -1120,10 +1313,11 @@
 			};
 			name = Release;
 		};
-		DDFEECD023F2001A0096015C /* Debug */ = {
+		DD86D58223D11C870046E63E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -1137,19 +1331,20 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = mh_dylib;
 				PRODUCT_BUNDLE_IDENTIFIER = com.somerandomiosdev.half;
 				PRODUCT_NAME = Half;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
-		DDFEECD123F2001A0096015C /* Release */ = {
+		DD86D58323D11C870046E63E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -1163,18 +1358,20 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = mh_dylib;
 				PRODUCT_BUNDLE_IDENTIFIER = com.somerandomiosdev.half;
 				PRODUCT_NAME = Half;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
-		DDFEECD323F2001A0096015C /* Debug */ = {
+		DD86D58523D11C870046E63E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "Plists/HalfTests-Info.plist";
@@ -1183,16 +1380,20 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.somerandomiosdev.half.tests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.somerandomiosdev.halftests;
 				PRODUCT_NAME = HalfTests;
 				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
-		DDFEECD423F2001A0096015C /* Release */ = {
+		DD86D58623D11C870046E63E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "Plists/HalfTests-Info.plist";
@@ -1201,16 +1402,18 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.somerandomiosdev.half.tests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.somerandomiosdev.halftests;
 				PRODUCT_NAME = HalfTests;
 				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
-		DDFEECEC23F2003E0096015C /* Debug */ = {
+		DD86D59E23D11CA00046E63E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -1223,20 +1426,21 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = mh_dylib;
 				PRODUCT_BUNDLE_IDENTIFIER = com.somerandomiosdev.half;
 				PRODUCT_NAME = Half;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
 			};
 			name = Debug;
 		};
-		DDFEECED23F2003E0096015C /* Release */ = {
+		DD86D59F23D11CA00046E63E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -1249,19 +1453,21 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = mh_dylib;
 				PRODUCT_BUNDLE_IDENTIFIER = com.somerandomiosdev.half;
 				PRODUCT_NAME = Half;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
 			};
 			name = Release;
 		};
-		DDFEECEF23F2003E0096015C /* Debug */ = {
+		DD86D5A123D11CA00046E63E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Plists/HalfTests-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1269,17 +1475,21 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.somerandomiosdev.half.tests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.somerandomiosdev.halftests;
 				PRODUCT_NAME = HalfTests;
 				SDKROOT = appletvos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
 			};
 			name = Debug;
 		};
-		DDFEECF023F2003E0096015C /* Release */ = {
+		DD86D5A223D11CA00046E63E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Plists/HalfTests-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1287,18 +1497,20 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.somerandomiosdev.half.tests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.somerandomiosdev.halftests;
 				PRODUCT_NAME = HalfTests;
 				SDKROOT = appletvos;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
 			};
 			name = Release;
 		};
-		DDFEECFC23F2004D0096015C /* Debug */ = {
+		DD86D5CA23D11D140046E63E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -1311,21 +1523,22 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = mh_dylib;
 				PRODUCT_BUNDLE_IDENTIFIER = com.somerandomiosdev.half;
 				PRODUCT_NAME = Half;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 			};
 			name = Debug;
 		};
-		DDFEECFD23F2004D0096015C /* Release */ = {
+		DD86D5CB23D11D140046E63E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -1338,109 +1551,145 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = mh_dylib;
 				PRODUCT_BUNDLE_IDENTIFIER = com.somerandomiosdev.half;
 				PRODUCT_NAME = Half;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Release;
+		};
+		DD9E3031271DBFF500C6D170 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PH26G7KHX9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DD9E3032271DBFF500C6D170 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PH26G7KHX9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DDB1DF78240B7F4700C20FED /* Build configuration list for PBXAggregateTarget "Generate Sources" */ = {
+		DD2FBC2A258BE8BB00DB3211 /* Build configuration list for PBXAggregateTarget "XCFramework" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DDB1DF79240B7F4700C20FED /* Debug */,
-				DDB1DF7A240B7F4700C20FED /* Release */,
+				DD2FBC28258BE8BB00DB3211 /* Debug */,
+				DD2FBC29258BE8BB00DB3211 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DDFEEC2D23EF13900096015C /* Build configuration list for PBXProject "Half" */ = {
+		DD48BC9D270E0DE800D842BC /* Build configuration list for PBXNativeTarget "Half watchOS Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DDFEEC4523EF13910096015C /* Debug */,
-				DDFEEC4623EF13910096015C /* Release */,
+				DD48BC9B270E0DE800D842BC /* Debug */,
+				DD48BC9C270E0DE800D842BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DDFEEC4723EF13910096015C /* Build configuration list for PBXNativeTarget "Half" */ = {
+		DD86D53723D11B3E0046E63E /* Build configuration list for PBXProject "Half" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DDFEEC4823EF13910096015C /* Debug */,
-				DDFEEC4923EF13910096015C /* Release */,
+				DD86D54F23D11B3E0046E63E /* Debug */,
+				DD86D55023D11B3E0046E63E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DDFEEC4A23EF13910096015C /* Build configuration list for PBXNativeTarget "HalfTests" */ = {
+		DD86D55123D11B3E0046E63E /* Build configuration list for PBXNativeTarget "Half" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DDFEEC4B23EF13910096015C /* Debug */,
-				DDFEEC4C23EF13910096015C /* Release */,
+				DD86D55223D11B3E0046E63E /* Debug */,
+				DD86D55323D11B3E0046E63E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DDFEECA523F1BA0B0096015C /* Build configuration list for PBXAggregateTarget "Run SwiftLint" */ = {
+		DD86D55423D11B3E0046E63E /* Build configuration list for PBXNativeTarget "HalfTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DDFEECA623F1BA0B0096015C /* Debug */,
-				DDFEECA723F1BA0B0096015C /* Release */,
+				DD86D55523D11B3E0046E63E /* Debug */,
+				DD86D55623D11B3E0046E63E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DDFEECCF23F2001A0096015C /* Build configuration list for PBXNativeTarget "Half macOS" */ = {
+		DD86D56523D11C4B0046E63E /* Build configuration list for PBXAggregateTarget "Run SwiftLint" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DDFEECD023F2001A0096015C /* Debug */,
-				DDFEECD123F2001A0096015C /* Release */,
+				DD86D56623D11C4B0046E63E /* Debug */,
+				DD86D56723D11C4B0046E63E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DDFEECD223F2001A0096015C /* Build configuration list for PBXNativeTarget "Half macOS Tests" */ = {
+		DD86D58123D11C870046E63E /* Build configuration list for PBXNativeTarget "Half macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DDFEECD323F2001A0096015C /* Debug */,
-				DDFEECD423F2001A0096015C /* Release */,
+				DD86D58223D11C870046E63E /* Debug */,
+				DD86D58323D11C870046E63E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DDFEECEB23F2003E0096015C /* Build configuration list for PBXNativeTarget "Half tvOS" */ = {
+		DD86D58423D11C870046E63E /* Build configuration list for PBXNativeTarget "Half macOS Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DDFEECEC23F2003E0096015C /* Debug */,
-				DDFEECED23F2003E0096015C /* Release */,
+				DD86D58523D11C870046E63E /* Debug */,
+				DD86D58623D11C870046E63E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DDFEECEE23F2003E0096015C /* Build configuration list for PBXNativeTarget "Half tvOS Tests" */ = {
+		DD86D59D23D11CA00046E63E /* Build configuration list for PBXNativeTarget "Half tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DDFEECEF23F2003E0096015C /* Debug */,
-				DDFEECF023F2003E0096015C /* Release */,
+				DD86D59E23D11CA00046E63E /* Debug */,
+				DD86D59F23D11CA00046E63E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DDFEECFB23F2004D0096015C /* Build configuration list for PBXNativeTarget "Half watchOS" */ = {
+		DD86D5A023D11CA00046E63E /* Build configuration list for PBXNativeTarget "Half tvOS Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DDFEECFC23F2004D0096015C /* Debug */,
-				DDFEECFD23F2004D0096015C /* Release */,
+				DD86D5A123D11CA00046E63E /* Debug */,
+				DD86D5A223D11CA00046E63E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD86D5C923D11D140046E63E /* Build configuration list for PBXNativeTarget "Half watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD86D5CA23D11D140046E63E /* Debug */,
+				DD86D5CB23D11D140046E63E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD9E3030271DBFF500C6D170 /* Build configuration list for PBXAggregateTarget "Generate Sources" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD9E3031271DBFF500C6D170 /* Debug */,
+				DD9E3032271DBFF500C6D170 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = DDFEEC2A23EF13900096015C /* Project object */;
+	rootObject = DD86D53423D11B3E0046E63E /* Project object */;
 }

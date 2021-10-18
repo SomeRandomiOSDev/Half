@@ -1,5 +1,7 @@
 Half.xcodeproj/project.xcworkspace
 Half.xcodeproj/xcuserdata
-.swiftpm
+
 .build
+.swiftpm
+scripts/build
 gyb.pyc

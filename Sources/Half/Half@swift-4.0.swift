@@ -8,7 +8,6 @@
 #if SWIFT_PACKAGE
 import CHalf
 #endif
-import Foundation
 
 #if os(iOS) || os(macOS) || os(tvOS) || os(watchOS)
 import CoreGraphics.CGBase

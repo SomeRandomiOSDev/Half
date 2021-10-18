@@ -8,7 +8,7 @@
 @testable import Half
 import XCTest
 
-//swiftlint:disable nesting
+//swiftlint:disable nesting function_body_length
 
 class HalfCodingTests: XCTestCase {
 

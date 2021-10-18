@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1130"
-   version = "1.3">
+   LastUpgradeVersion = "1300"
+   version = "1.7">
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
@@ -16,18 +16,24 @@
       <CodeCoverageTargets>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DDFEECBD23F2001A0096015C"
+            BlueprintIdentifier = "DD86D56F23D11C860046E63E"
             BuildableName = "Half.framework"
             BlueprintName = "Half macOS"
             ReferencedContainer = "container:Half.xcodeproj">
          </BuildableReference>
       </CodeCoverageTargets>
+      <TestPlans>
+         <TestPlanReference
+            reference = "container:Tests/Test Plans/Half macOS Tests.xctestplan"
+            default = "YES">
+         </TestPlanReference>
+      </TestPlans>
       <Testables>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DDFEECC523F2001A0096015C"
+               BlueprintIdentifier = "DD86D57723D11C860046E63E"
                BuildableName = "HalfTests.xctest"
                BlueprintName = "Half macOS Tests"
                ReferencedContainer = "container:Half.xcodeproj">

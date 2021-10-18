@@ -20,4 +20,4 @@ public func __allTests() -> [XCTestCaseEntry] {
         testCase(TestCHalf.__allTests__TestCHalf),
     ]
 }
-#endif
+#endif // #if !canImport(ObjectiveC)

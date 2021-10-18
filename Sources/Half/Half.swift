@@ -8,7 +8,6 @@
 #if SWIFT_PACKAGE
 import CHalf
 #endif
-import Foundation
 
 #if os(iOS) || os(macOS) || os(tvOS) || os(watchOS)
 import CoreGraphics.CGBase
@@ -235,8 +234,17 @@ extension Half: BinaryFloatingPoint {
     public init<Source>(_ value: Source) where Source: BinaryFloatingPoint {
         if let half = value as? Half {
             self.init(half._value)
+        } else if value.isInfinite {
+            let infinity = Half.infinity
+            self = Half(sign: value.sign, exponentBitPattern: infinity.exponentBitPattern, significandBitPattern: infinity.significandBitPattern)
+        } else if value.isNaN {
+            if value.isSignalingNaN {
+                self = .signalingNaN
+            } else {
+                self = .nan
+            }
         } else {
-            self.init(Float(value))
+            self.init(_half_from(Float(value)))
         }
     }
 
