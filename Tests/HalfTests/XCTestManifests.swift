@@ -62,4 +62,4 @@ public func __allTests() -> [XCTestCaseEntry] {
         testCase(TestFunctions.__allTests__TestFunctions),
     ]
 }
-#endif
+#endif // #if !canImport(ObjectiveC)

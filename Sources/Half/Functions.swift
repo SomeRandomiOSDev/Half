@@ -5,7 +5,11 @@
 //  Copyright © 2020 SomeRandomiOSDev. All rights reserved.
 //
 
-import Foundation
+#if os(Linux)
+import Glibc
+#else
+import Darwin
+#endif
 
 // Implmentation of public functions found in swift/stdlib/public/Platform for Half precision.
 //

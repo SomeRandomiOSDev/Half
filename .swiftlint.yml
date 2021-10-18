@@ -1,8 +1,9 @@
 disabled_rules: 
   - file_length
   - line_length
+  - cyclomatic_complexity
   - type_body_length
-  - function_body_length
+  - type_name
 
 opt_in_rules:
   - anyobject_protocol
@@ -61,6 +62,9 @@ excluded:
   - Tests/LinuxMain.swift
   - Tests/HalfTests/XCTestManifests.swift
   - Tests/CHalfTests/XCTestManifests.swift
+
+function_body_length:
+  - 60 #warning
 
 identifier_name:
   excluded:

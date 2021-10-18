@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1130"
-   version = "1.3">
+   LastUpgradeVersion = "1300"
+   version = "1.7">
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DDFEEC3223EF13900096015C"
+               BlueprintIdentifier = "DD86D53C23D11B3E0046E63E"
                BuildableName = "Half.framework"
                BlueprintName = "Half"
                ReferencedContainer = "container:Half.xcodeproj">
@@ -26,29 +26,13 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES"
-      onlyGenerateCoverageForSpecifiedTargets = "YES">
-      <CodeCoverageTargets>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DDFEEC3223EF13900096015C"
-            BuildableName = "Half.framework"
-            BlueprintName = "Half"
-            ReferencedContainer = "container:Half.xcodeproj">
-         </BuildableReference>
-      </CodeCoverageTargets>
-      <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DDFEEC3B23EF13910096015C"
-               BuildableName = "HalfTests.xctest"
-               BlueprintName = "HalfTests"
-               ReferencedContainer = "container:Half.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-      </Testables>
+      shouldUseLaunchSchemeArgsEnv = "YES">
+      <TestPlans>
+         <TestPlanReference
+            reference = "container:Tests/Test Plans/HalfTests.xctestplan"
+            default = "YES">
+         </TestPlanReference>
+      </TestPlans>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
@@ -70,7 +54,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DDFEEC3223EF13900096015C"
+            BlueprintIdentifier = "DD86D53C23D11B3E0046E63E"
             BuildableName = "Half.framework"
             BlueprintName = "Half"
             ReferencedContainer = "container:Half.xcodeproj">

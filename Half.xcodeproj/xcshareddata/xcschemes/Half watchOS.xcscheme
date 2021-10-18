@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1130"
-   version = "1.3">
+   LastUpgradeVersion = "1300"
+   version = "1.7">
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DDFEECF523F2004D0096015C"
+               BlueprintIdentifier = "DD86D5C323D11D140046E63E"
                BuildableName = "Half.framework"
                BlueprintName = "Half watchOS"
                ReferencedContainer = "container:Half.xcodeproj">
@@ -27,8 +27,12 @@
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
-      <Testables>
-      </Testables>
+      <TestPlans>
+         <TestPlanReference
+            reference = "container:Tests/Test Plans/Half watchOS Tests.xctestplan"
+            default = "YES">
+         </TestPlanReference>
+      </TestPlans>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
@@ -50,7 +54,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DDFEECF523F2004D0096015C"
+            BlueprintIdentifier = "DD86D5C323D11D140046E63E"
             BuildableName = "Half.framework"
             BlueprintName = "Half watchOS"
             ReferencedContainer = "container:Half.xcodeproj">

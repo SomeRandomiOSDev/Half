@@ -5,8 +5,6 @@
 //  Copyright © 2020 SomeRandomiOSDev. All rights reserved.
 //
 
-import Foundation
-
 // MARK: - Codable Protocol Conformance
 
 extension Half: Codable {

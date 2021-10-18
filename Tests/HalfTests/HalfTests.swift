@@ -12,6 +12,8 @@ import XCTest
 import CoreGraphics.CGBase
 #endif // #if canImport(CoreGraphics)
 
+//swiftlint:disable function_body_length
+
 class HalfTests: XCTestCase {
 
     // MARK: Test Methods
@@ -452,7 +454,20 @@ class HalfTests: XCTestCase {
 
     private func binaryFloatingPoint<BFP>(_ float: BFP, compare: (BFP, BFP) -> Void) where BFP: BinaryFloatingPoint {
         let half = Half(float)
-        compare(float, BFP(half))
+        let testFloat: BFP
+
+        if half.isInfinite {
+            let infinity = BFP.infinity
+            testFloat = BFP(sign: half.sign, exponentBitPattern: infinity.exponentBitPattern, significandBitPattern: infinity.significandBitPattern)
+        } else if half.isSignalingNaN {
+            testFloat = .signalingNaN
+        } else if half.isNaN {
+            testFloat = .nan
+        } else {
+            testFloat = BFP(half)
+        }
+
+        compare(float, testFloat)
     }
 
     private func exactBinaryFloatingPoint<BFP>(_ float: BFP, shouldFail: Bool, file: StaticString = #file, line: UInt = #line, compare: (BFP, BFP) -> Void) where BFP: BinaryFloatingPoint {
@@ -462,7 +477,19 @@ class HalfTests: XCTestCase {
             if shouldFail {
                 XCTFail("Expected Half initializer to fail", file: file, line: line)
             } else {
-                compare(float, BFP(half))
+                let testFloat: BFP
+                if half.isInfinite {
+                    let infinity = BFP.infinity
+                    testFloat = BFP(sign: half.sign, exponentBitPattern: infinity.exponentBitPattern, significandBitPattern: infinity.significandBitPattern)
+                } else if half.isSignalingNaN {
+                    testFloat = .signalingNaN
+                } else if half.isNaN {
+                    testFloat = .nan
+                } else {
+                    testFloat = BFP(half)
+                }
+
+                compare(float, testFloat)
             }
         } else if !shouldFail {
             XCTFail("Unexpected failure of Half initializer", file: file, line: line)
