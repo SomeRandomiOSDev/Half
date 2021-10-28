@@ -3,8 +3,15 @@ on: [push, workflow_dispatch]
 
 jobs:
   lint:
+    strategy:
+      matrix:
+        linttype: [Dynamic, Static]
+
     name: Lint
     runs-on: macOS-11
+    env:
+      LINT_TYPE: ${{ matrix.linttype }}
+
     steps:
     - name: Checkout Code
       uses: actions/checkout@v2
@@ -14,10 +21,10 @@ jobs:
       with:
         version: latest
 
-    - name: Lint (Dynamic Library)
+    - name: Lint
       run: |
-        pod lib lint
-
-    - name: Lint (Static Library)
-      run: |
-        pod lib lint --use-libraries
+        if [ "$LINT_TYPE" == "Dynamic" ]; then
+            pod lib lint
+        else
+            pod lib lint --use-libraries
+        fi
