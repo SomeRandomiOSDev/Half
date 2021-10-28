@@ -8,10 +8,12 @@
 ![Linux](https://img.shields.io/badge/platform-linux-lightgrey)
 [![Code Coverage](https://codecov.io/gh/SomeRandomiOSDev/Half/branch/master/graph/badge.svg)](https://codecov.io/gh/SomeRandomiOSDev/Half)
 
-![Swift Package](https://github.com/SomeRandomiOSDev/Half/workflows/Swift%20Package/badge.svg)
-![Xcode Project](https://github.com/SomeRandomiOSDev/Half/workflows/Xcode%20Project/badge.svg)
-![Cocoapods](https://github.com/SomeRandomiOSDev/Half/workflows/Cocoapods/badge.svg)
 ![Carthage](https://github.com/SomeRandomiOSDev/Half/workflows/Carthage/badge.svg)
+![Cocoapods](https://github.com/SomeRandomiOSDev/Half/workflows/Cocoapods/badge.svg)
+![Swift Package](https://github.com/SomeRandomiOSDev/Half/workflows/Swift%20Package/badge.svg)
+![SwiftLint](https://github.com/SomeRandomiOSDev/Half/actions/workflows/swiftlint.yml/badge.svg)
+![XCFramework](https://github.com/SomeRandomiOSDev/Half/actions/workflows/xcframework.yml/badge.svg)
+![Xcode Project](https://github.com/SomeRandomiOSDev/Half/workflows/Xcode%20Project/badge.svg)
 
 **Half** is a lightweight framework containing a Swift implementation for a half-precision floating point type for iOS, macOS, tvOS, and watchOS.
 
