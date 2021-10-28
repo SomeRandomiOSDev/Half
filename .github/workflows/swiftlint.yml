@@ -1,0 +1,15 @@
+name: SwiftLint
+on: [push, workflow_dispatch]
+
+jobs:
+  build:
+    name: Run SwiftLint
+    runs-on: macOS-latest
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v2
+
+    - name: Run SwiftLint
+      run: |
+        swiftlint lint --reporter github-actions-logging

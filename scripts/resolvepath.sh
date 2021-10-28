@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+#
 # resolvepath.sh
 # Usage example: ./resolvepath.sh "./some/random/path/../../"
 

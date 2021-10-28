@@ -16,7 +16,7 @@ jobs:
 
     - name: Build
       run: |
-        ./scripts/xcframework.sh -output ${TMPDIR}/Half.xcframework
+        ./scripts/xcframework.sh --output ${TMPDIR}/Half.xcframework
 
     - name: Create Zip
       run: |

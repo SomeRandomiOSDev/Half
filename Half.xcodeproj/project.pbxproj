@@ -3,10 +3,21 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
+		DD29532F2728E25A0096A94E /* Generate Sources */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = DD2953302728E25A0096A94E /* Build configuration list for PBXAggregateTarget "Generate Sources" */;
+			buildPhases = (
+				DD2953332728E25E0096A94E /* Generate Sources */,
+			);
+			dependencies = (
+			);
+			name = "Generate Sources";
+			productName = "Generate Sources";
+		};
 		DD2FBC27258BE8BB00DB3211 /* XCFramework */ = {
 			isa = PBXAggregateTarget;
 			buildConfigurationList = DD2FBC2A258BE8BB00DB3211 /* Build configuration list for PBXAggregateTarget "XCFramework" */;
@@ -29,79 +40,100 @@
 			name = "Run SwiftLint";
 			productName = "Run SwiftLint";
 		};
-		DD9E302F271DBFF500C6D170 /* Generate Sources */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = DD9E3030271DBFF500C6D170 /* Build configuration list for PBXAggregateTarget "Generate Sources" */;
-			buildPhases = (
-				DD9E3033271DC00700C6D170 /* Generate Sources */,
-			);
-			dependencies = (
-			);
-			name = "Generate Sources";
-			productName = "Generate Sources";
-		};
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		DD29534B2728E3420096A94E /* Half+Coding.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD29533D2728E3420096A94E /* Half+Coding.swift */; };
+		DD29534C2728E3420096A94E /* Half+Coding.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD29533D2728E3420096A94E /* Half+Coding.swift */; };
+		DD29534D2728E3420096A94E /* Half+Coding.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD29533D2728E3420096A94E /* Half+Coding.swift */; };
+		DD29534E2728E3420096A94E /* Half+Coding.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD29533D2728E3420096A94E /* Half+Coding.swift */; };
+		DD29534F2728E3420096A94E /* Half.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD29533E2728E3420096A94E /* Half.swift */; };
+		DD2953502728E3420096A94E /* Half.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD29533E2728E3420096A94E /* Half.swift */; };
+		DD2953512728E3420096A94E /* Half.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD29533E2728E3420096A94E /* Half.swift */; };
+		DD2953522728E3420096A94E /* Half.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD29533E2728E3420096A94E /* Half.swift */; };
+		DD2953532728E3430096A94E /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD29533F2728E3420096A94E /* Functions.swift */; };
+		DD2953542728E3430096A94E /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD29533F2728E3420096A94E /* Functions.swift */; };
+		DD2953552728E3430096A94E /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD29533F2728E3420096A94E /* Functions.swift */; };
+		DD2953562728E3430096A94E /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD29533F2728E3420096A94E /* Functions.swift */; };
+		DD2953572728E3430096A94E /* Half@swift-4.0.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2953402728E3420096A94E /* Half@swift-4.0.swift */; };
+		DD2953582728E3430096A94E /* Half@swift-4.0.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2953402728E3420096A94E /* Half@swift-4.0.swift */; };
+		DD2953592728E3430096A94E /* Half@swift-4.0.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2953402728E3420096A94E /* Half@swift-4.0.swift */; };
+		DD29535A2728E3430096A94E /* Half@swift-4.0.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2953402728E3420096A94E /* Half@swift-4.0.swift */; };
+		DD29535B2728E3430096A94E /* Half@swift-4.2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2953412728E3420096A94E /* Half@swift-4.2.swift */; };
+		DD29535C2728E3430096A94E /* Half@swift-4.2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2953412728E3420096A94E /* Half@swift-4.2.swift */; };
+		DD29535D2728E3430096A94E /* Half@swift-4.2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2953412728E3420096A94E /* Half@swift-4.2.swift */; };
+		DD29535E2728E3430096A94E /* Half@swift-4.2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2953412728E3420096A94E /* Half@swift-4.2.swift */; };
+		DD29535F2728E3430096A94E /* Half.swift.gyb in Resources */ = {isa = PBXBuildFile; fileRef = DD2953422728E3420096A94E /* Half.swift.gyb */; };
+		DD2953602728E3430096A94E /* Half.swift.gyb in Resources */ = {isa = PBXBuildFile; fileRef = DD2953422728E3420096A94E /* Half.swift.gyb */; };
+		DD2953612728E3430096A94E /* Half.swift.gyb in Resources */ = {isa = PBXBuildFile; fileRef = DD2953422728E3420096A94E /* Half.swift.gyb */; };
+		DD2953622728E3430096A94E /* Half.swift.gyb in Resources */ = {isa = PBXBuildFile; fileRef = DD2953422728E3420096A94E /* Half.swift.gyb */; };
+		DD2953632728E3430096A94E /* half.h in Headers */ = {isa = PBXBuildFile; fileRef = DD2953452728E3420096A94E /* half.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD2953642728E3430096A94E /* half.h in Headers */ = {isa = PBXBuildFile; fileRef = DD2953452728E3420096A94E /* half.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD2953652728E3430096A94E /* half.h in Headers */ = {isa = PBXBuildFile; fileRef = DD2953452728E3420096A94E /* half.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD2953662728E3430096A94E /* half.h in Headers */ = {isa = PBXBuildFile; fileRef = DD2953452728E3420096A94E /* half.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD2953672728E3430096A94E /* fp_extend.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DD2953482728E3420096A94E /* fp_extend.cpp */; };
+		DD2953682728E3430096A94E /* fp_extend.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DD2953482728E3420096A94E /* fp_extend.cpp */; };
+		DD2953692728E3430096A94E /* fp_extend.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DD2953482728E3420096A94E /* fp_extend.cpp */; };
+		DD29536A2728E3430096A94E /* fp_extend.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DD2953482728E3420096A94E /* fp_extend.cpp */; };
+		DD29536B2728E3430096A94E /* fp_trunc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DD2953492728E3420096A94E /* fp_trunc.cpp */; };
+		DD29536C2728E3430096A94E /* fp_trunc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DD2953492728E3420096A94E /* fp_trunc.cpp */; };
+		DD29536D2728E3430096A94E /* fp_trunc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DD2953492728E3420096A94E /* fp_trunc.cpp */; };
+		DD29536E2728E3430096A94E /* fp_trunc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DD2953492728E3420096A94E /* fp_trunc.cpp */; };
+		DD29536F2728E3430096A94E /* half.c in Sources */ = {isa = PBXBuildFile; fileRef = DD29534A2728E3420096A94E /* half.c */; };
+		DD2953702728E3430096A94E /* half.c in Sources */ = {isa = PBXBuildFile; fileRef = DD29534A2728E3420096A94E /* half.c */; };
+		DD2953712728E3430096A94E /* half.c in Sources */ = {isa = PBXBuildFile; fileRef = DD29534A2728E3420096A94E /* half.c */; };
+		DD2953722728E3430096A94E /* half.c in Sources */ = {isa = PBXBuildFile; fileRef = DD29534A2728E3420096A94E /* half.c */; };
+		DD29537F2728E3850096A94E /* CHalfTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2953752728E3850096A94E /* CHalfTests.swift */; };
+		DD2953802728E3850096A94E /* CHalfTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2953752728E3850096A94E /* CHalfTests.swift */; };
+		DD2953812728E3850096A94E /* CHalfTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2953752728E3850096A94E /* CHalfTests.swift */; };
+		DD2953822728E3850096A94E /* CHalfTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2953752728E3850096A94E /* CHalfTests.swift */; };
+		DD2953872728E3850096A94E /* Half+CodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2953782728E3850096A94E /* Half+CodingTests.swift */; };
+		DD2953882728E3850096A94E /* Half+CodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2953782728E3850096A94E /* Half+CodingTests.swift */; };
+		DD2953892728E3850096A94E /* Half+CodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2953782728E3850096A94E /* Half+CodingTests.swift */; };
+		DD29538A2728E3850096A94E /* Half+CodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2953782728E3850096A94E /* Half+CodingTests.swift */; };
+		DD29538B2728E3850096A94E /* HalfTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2953792728E3850096A94E /* HalfTests.swift */; };
+		DD29538C2728E3850096A94E /* HalfTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2953792728E3850096A94E /* HalfTests.swift */; };
+		DD29538D2728E3850096A94E /* HalfTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2953792728E3850096A94E /* HalfTests.swift */; };
+		DD29538E2728E3850096A94E /* HalfTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2953792728E3850096A94E /* HalfTests.swift */; };
+		DD29538F2728E3850096A94E /* FunctionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD29537A2728E3850096A94E /* FunctionsTests.swift */; };
+		DD2953902728E3850096A94E /* FunctionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD29537A2728E3850096A94E /* FunctionsTests.swift */; };
+		DD2953912728E3850096A94E /* FunctionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD29537A2728E3850096A94E /* FunctionsTests.swift */; };
+		DD2953922728E3850096A94E /* FunctionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD29537A2728E3850096A94E /* FunctionsTests.swift */; };
 		DD48BC98270E0DE800D842BC /* Half.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD86D5C423D11D140046E63E /* Half.framework */; };
 		DD86D54723D11B3E0046E63E /* Half.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD86D53D23D11B3E0046E63E /* Half.framework */; };
 		DD86D57923D11C860046E63E /* Half.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD86D57023D11C860046E63E /* Half.framework */; };
 		DD86D59523D11CA00046E63E /* Half.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD86D58C23D11CA00046E63E /* Half.framework */; };
-		DD9E2FC3271DBEE700C6D170 /* HalfTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9E2FC0271DBEE700C6D170 /* HalfTests.swift */; };
-		DD9E2FC4271DBEE700C6D170 /* HalfTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9E2FC0271DBEE700C6D170 /* HalfTests.swift */; };
-		DD9E2FC5271DBEE700C6D170 /* HalfTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9E2FC0271DBEE700C6D170 /* HalfTests.swift */; };
-		DD9E2FC6271DBEE700C6D170 /* HalfTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9E2FC0271DBEE700C6D170 /* HalfTests.swift */; };
-		DD9E2FC7271DBEE800C6D170 /* FunctionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9E2FC1271DBEE700C6D170 /* FunctionsTests.swift */; };
-		DD9E2FC8271DBEE800C6D170 /* FunctionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9E2FC1271DBEE700C6D170 /* FunctionsTests.swift */; };
-		DD9E2FC9271DBEE800C6D170 /* FunctionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9E2FC1271DBEE700C6D170 /* FunctionsTests.swift */; };
-		DD9E2FCA271DBEE800C6D170 /* FunctionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9E2FC1271DBEE700C6D170 /* FunctionsTests.swift */; };
-		DD9E2FCB271DBEE800C6D170 /* Half+CodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9E2FC2271DBEE700C6D170 /* Half+CodingTests.swift */; };
-		DD9E2FCC271DBEE800C6D170 /* Half+CodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9E2FC2271DBEE700C6D170 /* Half+CodingTests.swift */; };
-		DD9E2FCD271DBEE800C6D170 /* Half+CodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9E2FC2271DBEE700C6D170 /* Half+CodingTests.swift */; };
-		DD9E2FCE271DBEE800C6D170 /* Half+CodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9E2FC2271DBEE700C6D170 /* Half+CodingTests.swift */; };
-		DD9E2FD6271DBEF900C6D170 /* CHalfTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9E2FD1271DBEF900C6D170 /* CHalfTests.swift */; };
-		DD9E2FD7271DBEF900C6D170 /* CHalfTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9E2FD1271DBEF900C6D170 /* CHalfTests.swift */; };
-		DD9E2FD8271DBEF900C6D170 /* CHalfTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9E2FD1271DBEF900C6D170 /* CHalfTests.swift */; };
-		DD9E2FD9271DBEF900C6D170 /* CHalfTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9E2FD1271DBEF900C6D170 /* CHalfTests.swift */; };
-		DD9E2FFF271DBF5100C6D170 /* Half@swift-4.0.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9E2FF9271DBF5100C6D170 /* Half@swift-4.0.swift */; };
-		DD9E3000271DBF5100C6D170 /* Half@swift-4.0.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9E2FF9271DBF5100C6D170 /* Half@swift-4.0.swift */; };
-		DD9E3001271DBF5100C6D170 /* Half@swift-4.0.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9E2FF9271DBF5100C6D170 /* Half@swift-4.0.swift */; };
-		DD9E3002271DBF5100C6D170 /* Half@swift-4.0.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9E2FF9271DBF5100C6D170 /* Half@swift-4.0.swift */; };
-		DD9E3003271DBF5100C6D170 /* Half@swift-4.2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9E2FFA271DBF5100C6D170 /* Half@swift-4.2.swift */; };
-		DD9E3004271DBF5100C6D170 /* Half@swift-4.2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9E2FFA271DBF5100C6D170 /* Half@swift-4.2.swift */; };
-		DD9E3005271DBF5100C6D170 /* Half@swift-4.2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9E2FFA271DBF5100C6D170 /* Half@swift-4.2.swift */; };
-		DD9E3006271DBF5100C6D170 /* Half@swift-4.2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9E2FFA271DBF5100C6D170 /* Half@swift-4.2.swift */; };
-		DD9E3007271DBF5100C6D170 /* Half.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9E2FFB271DBF5100C6D170 /* Half.swift */; };
-		DD9E3008271DBF5100C6D170 /* Half.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9E2FFB271DBF5100C6D170 /* Half.swift */; };
-		DD9E3009271DBF5100C6D170 /* Half.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9E2FFB271DBF5100C6D170 /* Half.swift */; };
-		DD9E300A271DBF5100C6D170 /* Half.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9E2FFB271DBF5100C6D170 /* Half.swift */; };
-		DD9E300B271DBF5100C6D170 /* Half+Coding.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9E2FFC271DBF5100C6D170 /* Half+Coding.swift */; };
-		DD9E300C271DBF5100C6D170 /* Half+Coding.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9E2FFC271DBF5100C6D170 /* Half+Coding.swift */; };
-		DD9E300D271DBF5100C6D170 /* Half+Coding.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9E2FFC271DBF5100C6D170 /* Half+Coding.swift */; };
-		DD9E300E271DBF5100C6D170 /* Half+Coding.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9E2FFC271DBF5100C6D170 /* Half+Coding.swift */; };
-		DD9E300F271DBF5100C6D170 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9E2FFD271DBF5100C6D170 /* Functions.swift */; };
-		DD9E3010271DBF5100C6D170 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9E2FFD271DBF5100C6D170 /* Functions.swift */; };
-		DD9E3011271DBF5100C6D170 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9E2FFD271DBF5100C6D170 /* Functions.swift */; };
-		DD9E3012271DBF5100C6D170 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9E2FFD271DBF5100C6D170 /* Functions.swift */; };
-		DD9E301F271DBF7200C6D170 /* half.h in Headers */ = {isa = PBXBuildFile; fileRef = DD9E3019271DBF7200C6D170 /* half.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DD9E3020271DBF7200C6D170 /* half.h in Headers */ = {isa = PBXBuildFile; fileRef = DD9E3019271DBF7200C6D170 /* half.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DD9E3021271DBF7200C6D170 /* half.h in Headers */ = {isa = PBXBuildFile; fileRef = DD9E3019271DBF7200C6D170 /* half.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DD9E3022271DBF7200C6D170 /* half.h in Headers */ = {isa = PBXBuildFile; fileRef = DD9E3019271DBF7200C6D170 /* half.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DD9E3023271DBF7200C6D170 /* fp_extend.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DD9E301C271DBF7200C6D170 /* fp_extend.cpp */; };
-		DD9E3024271DBF7200C6D170 /* fp_extend.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DD9E301C271DBF7200C6D170 /* fp_extend.cpp */; };
-		DD9E3025271DBF7200C6D170 /* fp_extend.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DD9E301C271DBF7200C6D170 /* fp_extend.cpp */; };
-		DD9E3026271DBF7200C6D170 /* fp_extend.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DD9E301C271DBF7200C6D170 /* fp_extend.cpp */; };
-		DD9E3027271DBF7200C6D170 /* fp_trunc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DD9E301D271DBF7200C6D170 /* fp_trunc.cpp */; };
-		DD9E3028271DBF7200C6D170 /* fp_trunc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DD9E301D271DBF7200C6D170 /* fp_trunc.cpp */; };
-		DD9E3029271DBF7200C6D170 /* fp_trunc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DD9E301D271DBF7200C6D170 /* fp_trunc.cpp */; };
-		DD9E302A271DBF7200C6D170 /* fp_trunc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DD9E301D271DBF7200C6D170 /* fp_trunc.cpp */; };
-		DD9E302B271DBF7200C6D170 /* half.c in Sources */ = {isa = PBXBuildFile; fileRef = DD9E301E271DBF7200C6D170 /* half.c */; };
-		DD9E302C271DBF7200C6D170 /* half.c in Sources */ = {isa = PBXBuildFile; fileRef = DD9E301E271DBF7200C6D170 /* half.c */; };
-		DD9E302D271DBF7200C6D170 /* half.c in Sources */ = {isa = PBXBuildFile; fileRef = DD9E301E271DBF7200C6D170 /* half.c */; };
-		DD9E302E271DBF7200C6D170 /* half.c in Sources */ = {isa = PBXBuildFile; fileRef = DD9E301E271DBF7200C6D170 /* half.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		DD2953342728E2A30096A94E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD86D53423D11B3E0046E63E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD29532F2728E25A0096A94E;
+			remoteInfo = "Generate Sources";
+		};
+		DD2953362728E2A70096A94E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD86D53423D11B3E0046E63E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD29532F2728E25A0096A94E;
+			remoteInfo = "Generate Sources";
+		};
+		DD2953382728E2AA0096A94E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD86D53423D11B3E0046E63E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD29532F2728E25A0096A94E;
+			remoteInfo = "Generate Sources";
+		};
+		DD29533A2728E2AD0096A94E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD86D53423D11B3E0046E63E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD29532F2728E25A0096A94E;
+			remoteInfo = "Generate Sources";
+		};
 		DD48BC99270E0DE800D842BC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DD86D53423D11B3E0046E63E /* Project object */;
@@ -158,38 +190,28 @@
 			remoteGlobalIDString = DD86D56423D11C4B0046E63E;
 			remoteInfo = "Run SwiftLint";
 		};
-		DD9E3036271DC32200C6D170 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DD86D53423D11B3E0046E63E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DD9E302F271DBFF500C6D170;
-			remoteInfo = "Generate Sources";
-		};
-		DD9E3038271DC32800C6D170 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DD86D53423D11B3E0046E63E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DD9E302F271DBFF500C6D170;
-			remoteInfo = "Generate Sources";
-		};
-		DD9E303A271DC32C00C6D170 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DD86D53423D11B3E0046E63E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DD9E302F271DBFF500C6D170;
-			remoteInfo = "Generate Sources";
-		};
-		DD9E303C271DC32F00C6D170 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DD86D53423D11B3E0046E63E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DD9E302F271DBFF500C6D170;
-			remoteInfo = "Generate Sources";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		DD17A9F9257744BC00D30599 /* scripts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = scripts; sourceTree = "<group>"; };
+		DD29532C2728E0C50096A94E /* Package@swift-4.2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Package@swift-4.2.swift"; sourceTree = "<group>"; };
+		DD29532D2728E0C50096A94E /* Package@swift-4.0.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Package@swift-4.0.swift"; sourceTree = "<group>"; };
+		DD29533D2728E3420096A94E /* Half+Coding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Half+Coding.swift"; sourceTree = "<group>"; };
+		DD29533E2728E3420096A94E /* Half.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Half.swift; sourceTree = "<group>"; };
+		DD29533F2728E3420096A94E /* Functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
+		DD2953402728E3420096A94E /* Half@swift-4.0.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Half@swift-4.0.swift"; sourceTree = "<group>"; };
+		DD2953412728E3420096A94E /* Half@swift-4.2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Half@swift-4.2.swift"; sourceTree = "<group>"; };
+		DD2953422728E3420096A94E /* Half.swift.gyb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Half.swift.gyb; sourceTree = "<group>"; };
+		DD2953452728E3420096A94E /* half.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = half.h; sourceTree = "<group>"; };
+		DD2953462728E3420096A94E /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		DD2953482728E3420096A94E /* fp_extend.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fp_extend.cpp; sourceTree = "<group>"; };
+		DD2953492728E3420096A94E /* fp_trunc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fp_trunc.cpp; sourceTree = "<group>"; };
+		DD29534A2728E3420096A94E /* half.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = half.c; sourceTree = "<group>"; };
+		DD2953752728E3850096A94E /* CHalfTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHalfTests.swift; sourceTree = "<group>"; };
+		DD2953782728E3850096A94E /* Half+CodingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Half+CodingTests.swift"; sourceTree = "<group>"; };
+		DD2953792728E3850096A94E /* HalfTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HalfTests.swift; sourceTree = "<group>"; };
+		DD29537A2728E3850096A94E /* FunctionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionsTests.swift; sourceTree = "<group>"; };
+		DD2953932729A8530096A94E /* ATTRIBUTIONS */ = {isa = PBXFileReference; lastKnownFileType = text; path = ATTRIBUTIONS; sourceTree = "<group>"; };
 		DD48BC94270E0DE800D842BC /* HalfTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HalfTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD48BC9F270E0F4500D842BC /* HalfTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = HalfTests.xctestplan; sourceTree = "<group>"; };
 		DD48BCA0270E0F9A00D842BC /* Half macOS Tests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Half macOS Tests.xctestplan"; sourceTree = "<group>"; };
@@ -209,26 +231,6 @@
 		DD86D5E023D22DB90046E63E /* Half.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; path = Half.podspec; sourceTree = SOURCE_ROOT; };
 		DD86D5E123D22DB90046E63E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		DD86D5E323D22DC30046E63E /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = SOURCE_ROOT; };
-		DD9E2FBD271DBE8600C6D170 /* gyb.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = gyb.py; sourceTree = "<group>"; };
-		DD9E2FBE271DBE8600C6D170 /* gyb */ = {isa = PBXFileReference; lastKnownFileType = text; path = gyb; sourceTree = "<group>"; };
-		DD9E2FC0271DBEE700C6D170 /* HalfTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HalfTests.swift; sourceTree = "<group>"; };
-		DD9E2FC1271DBEE700C6D170 /* FunctionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionsTests.swift; sourceTree = "<group>"; };
-		DD9E2FC2271DBEE700C6D170 /* Half+CodingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Half+CodingTests.swift"; sourceTree = "<group>"; };
-		DD9E2FD1271DBEF900C6D170 /* CHalfTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHalfTests.swift; sourceTree = "<group>"; };
-		DD9E2FF9271DBF5100C6D170 /* Half@swift-4.0.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Half@swift-4.0.swift"; sourceTree = "<group>"; };
-		DD9E2FFA271DBF5100C6D170 /* Half@swift-4.2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Half@swift-4.2.swift"; sourceTree = "<group>"; };
-		DD9E2FFB271DBF5100C6D170 /* Half.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Half.swift; sourceTree = "<group>"; };
-		DD9E2FFC271DBF5100C6D170 /* Half+Coding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Half+Coding.swift"; sourceTree = "<group>"; };
-		DD9E2FFD271DBF5100C6D170 /* Functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
-		DD9E2FFE271DBF5100C6D170 /* Half.swift.gyb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Half.swift.gyb; sourceTree = "<group>"; };
-		DD9E3019271DBF7200C6D170 /* half.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = half.h; sourceTree = "<group>"; };
-		DD9E301A271DBF7200C6D170 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
-		DD9E301C271DBF7200C6D170 /* fp_extend.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fp_extend.cpp; sourceTree = "<group>"; };
-		DD9E301D271DBF7200C6D170 /* fp_trunc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fp_trunc.cpp; sourceTree = "<group>"; };
-		DD9E301E271DBF7200C6D170 /* half.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = half.c; sourceTree = "<group>"; };
-		DD9E3034271DC0FF00C6D170 /* Package@swift-4.0.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Package@swift-4.0.swift"; sourceTree = "<group>"; };
-		DD9E3035271DC0FF00C6D170 /* Package@swift-4.2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Package@swift-4.2.swift"; sourceTree = "<group>"; };
-		DD9E303E271DCF9900C6D170 /* ATTRIBUTIONS */ = {isa = PBXFileReference; lastKnownFileType = text; path = ATTRIBUTIONS; sourceTree = "<group>"; };
 		DDA26DBD256EA4D700E1C6D7 /* workflows */ = {isa = PBXFileReference; lastKnownFileType = folder; name = workflows; path = .github/workflows; sourceTree = "<group>"; };
 		DDB1DE5C2405EEE300C20FED /* codecov.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = codecov.yml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -297,6 +299,65 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DD29533C2728E3420096A94E /* Half */ = {
+			isa = PBXGroup;
+			children = (
+				DD29533F2728E3420096A94E /* Functions.swift */,
+				DD29533E2728E3420096A94E /* Half.swift */,
+				DD2953422728E3420096A94E /* Half.swift.gyb */,
+				DD2953402728E3420096A94E /* Half@swift-4.0.swift */,
+				DD2953412728E3420096A94E /* Half@swift-4.2.swift */,
+				DD29533D2728E3420096A94E /* Half+Coding.swift */,
+			);
+			path = Half;
+			sourceTree = "<group>";
+		};
+		DD2953432728E3420096A94E /* CHalf */ = {
+			isa = PBXGroup;
+			children = (
+				DD2953442728E3420096A94E /* include */,
+				DD2953472728E3420096A94E /* src */,
+			);
+			path = CHalf;
+			sourceTree = "<group>";
+		};
+		DD2953442728E3420096A94E /* include */ = {
+			isa = PBXGroup;
+			children = (
+				DD2953452728E3420096A94E /* half.h */,
+				DD2953462728E3420096A94E /* module.modulemap */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		DD2953472728E3420096A94E /* src */ = {
+			isa = PBXGroup;
+			children = (
+				DD2953482728E3420096A94E /* fp_extend.cpp */,
+				DD2953492728E3420096A94E /* fp_trunc.cpp */,
+				DD29534A2728E3420096A94E /* half.c */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		DD2953732728E3850096A94E /* CHalfTests */ = {
+			isa = PBXGroup;
+			children = (
+				DD2953752728E3850096A94E /* CHalfTests.swift */,
+			);
+			path = CHalfTests;
+			sourceTree = "<group>";
+		};
+		DD2953762728E3850096A94E /* HalfTests */ = {
+			isa = PBXGroup;
+			children = (
+				DD29537A2728E3850096A94E /* FunctionsTests.swift */,
+				DD2953782728E3850096A94E /* Half+CodingTests.swift */,
+				DD2953792728E3850096A94E /* HalfTests.swift */,
+			);
+			path = HalfTests;
+			sourceTree = "<group>";
+		};
 		DD48BC9E270E0F1300D842BC /* Test Plans */ = {
 			isa = PBXGroup;
 			children = (
@@ -306,29 +367,6 @@
 				DD48BCA2270E101D00D842BC /* Half watchOS Tests.xctestplan */,
 			);
 			path = "Test Plans";
-			sourceTree = "<group>";
-		};
-		DD5D04E52621361600BA0FC2 /* Half */ = {
-			isa = PBXGroup;
-			children = (
-				DD9E2FFD271DBF5100C6D170 /* Functions.swift */,
-				DD9E2FFB271DBF5100C6D170 /* Half.swift */,
-				DD9E2FF9271DBF5100C6D170 /* Half@swift-4.0.swift */,
-				DD9E2FFA271DBF5100C6D170 /* Half@swift-4.2.swift */,
-				DD9E2FFE271DBF5100C6D170 /* Half.swift.gyb */,
-				DD9E2FFC271DBF5100C6D170 /* Half+Coding.swift */,
-			);
-			path = Half;
-			sourceTree = "<group>";
-		};
-		DD5D04F22621362400BA0FC2 /* HalfTests */ = {
-			isa = PBXGroup;
-			children = (
-				DD9E2FC1271DBEE700C6D170 /* FunctionsTests.swift */,
-				DD9E2FC2271DBEE700C6D170 /* Half+CodingTests.swift */,
-				DD9E2FC0271DBEE700C6D170 /* HalfTests.swift */,
-			);
-			path = HalfTests;
 			sourceTree = "<group>";
 		};
 		DD86D53323D11B3E0046E63E = {
@@ -359,7 +397,6 @@
 			children = (
 				DDB1DE252405EE5F00C20FED /* Sources */,
 				DDB1DE502405EE9900C20FED /* Tests */,
-				DD9E2FBC271DBE8600C6D170 /* Utils */,
 				DD86D55B23D11BA80046E63E /* Supporting Files */,
 			);
 			name = Half;
@@ -372,69 +409,24 @@
 				DDA26DBD256EA4D700E1C6D7 /* workflows */,
 				DD86D5E023D22DB90046E63E /* Half.podspec */,
 				DD86D5DF23D22DB90046E63E /* Package.swift */,
-				DD9E3035271DC0FF00C6D170 /* Package@swift-4.2.swift */,
-				DD9E3034271DC0FF00C6D170 /* Package@swift-4.0.swift */,
+				DD29532C2728E0C50096A94E /* Package@swift-4.2.swift */,
+				DD29532D2728E0C50096A94E /* Package@swift-4.0.swift */,
 				DDB1DE5C2405EEE300C20FED /* codecov.yml */,
 				DD86D5E323D22DC30046E63E /* .swiftlint.yml */,
 				DD86D5E123D22DB90046E63E /* README.md */,
-				DD9E303E271DCF9900C6D170 /* ATTRIBUTIONS */,
 				DD86D5DE23D22DB90046E63E /* LICENSE */,
+				DD2953932729A8530096A94E /* ATTRIBUTIONS */,
 				DD86D54123D11B3E0046E63E /* Half-Info.plist */,
 				DD5D044A261FA56400BA0FC2 /* HalfTests-Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		DD9E2FBC271DBE8600C6D170 /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				DD9E2FBD271DBE8600C6D170 /* gyb.py */,
-				DD9E2FBE271DBE8600C6D170 /* gyb */,
-			);
-			path = Utils;
-			sourceTree = "<group>";
-		};
-		DD9E2FCF271DBEF900C6D170 /* CHalfTests */ = {
-			isa = PBXGroup;
-			children = (
-				DD9E2FD1271DBEF900C6D170 /* CHalfTests.swift */,
-			);
-			path = CHalfTests;
-			sourceTree = "<group>";
-		};
-		DD9E3017271DBF7200C6D170 /* CHalf */ = {
-			isa = PBXGroup;
-			children = (
-				DD9E3018271DBF7200C6D170 /* include */,
-				DD9E301B271DBF7200C6D170 /* src */,
-			);
-			path = CHalf;
-			sourceTree = "<group>";
-		};
-		DD9E3018271DBF7200C6D170 /* include */ = {
-			isa = PBXGroup;
-			children = (
-				DD9E3019271DBF7200C6D170 /* half.h */,
-				DD9E301A271DBF7200C6D170 /* module.modulemap */,
-			);
-			path = include;
-			sourceTree = "<group>";
-		};
-		DD9E301B271DBF7200C6D170 /* src */ = {
-			isa = PBXGroup;
-			children = (
-				DD9E301C271DBF7200C6D170 /* fp_extend.cpp */,
-				DD9E301D271DBF7200C6D170 /* fp_trunc.cpp */,
-				DD9E301E271DBF7200C6D170 /* half.c */,
-			);
-			path = src;
-			sourceTree = "<group>";
-		};
 		DDB1DE252405EE5F00C20FED /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				DD9E3017271DBF7200C6D170 /* CHalf */,
-				DD5D04E52621361600BA0FC2 /* Half */,
+				DD2953432728E3420096A94E /* CHalf */,
+				DD29533C2728E3420096A94E /* Half */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -442,8 +434,8 @@
 		DDB1DE502405EE9900C20FED /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				DD9E2FCF271DBEF900C6D170 /* CHalfTests */,
-				DD5D04F22621362400BA0FC2 /* HalfTests */,
+				DD2953732728E3850096A94E /* CHalfTests */,
+				DD2953762728E3850096A94E /* HalfTests */,
 				DD48BC9E270E0F1300D842BC /* Test Plans */,
 			);
 			path = Tests;
@@ -456,7 +448,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD9E301F271DBF7200C6D170 /* half.h in Headers */,
+				DD2953632728E3430096A94E /* half.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,7 +456,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD9E3020271DBF7200C6D170 /* half.h in Headers */,
+				DD2953642728E3430096A94E /* half.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,7 +464,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD9E3021271DBF7200C6D170 /* half.h in Headers */,
+				DD2953652728E3430096A94E /* half.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,7 +472,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD9E3022271DBF7200C6D170 /* half.h in Headers */,
+				DD2953662728E3430096A94E /* half.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -517,7 +509,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				DD9E3037271DC32200C6D170 /* PBXTargetDependency */,
+				DD2953352728E2A30096A94E /* PBXTargetDependency */,
 				DD86D56A23D11C6C0046E63E /* PBXTargetDependency */,
 			);
 			name = Half;
@@ -555,7 +547,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				DD9E3039271DC32800C6D170 /* PBXTargetDependency */,
+				DD2953372728E2A70096A94E /* PBXTargetDependency */,
 				DD86D5D923D11DC60046E63E /* PBXTargetDependency */,
 			);
 			name = "Half macOS";
@@ -593,7 +585,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				DD9E303B271DC32C00C6D170 /* PBXTargetDependency */,
+				DD2953392728E2AA0096A94E /* PBXTargetDependency */,
 				DD86D5DB23D11DC90046E63E /* PBXTargetDependency */,
 			);
 			name = "Half tvOS";
@@ -631,7 +623,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				DD9E303D271DC32F00C6D170 /* PBXTargetDependency */,
+				DD29533B2728E2AD0096A94E /* PBXTargetDependency */,
 				DD86D5DD23D11DCC0046E63E /* PBXTargetDependency */,
 			);
 			name = "Half watchOS";
@@ -649,6 +641,9 @@
 				LastUpgradeCheck = 1300;
 				ORGANIZATIONNAME = SomeRandomiOSDev;
 				TargetAttributes = {
+					DD29532F2728E25A0096A94E = {
+						CreatedOnToolsVersion = 13.0;
+					};
 					DD2FBC27258BE8BB00DB3211 = {
 						CreatedOnToolsVersion = 13.0;
 						LastSwiftMigration = 1300;
@@ -689,9 +684,6 @@
 						CreatedOnToolsVersion = 13.0;
 						LastSwiftMigration = 1300;
 					};
-					DD9E302F271DBFF500C6D170 = {
-						CreatedOnToolsVersion = 13.0;
-					};
 				};
 			};
 			buildConfigurationList = DD86D53723D11B3E0046E63E /* Build configuration list for PBXProject "Half" */;
@@ -703,6 +695,9 @@
 				Base,
 			);
 			mainGroup = DD86D53323D11B3E0046E63E;
+			packageReferences = (
+				DD29532E2728E1A90096A94E /* XCRemoteSwiftPackageReference "gyb" */,
+			);
 			productRefGroup = DD86D53E23D11B3E0046E63E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -715,7 +710,7 @@
 				DD86D59323D11CA00046E63E /* Half tvOS Tests */,
 				DD86D5C323D11D140046E63E /* Half watchOS */,
 				DD48BC93270E0DE800D842BC /* Half watchOS Tests */,
-				DD9E302F271DBFF500C6D170 /* Generate Sources */,
+				DD29532F2728E25A0096A94E /* Generate Sources */,
 				DD86D56423D11C4B0046E63E /* Run SwiftLint */,
 				DD2FBC27258BE8BB00DB3211 /* XCFramework */,
 			);
@@ -734,6 +729,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD29535F2728E3430096A94E /* Half.swift.gyb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -748,6 +744,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD2953602728E3430096A94E /* Half.swift.gyb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -762,6 +759,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD2953612728E3430096A94E /* Half.swift.gyb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -776,12 +774,31 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD2953622728E3430096A94E /* Half.swift.gyb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		DD2953332728E25E0096A94E /* Generate Sources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Generate Sources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "DERIVED_DATA_DIR=\"$(dirname \"$(dirname \"$(xcodebuild -project \"$PROJECT_FILE_PATH\" -showBuildSettings | grep -m 1 \"BUILD_DIR\" | grep -oEi \"\\/.*\")\")\")\"\n\n\"$DERIVED_DATA_DIR/SourcePackages/checkouts/gyb/gyb\" --line-directive '' -Dswift_version='5.0' -o ./Sources/Half/Half.swift ./Sources/Half/Half.swift.gyb\n\"$DERIVED_DATA_DIR/SourcePackages/checkouts/gyb/gyb\" --line-directive '' -Dswift_version='4.2' -o ./Sources/Half/Half@swift-4.2.swift ./Sources/Half/Half.swift.gyb\n\"$DERIVED_DATA_DIR/SourcePackages/checkouts/gyb/gyb\" --line-directive '' -Dswift_version='4.0' -o ./Sources/Half/Half@swift-4.0.swift ./Sources/Half/Half.swift.gyb\n";
+		};
 		DD2FBC33258BE8C600DB3211 /* Build XCFramework */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -798,7 +815,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "${PROJECT_DIR}/scripts/xcframework.sh -configuration ${CONFIGURATION} -output \"${BUILD_DIR}/${CONFIGURATION}-universal/Half.xcframework\" \n";
+			shellScript = "${PROJECT_DIR}/scripts/xcframework.sh --configuration ${CONFIGURATION} --output \"${BUILD_DIR}/${CONFIGURATION}-universal/Half.xcframework\" \n";
 		};
 		DD86D56823D11C550046E63E /* Run SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -818,25 +835,6 @@
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
-		DD9E3033271DC00700C6D170 /* Generate Sources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Sources/Half/Half.swift.gyb",
-			);
-			name = "Generate Sources";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "./utils/gyb --line-directive '' -Dswift_version='5.0' -o ./Sources/Half/Half.swift ./Sources/Half/Half.swift.gyb\n./utils/gyb --line-directive '' -Dswift_version='4.2' -o ./Sources/Half/Half@swift-4.2.swift ./Sources/Half/Half.swift.gyb\n./utils/gyb --line-directive '' -Dswift_version='4.0' -o ./Sources/Half/Half@swift-4.0.swift ./Sources/Half/Half.swift.gyb\n";
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -844,10 +842,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD9E2FD9271DBEF900C6D170 /* CHalfTests.swift in Sources */,
-				DD9E2FCE271DBEE800C6D170 /* Half+CodingTests.swift in Sources */,
-				DD9E2FC6271DBEE700C6D170 /* HalfTests.swift in Sources */,
-				DD9E2FCA271DBEE800C6D170 /* FunctionsTests.swift in Sources */,
+				DD2953822728E3850096A94E /* CHalfTests.swift in Sources */,
+				DD29538A2728E3850096A94E /* Half+CodingTests.swift in Sources */,
+				DD2953922728E3850096A94E /* FunctionsTests.swift in Sources */,
+				DD29538E2728E3850096A94E /* HalfTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -855,14 +853,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD9E3003271DBF5100C6D170 /* Half@swift-4.2.swift in Sources */,
-				DD9E3023271DBF7200C6D170 /* fp_extend.cpp in Sources */,
-				DD9E302B271DBF7200C6D170 /* half.c in Sources */,
-				DD9E2FFF271DBF5100C6D170 /* Half@swift-4.0.swift in Sources */,
-				DD9E300B271DBF5100C6D170 /* Half+Coding.swift in Sources */,
-				DD9E300F271DBF5100C6D170 /* Functions.swift in Sources */,
-				DD9E3007271DBF5100C6D170 /* Half.swift in Sources */,
-				DD9E3027271DBF7200C6D170 /* fp_trunc.cpp in Sources */,
+				DD29535B2728E3430096A94E /* Half@swift-4.2.swift in Sources */,
+				DD2953672728E3430096A94E /* fp_extend.cpp in Sources */,
+				DD29536F2728E3430096A94E /* half.c in Sources */,
+				DD29534F2728E3420096A94E /* Half.swift in Sources */,
+				DD29534B2728E3420096A94E /* Half+Coding.swift in Sources */,
+				DD2953572728E3430096A94E /* Half@swift-4.0.swift in Sources */,
+				DD2953532728E3430096A94E /* Functions.swift in Sources */,
+				DD29536B2728E3430096A94E /* fp_trunc.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -870,10 +868,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD9E2FD6271DBEF900C6D170 /* CHalfTests.swift in Sources */,
-				DD9E2FCB271DBEE800C6D170 /* Half+CodingTests.swift in Sources */,
-				DD9E2FC3271DBEE700C6D170 /* HalfTests.swift in Sources */,
-				DD9E2FC7271DBEE800C6D170 /* FunctionsTests.swift in Sources */,
+				DD29537F2728E3850096A94E /* CHalfTests.swift in Sources */,
+				DD2953872728E3850096A94E /* Half+CodingTests.swift in Sources */,
+				DD29538F2728E3850096A94E /* FunctionsTests.swift in Sources */,
+				DD29538B2728E3850096A94E /* HalfTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -881,14 +879,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD9E3004271DBF5100C6D170 /* Half@swift-4.2.swift in Sources */,
-				DD9E3024271DBF7200C6D170 /* fp_extend.cpp in Sources */,
-				DD9E302C271DBF7200C6D170 /* half.c in Sources */,
-				DD9E3000271DBF5100C6D170 /* Half@swift-4.0.swift in Sources */,
-				DD9E300C271DBF5100C6D170 /* Half+Coding.swift in Sources */,
-				DD9E3010271DBF5100C6D170 /* Functions.swift in Sources */,
-				DD9E3008271DBF5100C6D170 /* Half.swift in Sources */,
-				DD9E3028271DBF7200C6D170 /* fp_trunc.cpp in Sources */,
+				DD29535C2728E3430096A94E /* Half@swift-4.2.swift in Sources */,
+				DD2953682728E3430096A94E /* fp_extend.cpp in Sources */,
+				DD2953702728E3430096A94E /* half.c in Sources */,
+				DD2953502728E3420096A94E /* Half.swift in Sources */,
+				DD29534C2728E3420096A94E /* Half+Coding.swift in Sources */,
+				DD2953582728E3430096A94E /* Half@swift-4.0.swift in Sources */,
+				DD2953542728E3430096A94E /* Functions.swift in Sources */,
+				DD29536C2728E3430096A94E /* fp_trunc.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -896,10 +894,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD9E2FD7271DBEF900C6D170 /* CHalfTests.swift in Sources */,
-				DD9E2FCC271DBEE800C6D170 /* Half+CodingTests.swift in Sources */,
-				DD9E2FC4271DBEE700C6D170 /* HalfTests.swift in Sources */,
-				DD9E2FC8271DBEE800C6D170 /* FunctionsTests.swift in Sources */,
+				DD2953802728E3850096A94E /* CHalfTests.swift in Sources */,
+				DD2953882728E3850096A94E /* Half+CodingTests.swift in Sources */,
+				DD2953902728E3850096A94E /* FunctionsTests.swift in Sources */,
+				DD29538C2728E3850096A94E /* HalfTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -907,14 +905,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD9E3005271DBF5100C6D170 /* Half@swift-4.2.swift in Sources */,
-				DD9E3025271DBF7200C6D170 /* fp_extend.cpp in Sources */,
-				DD9E302D271DBF7200C6D170 /* half.c in Sources */,
-				DD9E3001271DBF5100C6D170 /* Half@swift-4.0.swift in Sources */,
-				DD9E300D271DBF5100C6D170 /* Half+Coding.swift in Sources */,
-				DD9E3011271DBF5100C6D170 /* Functions.swift in Sources */,
-				DD9E3009271DBF5100C6D170 /* Half.swift in Sources */,
-				DD9E3029271DBF7200C6D170 /* fp_trunc.cpp in Sources */,
+				DD29535D2728E3430096A94E /* Half@swift-4.2.swift in Sources */,
+				DD2953692728E3430096A94E /* fp_extend.cpp in Sources */,
+				DD2953712728E3430096A94E /* half.c in Sources */,
+				DD2953512728E3420096A94E /* Half.swift in Sources */,
+				DD29534D2728E3420096A94E /* Half+Coding.swift in Sources */,
+				DD2953592728E3430096A94E /* Half@swift-4.0.swift in Sources */,
+				DD2953552728E3430096A94E /* Functions.swift in Sources */,
+				DD29536D2728E3430096A94E /* fp_trunc.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -922,10 +920,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD9E2FD8271DBEF900C6D170 /* CHalfTests.swift in Sources */,
-				DD9E2FCD271DBEE800C6D170 /* Half+CodingTests.swift in Sources */,
-				DD9E2FC5271DBEE700C6D170 /* HalfTests.swift in Sources */,
-				DD9E2FC9271DBEE800C6D170 /* FunctionsTests.swift in Sources */,
+				DD2953812728E3850096A94E /* CHalfTests.swift in Sources */,
+				DD2953892728E3850096A94E /* Half+CodingTests.swift in Sources */,
+				DD2953912728E3850096A94E /* FunctionsTests.swift in Sources */,
+				DD29538D2728E3850096A94E /* HalfTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -933,20 +931,40 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD9E3006271DBF5100C6D170 /* Half@swift-4.2.swift in Sources */,
-				DD9E3026271DBF7200C6D170 /* fp_extend.cpp in Sources */,
-				DD9E302E271DBF7200C6D170 /* half.c in Sources */,
-				DD9E3002271DBF5100C6D170 /* Half@swift-4.0.swift in Sources */,
-				DD9E300E271DBF5100C6D170 /* Half+Coding.swift in Sources */,
-				DD9E3012271DBF5100C6D170 /* Functions.swift in Sources */,
-				DD9E300A271DBF5100C6D170 /* Half.swift in Sources */,
-				DD9E302A271DBF7200C6D170 /* fp_trunc.cpp in Sources */,
+				DD29535E2728E3430096A94E /* Half@swift-4.2.swift in Sources */,
+				DD29536A2728E3430096A94E /* fp_extend.cpp in Sources */,
+				DD2953722728E3430096A94E /* half.c in Sources */,
+				DD2953522728E3420096A94E /* Half.swift in Sources */,
+				DD29534E2728E3420096A94E /* Half+Coding.swift in Sources */,
+				DD29535A2728E3430096A94E /* Half@swift-4.0.swift in Sources */,
+				DD2953562728E3430096A94E /* Functions.swift in Sources */,
+				DD29536E2728E3430096A94E /* fp_trunc.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		DD2953352728E2A30096A94E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD29532F2728E25A0096A94E /* Generate Sources */;
+			targetProxy = DD2953342728E2A30096A94E /* PBXContainerItemProxy */;
+		};
+		DD2953372728E2A70096A94E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD29532F2728E25A0096A94E /* Generate Sources */;
+			targetProxy = DD2953362728E2A70096A94E /* PBXContainerItemProxy */;
+		};
+		DD2953392728E2AA0096A94E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD29532F2728E25A0096A94E /* Generate Sources */;
+			targetProxy = DD2953382728E2AA0096A94E /* PBXContainerItemProxy */;
+		};
+		DD29533B2728E2AD0096A94E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD29532F2728E25A0096A94E /* Generate Sources */;
+			targetProxy = DD29533A2728E2AD0096A94E /* PBXContainerItemProxy */;
+		};
 		DD48BC9A270E0DE800D842BC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = DD86D5C323D11D140046E63E /* Half watchOS */;
@@ -987,29 +1005,27 @@
 			target = DD86D56423D11C4B0046E63E /* Run SwiftLint */;
 			targetProxy = DD86D5DC23D11DCC0046E63E /* PBXContainerItemProxy */;
 		};
-		DD9E3037271DC32200C6D170 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = DD9E302F271DBFF500C6D170 /* Generate Sources */;
-			targetProxy = DD9E3036271DC32200C6D170 /* PBXContainerItemProxy */;
-		};
-		DD9E3039271DC32800C6D170 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = DD9E302F271DBFF500C6D170 /* Generate Sources */;
-			targetProxy = DD9E3038271DC32800C6D170 /* PBXContainerItemProxy */;
-		};
-		DD9E303B271DC32C00C6D170 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = DD9E302F271DBFF500C6D170 /* Generate Sources */;
-			targetProxy = DD9E303A271DC32C00C6D170 /* PBXContainerItemProxy */;
-		};
-		DD9E303D271DC32F00C6D170 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = DD9E302F271DBFF500C6D170 /* Generate Sources */;
-			targetProxy = DD9E303C271DC32F00C6D170 /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		DD2953312728E25A0096A94E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PH26G7KHX9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DD2953322728E25A0096A94E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PH26G7KHX9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		DD2FBC28258BE8BB00DB3211 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1031,7 +1047,6 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Plists/HalfTests-Info.plist";
@@ -1044,7 +1059,6 @@
 				PRODUCT_NAME = HalfTests;
 				SDKROOT = watchos;
 				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 			};
@@ -1055,7 +1069,6 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Plists/TestProjectTests-Info.plist";
@@ -1135,7 +1148,7 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TVOS_DEPLOYMENT_TARGET = 12.0;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
@@ -1197,7 +1210,7 @@
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
-				TVOS_DEPLOYMENT_TARGET = 12.0;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1260,7 +1273,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Plists/HalfTests-Info.plist";
@@ -1271,8 +1283,6 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.somerandomiosdev.halftests;
 				PRODUCT_NAME = HalfTests;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,6";
 			};
 			name = Debug;
@@ -1281,7 +1291,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Plists/HalfTests-Info.plist";
@@ -1292,7 +1301,6 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.somerandomiosdev.halftests;
 				PRODUCT_NAME = HalfTests;
-				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,6";
 			};
 			name = Release;
@@ -1560,27 +1568,18 @@
 			};
 			name = Release;
 		};
-		DD9E3031271DBFF500C6D170 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = PH26G7KHX9;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		DD9E3032271DBFF500C6D170 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = PH26G7KHX9;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		DD2953302728E25A0096A94E /* Build configuration list for PBXAggregateTarget "Generate Sources" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD2953312728E25A0096A94E /* Debug */,
+				DD2953322728E25A0096A94E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		DD2FBC2A258BE8BB00DB3211 /* Build configuration list for PBXAggregateTarget "XCFramework" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1680,16 +1679,18 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DD9E3030271DBFF500C6D170 /* Build configuration list for PBXAggregateTarget "Generate Sources" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DD9E3031271DBFF500C6D170 /* Debug */,
-				DD9E3032271DBFF500C6D170 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DD29532E2728E1A90096A94E /* XCRemoteSwiftPackageReference "gyb" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SomeRandomiOSDev/gyb";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = DD86D53423D11B3E0046E63E /* Project object */;
 }
