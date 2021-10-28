@@ -1,0 +1,19 @@
+name: Publish CocoaPods
+on:
+  release:
+    types: [published]
+
+jobs:
+  publish:
+    name: Publish CocoaPods
+    runs-on: macOS-11
+    env:
+      COCOAPODS_TRUNK_TOKEN: ${{ secrets.COCOAPODS_TRUNK_TOKEN }}
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v2
+
+    - name: Publish
+      run: |
+        pod trunk push Half.podspec
