@@ -455,9 +455,9 @@ extension Half: FloatingPoint {
     @inlinable
     public var sign: FloatingPointSign {
         let shift = Half.significandBitCount + Half.exponentBitCount
-        //swiftlint:disable force_unwrapping
+        // swiftlint:disable force_unwrapping
         return FloatingPointSign(rawValue: Int(bitPattern &>> UInt16(shift)))!
-        //swiftlint:enable force_unwrapping
+        // swiftlint:enable force_unwrapping
     }
 
     @inlinable

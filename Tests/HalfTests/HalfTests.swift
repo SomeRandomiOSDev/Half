@@ -12,7 +12,7 @@ import XCTest
 import CoreGraphics.CGBase
 #endif // #if canImport(CoreGraphics)
 
-//swiftlint:disable function_body_length
+// swiftlint:disable function_body_length
 
 class HalfTests: XCTestCase {
 
@@ -390,20 +390,20 @@ class HalfTests: XCTestCase {
     func testULP() {
         XCTAssertTrue(Half.infinity.ulp.isNaN)
         XCTAssertEqual(Half(1.0).ulp, 0.0009765625)
-        XCTAssertEqual(Half(sign: .plus, exponentBitPattern: 0, significandBitPattern: 1).ulp, 5.9604645e-08) //subnormal
+        XCTAssertEqual(Half(sign: .plus, exponentBitPattern: 0, significandBitPattern: 1).ulp, 5.9604645e-08) // subnormal
     }
 
     func testSignificand() {
         XCTAssertTrue(Half.nan.significand.isNaN)
         XCTAssertEqual(Half(0.75).significand.significandBitPattern, 512)
-        XCTAssertEqual(Half(sign: .plus, exponentBitPattern: 0, significandBitPattern: 1).significand.significandBitPattern, 0) //subnormal
+        XCTAssertEqual(Half(sign: .plus, exponentBitPattern: 0, significandBitPattern: 1).significand.significandBitPattern, 0) // subnormal
         XCTAssertEqual(Half.infinity.significand.significandBitPattern, 0)
     }
 
     func testCanonical() {
         #if arch(arm)
         XCTAssertTrue(Half(1.0).isCanonical)
-        XCTAssertFalse(Half(sign: .plus, exponentBitPattern: 0, significandBitPattern: 1).isCanonical) //subnormal
+        XCTAssertFalse(Half(sign: .plus, exponentBitPattern: 0, significandBitPattern: 1).isCanonical) // subnormal
         #else
         for bitPattern in 0 ... UInt16.max {
             XCTAssertTrue(Half(bitPattern: bitPattern).isCanonical)
@@ -416,13 +416,13 @@ class HalfTests: XCTestCase {
         XCTAssertEqual(Half().exponent, .min)
         XCTAssertEqual(Half(1.0).exponent, 0)
         XCTAssertEqual(Half(8.0).exponent, 3)
-        XCTAssertEqual(Half(sign: .plus, exponentBitPattern: 0, significandBitPattern: 1).exponent, -24) //subnormal
+        XCTAssertEqual(Half(sign: .plus, exponentBitPattern: 0, significandBitPattern: 1).exponent, -24) // subnormal
     }
 
     func testBinade() {
         XCTAssertTrue(Half.infinity.binade.isNaN)
         XCTAssertEqual(Half(21.5).binade, 16.0)
-        XCTAssertEqual(Half(sign: .plus, exponentBitPattern: 0, significandBitPattern: 1).binade, 5.9604645e-08) //subnormal
+        XCTAssertEqual(Half(sign: .plus, exponentBitPattern: 0, significandBitPattern: 1).binade, 5.9604645e-08) // subnormal
     }
 
     func testSignificandWidth() {
@@ -430,7 +430,7 @@ class HalfTests: XCTestCase {
         XCTAssertEqual(Half(2.5).significandWidth, 2)
         XCTAssertEqual(Half.infinity.significandWidth, -1)
         XCTAssertEqual(Half.nan.significandWidth, -1)
-        XCTAssertEqual(Half(sign: .plus, exponentBitPattern: 0, significandBitPattern: 0xFF).significandWidth, 7) //subnormal
+        XCTAssertEqual(Half(sign: .plus, exponentBitPattern: 0, significandBitPattern: 0xFF).significandWidth, 7) // subnormal
     }
 
     func testDescription() {

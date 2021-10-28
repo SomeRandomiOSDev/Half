@@ -39,12 +39,12 @@ jobs:
     - name: Generate Code Coverage File
       if: ${{ runner.os == 'macOS' && github.event_name == 'push' && github.ref == 'refs/heads/main' }}
       run: |
-        xcrun llvm-cov export --instr-profile=.build/x86_64-apple-macosx/debug/codecov/default.profdata .build/x86_64-apple-macosx/debug/HalfPackageTests.xctest/Contents/MacOS/HalfPackageTests > ./info.lcov
+        xcrun llvm-cov export --format=lcov --instr-profile=".build/debug/codecov/default.profdata" ".build/debug/HalfPackageTests.xctest/Contents/MacOS/HalfPackageTests" > "./codecov.lcov"
 
     - name: Upload Code Coverage
       if: ${{ runner.os == 'macOS' && github.event_name == 'push' && github.ref == 'refs/heads/main' }}
-      uses: codecov/codecov-action@v1
+      uses: codecov/codecov-action@v2
       with:
         token: ${{ secrets.CODECOV_TOKEN }}
-        file: ./info.lcov
+        file: ./codecov.lcov
         verbose: true

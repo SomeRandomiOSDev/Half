@@ -4,4 +4,3 @@ Half.xcodeproj/xcuserdata
 .build
 .swiftpm
 scripts/build
-gyb.pyc

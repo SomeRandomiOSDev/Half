@@ -489,9 +489,9 @@ extension Half: FloatingPoint {
 
     ${inlinable}public var sign: FloatingPointSign {
         let shift = Half.significandBitCount + Half.exponentBitCount
-        //swiftlint:disable force_unwrapping
+        // swiftlint:disable force_unwrapping
         return FloatingPointSign(rawValue: Int(bitPattern &>> UInt16(shift)))!
-        //swiftlint:enable force_unwrapping
+        // swiftlint:enable force_unwrapping
     }
 
     ${inlinable}public var significand: Half {
@@ -618,11 +618,11 @@ extension Half: FloatingPoint {
 extension Half: Hashable {
 
 % if swift_version == '4.0':
-    //swiftlint:disable legacy_hashing
+    // swiftlint:disable legacy_hashing
     ${inlinable}public var hashValue: Int {
         return Int(bitPattern)
     }
-    //swiftlint:enable legacy_hashing
+    // swiftlint:enable legacy_hashing
 % else:
     ${inlinable}public func hash(into hasher: inout Hasher) {
         var value = self

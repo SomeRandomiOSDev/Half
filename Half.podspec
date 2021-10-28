@@ -1,12 +1,12 @@
 Pod::Spec.new do |s|
-  
+
   s.name         = "Half"
-  s.version      = "1.2.1"
+  s.version      = "1.2.2"
   s.summary      = "Swift Half-Precision Floating Point"
   s.description  = <<-DESC
                    A lightweight framework containing a Swift implementation for a half-precision floating point type for iOS, macOS, tvOS, and watchOS.
                    DESC
-  
+
   s.homepage     = "https://github.com/SomeRandomiOSDev/Half"
   s.license      = "MIT"
   s.author       = { "Joe Newton" => "somerandomiosdev@gmail.com" }
@@ -30,5 +30,5 @@ Pod::Spec.new do |s|
     ts.source_files              = 'Tests/CHalfTests/*Tests.swift',
                                    'Tests/HalfTests/*Tests.swift'
   end
-  
+
 end
