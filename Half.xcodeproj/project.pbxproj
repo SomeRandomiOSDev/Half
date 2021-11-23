@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXAggregateTarget section */
-		DD29532F2728E25A0096A94E /* Generate Sources */ = {
+		DD02B86527488D3C007F5569 /* Generate Sources */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = DD2953302728E25A0096A94E /* Build configuration list for PBXAggregateTarget "Generate Sources" */;
+			buildConfigurationList = DD02B86627488D3C007F5569 /* Build configuration list for PBXAggregateTarget "Generate Sources" */;
 			buildPhases = (
-				DD2953332728E25E0096A94E /* Generate Sources */,
+				DD02B86927488D4C007F5569 /* Generate Sources */,
 			);
 			dependencies = (
 			);
@@ -43,62 +43,62 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		DD29534B2728E3420096A94E /* Half+Coding.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD29533D2728E3420096A94E /* Half+Coding.swift */; };
-		DD29534C2728E3420096A94E /* Half+Coding.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD29533D2728E3420096A94E /* Half+Coding.swift */; };
-		DD29534D2728E3420096A94E /* Half+Coding.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD29533D2728E3420096A94E /* Half+Coding.swift */; };
-		DD29534E2728E3420096A94E /* Half+Coding.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD29533D2728E3420096A94E /* Half+Coding.swift */; };
-		DD29534F2728E3420096A94E /* Half.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD29533E2728E3420096A94E /* Half.swift */; };
-		DD2953502728E3420096A94E /* Half.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD29533E2728E3420096A94E /* Half.swift */; };
-		DD2953512728E3420096A94E /* Half.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD29533E2728E3420096A94E /* Half.swift */; };
-		DD2953522728E3420096A94E /* Half.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD29533E2728E3420096A94E /* Half.swift */; };
-		DD2953532728E3430096A94E /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD29533F2728E3420096A94E /* Functions.swift */; };
-		DD2953542728E3430096A94E /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD29533F2728E3420096A94E /* Functions.swift */; };
-		DD2953552728E3430096A94E /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD29533F2728E3420096A94E /* Functions.swift */; };
-		DD2953562728E3430096A94E /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD29533F2728E3420096A94E /* Functions.swift */; };
-		DD2953572728E3430096A94E /* Half@swift-4.0.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2953402728E3420096A94E /* Half@swift-4.0.swift */; };
-		DD2953582728E3430096A94E /* Half@swift-4.0.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2953402728E3420096A94E /* Half@swift-4.0.swift */; };
-		DD2953592728E3430096A94E /* Half@swift-4.0.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2953402728E3420096A94E /* Half@swift-4.0.swift */; };
-		DD29535A2728E3430096A94E /* Half@swift-4.0.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2953402728E3420096A94E /* Half@swift-4.0.swift */; };
-		DD29535B2728E3430096A94E /* Half@swift-4.2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2953412728E3420096A94E /* Half@swift-4.2.swift */; };
-		DD29535C2728E3430096A94E /* Half@swift-4.2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2953412728E3420096A94E /* Half@swift-4.2.swift */; };
-		DD29535D2728E3430096A94E /* Half@swift-4.2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2953412728E3420096A94E /* Half@swift-4.2.swift */; };
-		DD29535E2728E3430096A94E /* Half@swift-4.2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2953412728E3420096A94E /* Half@swift-4.2.swift */; };
-		DD29535F2728E3430096A94E /* Half.swift.gyb in Resources */ = {isa = PBXBuildFile; fileRef = DD2953422728E3420096A94E /* Half.swift.gyb */; };
-		DD2953602728E3430096A94E /* Half.swift.gyb in Resources */ = {isa = PBXBuildFile; fileRef = DD2953422728E3420096A94E /* Half.swift.gyb */; };
-		DD2953612728E3430096A94E /* Half.swift.gyb in Resources */ = {isa = PBXBuildFile; fileRef = DD2953422728E3420096A94E /* Half.swift.gyb */; };
-		DD2953622728E3430096A94E /* Half.swift.gyb in Resources */ = {isa = PBXBuildFile; fileRef = DD2953422728E3420096A94E /* Half.swift.gyb */; };
-		DD2953632728E3430096A94E /* half.h in Headers */ = {isa = PBXBuildFile; fileRef = DD2953452728E3420096A94E /* half.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DD2953642728E3430096A94E /* half.h in Headers */ = {isa = PBXBuildFile; fileRef = DD2953452728E3420096A94E /* half.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DD2953652728E3430096A94E /* half.h in Headers */ = {isa = PBXBuildFile; fileRef = DD2953452728E3420096A94E /* half.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DD2953662728E3430096A94E /* half.h in Headers */ = {isa = PBXBuildFile; fileRef = DD2953452728E3420096A94E /* half.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DD2953672728E3430096A94E /* fp_extend.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DD2953482728E3420096A94E /* fp_extend.cpp */; };
-		DD2953682728E3430096A94E /* fp_extend.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DD2953482728E3420096A94E /* fp_extend.cpp */; };
-		DD2953692728E3430096A94E /* fp_extend.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DD2953482728E3420096A94E /* fp_extend.cpp */; };
-		DD29536A2728E3430096A94E /* fp_extend.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DD2953482728E3420096A94E /* fp_extend.cpp */; };
-		DD29536B2728E3430096A94E /* fp_trunc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DD2953492728E3420096A94E /* fp_trunc.cpp */; };
-		DD29536C2728E3430096A94E /* fp_trunc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DD2953492728E3420096A94E /* fp_trunc.cpp */; };
-		DD29536D2728E3430096A94E /* fp_trunc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DD2953492728E3420096A94E /* fp_trunc.cpp */; };
-		DD29536E2728E3430096A94E /* fp_trunc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DD2953492728E3420096A94E /* fp_trunc.cpp */; };
-		DD29536F2728E3430096A94E /* half.c in Sources */ = {isa = PBXBuildFile; fileRef = DD29534A2728E3420096A94E /* half.c */; };
-		DD2953702728E3430096A94E /* half.c in Sources */ = {isa = PBXBuildFile; fileRef = DD29534A2728E3420096A94E /* half.c */; };
-		DD2953712728E3430096A94E /* half.c in Sources */ = {isa = PBXBuildFile; fileRef = DD29534A2728E3420096A94E /* half.c */; };
-		DD2953722728E3430096A94E /* half.c in Sources */ = {isa = PBXBuildFile; fileRef = DD29534A2728E3420096A94E /* half.c */; };
-		DD29537F2728E3850096A94E /* CHalfTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2953752728E3850096A94E /* CHalfTests.swift */; };
-		DD2953802728E3850096A94E /* CHalfTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2953752728E3850096A94E /* CHalfTests.swift */; };
-		DD2953812728E3850096A94E /* CHalfTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2953752728E3850096A94E /* CHalfTests.swift */; };
-		DD2953822728E3850096A94E /* CHalfTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2953752728E3850096A94E /* CHalfTests.swift */; };
-		DD2953872728E3850096A94E /* Half+CodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2953782728E3850096A94E /* Half+CodingTests.swift */; };
-		DD2953882728E3850096A94E /* Half+CodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2953782728E3850096A94E /* Half+CodingTests.swift */; };
-		DD2953892728E3850096A94E /* Half+CodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2953782728E3850096A94E /* Half+CodingTests.swift */; };
-		DD29538A2728E3850096A94E /* Half+CodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2953782728E3850096A94E /* Half+CodingTests.swift */; };
-		DD29538B2728E3850096A94E /* HalfTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2953792728E3850096A94E /* HalfTests.swift */; };
-		DD29538C2728E3850096A94E /* HalfTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2953792728E3850096A94E /* HalfTests.swift */; };
-		DD29538D2728E3850096A94E /* HalfTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2953792728E3850096A94E /* HalfTests.swift */; };
-		DD29538E2728E3850096A94E /* HalfTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2953792728E3850096A94E /* HalfTests.swift */; };
-		DD29538F2728E3850096A94E /* FunctionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD29537A2728E3850096A94E /* FunctionsTests.swift */; };
-		DD2953902728E3850096A94E /* FunctionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD29537A2728E3850096A94E /* FunctionsTests.swift */; };
-		DD2953912728E3850096A94E /* FunctionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD29537A2728E3850096A94E /* FunctionsTests.swift */; };
-		DD2953922728E3850096A94E /* FunctionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD29537A2728E3850096A94E /* FunctionsTests.swift */; };
+		DD02B83527488CFF007F5569 /* Half.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD02B82F27488CFF007F5569 /* Half.swift */; };
+		DD02B83627488CFF007F5569 /* Half.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD02B82F27488CFF007F5569 /* Half.swift */; };
+		DD02B83727488CFF007F5569 /* Half.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD02B82F27488CFF007F5569 /* Half.swift */; };
+		DD02B83827488CFF007F5569 /* Half.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD02B82F27488CFF007F5569 /* Half.swift */; };
+		DD02B84127488CFF007F5569 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD02B83227488CFF007F5569 /* Functions.swift */; };
+		DD02B84227488CFF007F5569 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD02B83227488CFF007F5569 /* Functions.swift */; };
+		DD02B84327488CFF007F5569 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD02B83227488CFF007F5569 /* Functions.swift */; };
+		DD02B84427488CFF007F5569 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD02B83227488CFF007F5569 /* Functions.swift */; };
+		DD02B84927488CFF007F5569 /* Half+Coding.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD02B83427488CFF007F5569 /* Half+Coding.swift */; };
+		DD02B84A27488CFF007F5569 /* Half+Coding.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD02B83427488CFF007F5569 /* Half+Coding.swift */; };
+		DD02B84B27488CFF007F5569 /* Half+Coding.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD02B83427488CFF007F5569 /* Half+Coding.swift */; };
+		DD02B84C27488CFF007F5569 /* Half+Coding.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD02B83427488CFF007F5569 /* Half+Coding.swift */; };
+		DD02B85527488D13007F5569 /* half.h in Headers */ = {isa = PBXBuildFile; fileRef = DD02B84F27488D13007F5569 /* half.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD02B85627488D13007F5569 /* half.h in Headers */ = {isa = PBXBuildFile; fileRef = DD02B84F27488D13007F5569 /* half.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD02B85727488D13007F5569 /* half.h in Headers */ = {isa = PBXBuildFile; fileRef = DD02B84F27488D13007F5569 /* half.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD02B85827488D13007F5569 /* half.h in Headers */ = {isa = PBXBuildFile; fileRef = DD02B84F27488D13007F5569 /* half.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD02B85927488D14007F5569 /* fp_extend.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DD02B85227488D13007F5569 /* fp_extend.cpp */; };
+		DD02B85A27488D14007F5569 /* fp_extend.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DD02B85227488D13007F5569 /* fp_extend.cpp */; };
+		DD02B85B27488D14007F5569 /* fp_extend.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DD02B85227488D13007F5569 /* fp_extend.cpp */; };
+		DD02B85C27488D14007F5569 /* fp_extend.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DD02B85227488D13007F5569 /* fp_extend.cpp */; };
+		DD02B85D27488D14007F5569 /* fp_trunc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DD02B85327488D13007F5569 /* fp_trunc.cpp */; };
+		DD02B85E27488D14007F5569 /* fp_trunc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DD02B85327488D13007F5569 /* fp_trunc.cpp */; };
+		DD02B85F27488D14007F5569 /* fp_trunc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DD02B85327488D13007F5569 /* fp_trunc.cpp */; };
+		DD02B86027488D14007F5569 /* fp_trunc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DD02B85327488D13007F5569 /* fp_trunc.cpp */; };
+		DD02B86127488D14007F5569 /* half.c in Sources */ = {isa = PBXBuildFile; fileRef = DD02B85427488D13007F5569 /* half.c */; };
+		DD02B86227488D14007F5569 /* half.c in Sources */ = {isa = PBXBuildFile; fileRef = DD02B85427488D13007F5569 /* half.c */; };
+		DD02B86327488D14007F5569 /* half.c in Sources */ = {isa = PBXBuildFile; fileRef = DD02B85427488D13007F5569 /* half.c */; };
+		DD02B86427488D14007F5569 /* half.c in Sources */ = {isa = PBXBuildFile; fileRef = DD02B85427488D13007F5569 /* half.c */; };
+		DD02B87927488DD2007F5569 /* CHalfTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD02B87427488DD1007F5569 /* CHalfTests.swift */; };
+		DD02B87A27488DD2007F5569 /* CHalfTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD02B87427488DD1007F5569 /* CHalfTests.swift */; };
+		DD02B87B27488DD2007F5569 /* CHalfTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD02B87427488DD1007F5569 /* CHalfTests.swift */; };
+		DD02B87C27488DD2007F5569 /* CHalfTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD02B87427488DD1007F5569 /* CHalfTests.swift */; };
+		DD02B88027488DE3007F5569 /* FunctionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD02B87D27488DE3007F5569 /* FunctionsTests.swift */; };
+		DD02B88127488DE3007F5569 /* FunctionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD02B87D27488DE3007F5569 /* FunctionsTests.swift */; };
+		DD02B88227488DE3007F5569 /* FunctionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD02B87D27488DE3007F5569 /* FunctionsTests.swift */; };
+		DD02B88327488DE3007F5569 /* FunctionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD02B87D27488DE3007F5569 /* FunctionsTests.swift */; };
+		DD02B88427488DE3007F5569 /* HalfTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD02B87E27488DE3007F5569 /* HalfTests.swift */; };
+		DD02B88527488DE3007F5569 /* HalfTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD02B87E27488DE3007F5569 /* HalfTests.swift */; };
+		DD02B88627488DE3007F5569 /* HalfTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD02B87E27488DE3007F5569 /* HalfTests.swift */; };
+		DD02B88727488DE3007F5569 /* HalfTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD02B87E27488DE3007F5569 /* HalfTests.swift */; };
+		DD02B88827488DE3007F5569 /* Half+CodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD02B87F27488DE3007F5569 /* Half+CodingTests.swift */; };
+		DD02B88927488DE3007F5569 /* Half+CodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD02B87F27488DE3007F5569 /* Half+CodingTests.swift */; };
+		DD02B88A27488DE3007F5569 /* Half+CodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD02B87F27488DE3007F5569 /* Half+CodingTests.swift */; };
+		DD02B88B27488DE3007F5569 /* Half+CodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD02B87F27488DE3007F5569 /* Half+CodingTests.swift */; };
+		DD02B89027492C9E007F5569 /* Half@swift-4.0.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD02B83127488CFF007F5569 /* Half@swift-4.0.swift */; };
+		DD02B89127492C9E007F5569 /* Half@swift-4.2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD02B83327488CFF007F5569 /* Half@swift-4.2.swift */; };
+		DD02B89227492C9E007F5569 /* Half@swift-4.0.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD02B83127488CFF007F5569 /* Half@swift-4.0.swift */; };
+		DD02B89327492C9E007F5569 /* Half@swift-4.2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD02B83327488CFF007F5569 /* Half@swift-4.2.swift */; };
+		DD02B89427492C9F007F5569 /* Half@swift-4.0.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD02B83127488CFF007F5569 /* Half@swift-4.0.swift */; };
+		DD02B89527492C9F007F5569 /* Half@swift-4.2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD02B83327488CFF007F5569 /* Half@swift-4.2.swift */; };
+		DD02B89627492C9F007F5569 /* Half@swift-4.0.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD02B83127488CFF007F5569 /* Half@swift-4.0.swift */; };
+		DD02B89727492C9F007F5569 /* Half@swift-4.2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD02B83327488CFF007F5569 /* Half@swift-4.2.swift */; };
+		DD3BB7212731B47100DB55F8 /* Half.docc in Sources */ = {isa = PBXBuildFile; fileRef = DD3BB7202731ADDA00DB55F8 /* Half.docc */; };
+		DD3BB7222731B47100DB55F8 /* Half.docc in Sources */ = {isa = PBXBuildFile; fileRef = DD3BB7202731ADDA00DB55F8 /* Half.docc */; };
+		DD3BB7232731B47200DB55F8 /* Half.docc in Sources */ = {isa = PBXBuildFile; fileRef = DD3BB7202731ADDA00DB55F8 /* Half.docc */; };
+		DD3BB7242731B47200DB55F8 /* Half.docc in Sources */ = {isa = PBXBuildFile; fileRef = DD3BB7202731ADDA00DB55F8 /* Half.docc */; };
 		DD48BC98270E0DE800D842BC /* Half.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD86D5C423D11D140046E63E /* Half.framework */; };
 		DD86D54723D11B3E0046E63E /* Half.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD86D53D23D11B3E0046E63E /* Half.framework */; };
 		DD86D57923D11C860046E63E /* Half.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD86D57023D11C860046E63E /* Half.framework */; };
@@ -106,32 +106,32 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		DD2953342728E2A30096A94E /* PBXContainerItemProxy */ = {
+		DD02B86A27488D64007F5569 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DD86D53423D11B3E0046E63E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = DD29532F2728E25A0096A94E;
+			remoteGlobalIDString = DD02B86527488D3C007F5569;
 			remoteInfo = "Generate Sources";
 		};
-		DD2953362728E2A70096A94E /* PBXContainerItemProxy */ = {
+		DD02B86C27488D68007F5569 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DD86D53423D11B3E0046E63E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = DD29532F2728E25A0096A94E;
+			remoteGlobalIDString = DD02B86527488D3C007F5569;
 			remoteInfo = "Generate Sources";
 		};
-		DD2953382728E2AA0096A94E /* PBXContainerItemProxy */ = {
+		DD02B86E27488D6B007F5569 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DD86D53423D11B3E0046E63E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = DD29532F2728E25A0096A94E;
+			remoteGlobalIDString = DD02B86527488D3C007F5569;
 			remoteInfo = "Generate Sources";
 		};
-		DD29533A2728E2AD0096A94E /* PBXContainerItemProxy */ = {
+		DD02B87027488D6F007F5569 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DD86D53423D11B3E0046E63E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = DD29532F2728E25A0096A94E;
+			remoteGlobalIDString = DD02B86527488D3C007F5569;
 			remoteInfo = "Generate Sources";
 		};
 		DD48BC99270E0DE800D842BC /* PBXContainerItemProxy */ = {
@@ -193,45 +193,46 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DD02B82F27488CFF007F5569 /* Half.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Half.swift; sourceTree = "<group>"; };
+		DD02B83027488CFF007F5569 /* Half.swift.gyb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Half.swift.gyb; sourceTree = "<group>"; };
+		DD02B83127488CFF007F5569 /* Half@swift-4.0.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Half@swift-4.0.swift"; sourceTree = "<group>"; };
+		DD02B83227488CFF007F5569 /* Functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
+		DD02B83327488CFF007F5569 /* Half@swift-4.2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Half@swift-4.2.swift"; sourceTree = "<group>"; };
+		DD02B83427488CFF007F5569 /* Half+Coding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Half+Coding.swift"; sourceTree = "<group>"; };
+		DD02B84F27488D13007F5569 /* half.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = half.h; sourceTree = "<group>"; };
+		DD02B85027488D13007F5569 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		DD02B85227488D13007F5569 /* fp_extend.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fp_extend.cpp; sourceTree = "<group>"; };
+		DD02B85327488D13007F5569 /* fp_trunc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fp_trunc.cpp; sourceTree = "<group>"; };
+		DD02B85427488D13007F5569 /* half.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = half.c; sourceTree = "<group>"; };
+		DD02B87427488DD1007F5569 /* CHalfTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHalfTests.swift; sourceTree = "<group>"; };
+		DD02B87D27488DE3007F5569 /* FunctionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionsTests.swift; sourceTree = "<group>"; };
+		DD02B87E27488DE3007F5569 /* HalfTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HalfTests.swift; sourceTree = "<group>"; };
+		DD02B87F27488DE3007F5569 /* Half+CodingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Half+CodingTests.swift"; sourceTree = "<group>"; };
+		DD02B88C27488FAE007F5569 /* Package@swift-4.0.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Package@swift-4.0.swift"; sourceTree = "<group>"; };
+		DD02B88D27488FAE007F5569 /* Package@swift-4.2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Package@swift-4.2.swift"; sourceTree = "<group>"; };
+		DD02B88E27489027007F5569 /* ATTRIBUTIONS */ = {isa = PBXFileReference; lastKnownFileType = text; path = ATTRIBUTIONS; sourceTree = "<group>"; };
 		DD17A9F9257744BC00D30599 /* scripts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = scripts; sourceTree = "<group>"; };
-		DD29532C2728E0C50096A94E /* Package@swift-4.2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Package@swift-4.2.swift"; sourceTree = "<group>"; };
-		DD29532D2728E0C50096A94E /* Package@swift-4.0.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Package@swift-4.0.swift"; sourceTree = "<group>"; };
-		DD29533D2728E3420096A94E /* Half+Coding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Half+Coding.swift"; sourceTree = "<group>"; };
-		DD29533E2728E3420096A94E /* Half.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Half.swift; sourceTree = "<group>"; };
-		DD29533F2728E3420096A94E /* Functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
-		DD2953402728E3420096A94E /* Half@swift-4.0.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Half@swift-4.0.swift"; sourceTree = "<group>"; };
-		DD2953412728E3420096A94E /* Half@swift-4.2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Half@swift-4.2.swift"; sourceTree = "<group>"; };
-		DD2953422728E3420096A94E /* Half.swift.gyb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Half.swift.gyb; sourceTree = "<group>"; };
-		DD2953452728E3420096A94E /* half.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = half.h; sourceTree = "<group>"; };
-		DD2953462728E3420096A94E /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
-		DD2953482728E3420096A94E /* fp_extend.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fp_extend.cpp; sourceTree = "<group>"; };
-		DD2953492728E3420096A94E /* fp_trunc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fp_trunc.cpp; sourceTree = "<group>"; };
-		DD29534A2728E3420096A94E /* half.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = half.c; sourceTree = "<group>"; };
-		DD2953752728E3850096A94E /* CHalfTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHalfTests.swift; sourceTree = "<group>"; };
-		DD2953782728E3850096A94E /* Half+CodingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Half+CodingTests.swift"; sourceTree = "<group>"; };
-		DD2953792728E3850096A94E /* HalfTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HalfTests.swift; sourceTree = "<group>"; };
-		DD29537A2728E3850096A94E /* FunctionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionsTests.swift; sourceTree = "<group>"; };
-		DD2953932729A8530096A94E /* ATTRIBUTIONS */ = {isa = PBXFileReference; lastKnownFileType = text; path = ATTRIBUTIONS; sourceTree = "<group>"; };
+		DD3BB7202731ADDA00DB55F8 /* Half.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Half.docc; sourceTree = "<group>"; };
+		DD438A452742CFD900F0A1F6 /* .remarkrc */ = {isa = PBXFileReference; explicitFileType = text.json; path = .remarkrc; sourceTree = "<group>"; };
+		DD438A462742D18A00F0A1F6 /* Plists */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Plists; sourceTree = "<group>"; };
 		DD48BC94270E0DE800D842BC /* HalfTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HalfTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD48BC9F270E0F4500D842BC /* HalfTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = HalfTests.xctestplan; sourceTree = "<group>"; };
 		DD48BCA0270E0F9A00D842BC /* Half macOS Tests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Half macOS Tests.xctestplan"; sourceTree = "<group>"; };
 		DD48BCA1270E0FE200D842BC /* Half tvOS Tests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Half tvOS Tests.xctestplan"; sourceTree = "<group>"; };
 		DD48BCA2270E101D00D842BC /* Half watchOS Tests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Half watchOS Tests.xctestplan"; sourceTree = "<group>"; };
-		DD5D044A261FA56400BA0FC2 /* HalfTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "HalfTests-Info.plist"; path = "Plists/HalfTests-Info.plist"; sourceTree = "<group>"; };
 		DD86D53D23D11B3E0046E63E /* Half.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Half.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DD86D54123D11B3E0046E63E /* Half-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Half-Info.plist"; path = "Plists/Half-Info.plist"; sourceTree = "<group>"; };
 		DD86D54623D11B3E0046E63E /* HalfTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HalfTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD86D57023D11C860046E63E /* Half.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Half.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD86D57823D11C860046E63E /* HalfTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HalfTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD86D58C23D11CA00046E63E /* Half.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Half.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD86D59423D11CA00046E63E /* HalfTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HalfTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD86D5C423D11D140046E63E /* Half.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Half.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DD86D5DE23D22DB90046E63E /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
-		DD86D5DF23D22DB90046E63E /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = SOURCE_ROOT; };
-		DD86D5E023D22DB90046E63E /* Half.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; path = Half.podspec; sourceTree = SOURCE_ROOT; };
-		DD86D5E123D22DB90046E63E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
-		DD86D5E323D22DC30046E63E /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = SOURCE_ROOT; };
-		DDA26DBD256EA4D700E1C6D7 /* workflows */ = {isa = PBXFileReference; lastKnownFileType = folder; name = workflows; path = .github/workflows; sourceTree = "<group>"; };
+		DD86D5DE23D22DB90046E63E /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		DD86D5DF23D22DB90046E63E /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		DD86D5E023D22DB90046E63E /* Half.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; path = Half.podspec; sourceTree = "<group>"; };
+		DD86D5E123D22DB90046E63E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		DD86D5E323D22DC30046E63E /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		DDA42148273E153D00F2B0BC /* github */ = {isa = PBXFileReference; lastKnownFileType = folder; name = github; path = .github; sourceTree = "<group>"; };
 		DDB1DE5C2405EEE300C20FED /* codecov.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = codecov.yml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -299,63 +300,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DD29533C2728E3420096A94E /* Half */ = {
+		DD02B84D27488D13007F5569 /* CHalf */ = {
 			isa = PBXGroup;
 			children = (
-				DD29533F2728E3420096A94E /* Functions.swift */,
-				DD29533E2728E3420096A94E /* Half.swift */,
-				DD2953422728E3420096A94E /* Half.swift.gyb */,
-				DD2953402728E3420096A94E /* Half@swift-4.0.swift */,
-				DD2953412728E3420096A94E /* Half@swift-4.2.swift */,
-				DD29533D2728E3420096A94E /* Half+Coding.swift */,
-			);
-			path = Half;
-			sourceTree = "<group>";
-		};
-		DD2953432728E3420096A94E /* CHalf */ = {
-			isa = PBXGroup;
-			children = (
-				DD2953442728E3420096A94E /* include */,
-				DD2953472728E3420096A94E /* src */,
+				DD02B84E27488D13007F5569 /* include */,
+				DD02B85127488D13007F5569 /* src */,
 			);
 			path = CHalf;
 			sourceTree = "<group>";
 		};
-		DD2953442728E3420096A94E /* include */ = {
+		DD02B84E27488D13007F5569 /* include */ = {
 			isa = PBXGroup;
 			children = (
-				DD2953452728E3420096A94E /* half.h */,
-				DD2953462728E3420096A94E /* module.modulemap */,
+				DD02B84F27488D13007F5569 /* half.h */,
+				DD02B85027488D13007F5569 /* module.modulemap */,
 			);
 			path = include;
 			sourceTree = "<group>";
 		};
-		DD2953472728E3420096A94E /* src */ = {
+		DD02B85127488D13007F5569 /* src */ = {
 			isa = PBXGroup;
 			children = (
-				DD2953482728E3420096A94E /* fp_extend.cpp */,
-				DD2953492728E3420096A94E /* fp_trunc.cpp */,
-				DD29534A2728E3420096A94E /* half.c */,
+				DD02B85227488D13007F5569 /* fp_extend.cpp */,
+				DD02B85327488D13007F5569 /* fp_trunc.cpp */,
+				DD02B85427488D13007F5569 /* half.c */,
 			);
 			path = src;
 			sourceTree = "<group>";
 		};
-		DD2953732728E3850096A94E /* CHalfTests */ = {
+		DD02B87227488DD1007F5569 /* CHalfTests */ = {
 			isa = PBXGroup;
 			children = (
-				DD2953752728E3850096A94E /* CHalfTests.swift */,
+				DD02B87427488DD1007F5569 /* CHalfTests.swift */,
 			);
 			path = CHalfTests;
 			sourceTree = "<group>";
 		};
-		DD2953762728E3850096A94E /* HalfTests */ = {
+		DD3BB71F2731AD4F00DB55F8 /* Documentation */ = {
 			isa = PBXGroup;
 			children = (
-				DD29537A2728E3850096A94E /* FunctionsTests.swift */,
-				DD2953782728E3850096A94E /* Half+CodingTests.swift */,
-				DD2953792728E3850096A94E /* HalfTests.swift */,
+				DD3BB7202731ADDA00DB55F8 /* Half.docc */,
 			);
-			path = HalfTests;
+			path = Documentation;
 			sourceTree = "<group>";
 		};
 		DD48BC9E270E0F1300D842BC /* Test Plans */ = {
@@ -367,6 +353,29 @@
 				DD48BCA2270E101D00D842BC /* Half watchOS Tests.xctestplan */,
 			);
 			path = "Test Plans";
+			sourceTree = "<group>";
+		};
+		DD5D04E52621361600BA0FC2 /* Half */ = {
+			isa = PBXGroup;
+			children = (
+				DD02B83227488CFF007F5569 /* Functions.swift */,
+				DD02B82F27488CFF007F5569 /* Half.swift */,
+				DD02B83027488CFF007F5569 /* Half.swift.gyb */,
+				DD02B83127488CFF007F5569 /* Half@swift-4.0.swift */,
+				DD02B83327488CFF007F5569 /* Half@swift-4.2.swift */,
+				DD02B83427488CFF007F5569 /* Half+Coding.swift */,
+			);
+			path = Half;
+			sourceTree = "<group>";
+		};
+		DD5D04F22621362400BA0FC2 /* HalfTests */ = {
+			isa = PBXGroup;
+			children = (
+				DD02B87D27488DE3007F5569 /* FunctionsTests.swift */,
+				DD02B87F27488DE3007F5569 /* Half+CodingTests.swift */,
+				DD02B87E27488DE3007F5569 /* HalfTests.swift */,
+			);
+			path = HalfTests;
 			sourceTree = "<group>";
 		};
 		DD86D53323D11B3E0046E63E = {
@@ -397,6 +406,7 @@
 			children = (
 				DDB1DE252405EE5F00C20FED /* Sources */,
 				DDB1DE502405EE9900C20FED /* Tests */,
+				DD3BB71F2731AD4F00DB55F8 /* Documentation */,
 				DD86D55B23D11BA80046E63E /* Supporting Files */,
 			);
 			name = Half;
@@ -405,19 +415,19 @@
 		DD86D55B23D11BA80046E63E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DD438A462742D18A00F0A1F6 /* Plists */,
+				DDA42148273E153D00F2B0BC /* github */,
 				DD17A9F9257744BC00D30599 /* scripts */,
-				DDA26DBD256EA4D700E1C6D7 /* workflows */,
 				DD86D5E023D22DB90046E63E /* Half.podspec */,
 				DD86D5DF23D22DB90046E63E /* Package.swift */,
-				DD29532C2728E0C50096A94E /* Package@swift-4.2.swift */,
-				DD29532D2728E0C50096A94E /* Package@swift-4.0.swift */,
+				DD02B88D27488FAE007F5569 /* Package@swift-4.2.swift */,
+				DD02B88C27488FAE007F5569 /* Package@swift-4.0.swift */,
 				DDB1DE5C2405EEE300C20FED /* codecov.yml */,
+				DD438A452742CFD900F0A1F6 /* .remarkrc */,
 				DD86D5E323D22DC30046E63E /* .swiftlint.yml */,
 				DD86D5E123D22DB90046E63E /* README.md */,
 				DD86D5DE23D22DB90046E63E /* LICENSE */,
-				DD2953932729A8530096A94E /* ATTRIBUTIONS */,
-				DD86D54123D11B3E0046E63E /* Half-Info.plist */,
-				DD5D044A261FA56400BA0FC2 /* HalfTests-Info.plist */,
+				DD02B88E27489027007F5569 /* ATTRIBUTIONS */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -425,8 +435,8 @@
 		DDB1DE252405EE5F00C20FED /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				DD2953432728E3420096A94E /* CHalf */,
-				DD29533C2728E3420096A94E /* Half */,
+				DD02B84D27488D13007F5569 /* CHalf */,
+				DD5D04E52621361600BA0FC2 /* Half */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -434,8 +444,8 @@
 		DDB1DE502405EE9900C20FED /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				DD2953732728E3850096A94E /* CHalfTests */,
-				DD2953762728E3850096A94E /* HalfTests */,
+				DD02B87227488DD1007F5569 /* CHalfTests */,
+				DD5D04F22621362400BA0FC2 /* HalfTests */,
 				DD48BC9E270E0F1300D842BC /* Test Plans */,
 			);
 			path = Tests;
@@ -448,7 +458,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD2953632728E3430096A94E /* half.h in Headers */,
+				DD02B85527488D13007F5569 /* half.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,7 +466,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD2953642728E3430096A94E /* half.h in Headers */,
+				DD02B85627488D13007F5569 /* half.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,7 +474,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD2953652728E3430096A94E /* half.h in Headers */,
+				DD02B85727488D13007F5569 /* half.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,7 +482,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD2953662728E3430096A94E /* half.h in Headers */,
+				DD02B85827488D13007F5569 /* half.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,7 +519,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				DD2953352728E2A30096A94E /* PBXTargetDependency */,
+				DD02B87127488D6F007F5569 /* PBXTargetDependency */,
 				DD86D56A23D11C6C0046E63E /* PBXTargetDependency */,
 			);
 			name = Half;
@@ -547,7 +557,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				DD2953372728E2A70096A94E /* PBXTargetDependency */,
+				DD02B86F27488D6B007F5569 /* PBXTargetDependency */,
 				DD86D5D923D11DC60046E63E /* PBXTargetDependency */,
 			);
 			name = "Half macOS";
@@ -585,7 +595,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				DD2953392728E2AA0096A94E /* PBXTargetDependency */,
+				DD02B86D27488D68007F5569 /* PBXTargetDependency */,
 				DD86D5DB23D11DC90046E63E /* PBXTargetDependency */,
 			);
 			name = "Half tvOS";
@@ -623,7 +633,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				DD29533B2728E2AD0096A94E /* PBXTargetDependency */,
+				DD02B86B27488D64007F5569 /* PBXTargetDependency */,
 				DD86D5DD23D11DCC0046E63E /* PBXTargetDependency */,
 			);
 			name = "Half watchOS";
@@ -637,52 +647,52 @@
 		DD86D53423D11B3E0046E63E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1300;
-				LastUpgradeCheck = 1300;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
 				ORGANIZATIONNAME = SomeRandomiOSDev;
 				TargetAttributes = {
-					DD29532F2728E25A0096A94E = {
-						CreatedOnToolsVersion = 13.0;
+					DD02B86527488D3C007F5569 = {
+						CreatedOnToolsVersion = 13.1;
 					};
 					DD2FBC27258BE8BB00DB3211 = {
-						CreatedOnToolsVersion = 13.0;
-						LastSwiftMigration = 1300;
+						CreatedOnToolsVersion = 13.1;
+						LastSwiftMigration = 1310;
 					};
 					DD48BC93270E0DE800D842BC = {
-						CreatedOnToolsVersion = 13.0;
-						LastSwiftMigration = 1300;
+						CreatedOnToolsVersion = 13.1;
+						LastSwiftMigration = 1310;
 					};
 					DD86D53C23D11B3E0046E63E = {
-						CreatedOnToolsVersion = 13.0;
-						LastSwiftMigration = 1300;
+						CreatedOnToolsVersion = 13.1;
+						LastSwiftMigration = 1310;
 					};
 					DD86D54523D11B3E0046E63E = {
-						CreatedOnToolsVersion = 13.0;
-						LastSwiftMigration = 1300;
+						CreatedOnToolsVersion = 13.1;
+						LastSwiftMigration = 1310;
 					};
 					DD86D56423D11C4B0046E63E = {
-						CreatedOnToolsVersion = 13.0;
-						LastSwiftMigration = 1300;
+						CreatedOnToolsVersion = 13.1;
+						LastSwiftMigration = 1310;
 					};
 					DD86D56F23D11C860046E63E = {
-						CreatedOnToolsVersion = 13.0;
-						LastSwiftMigration = 1300;
+						CreatedOnToolsVersion = 13.1;
+						LastSwiftMigration = 1310;
 					};
 					DD86D57723D11C860046E63E = {
-						CreatedOnToolsVersion = 13.0;
-						LastSwiftMigration = 1300;
+						CreatedOnToolsVersion = 13.1;
+						LastSwiftMigration = 1310;
 					};
 					DD86D58B23D11CA00046E63E = {
-						CreatedOnToolsVersion = 13.0;
-						LastSwiftMigration = 1300;
+						CreatedOnToolsVersion = 13.1;
+						LastSwiftMigration = 1310;
 					};
 					DD86D59323D11CA00046E63E = {
-						CreatedOnToolsVersion = 13.0;
-						LastSwiftMigration = 1300;
+						CreatedOnToolsVersion = 13.1;
+						LastSwiftMigration = 1310;
 					};
 					DD86D5C323D11D140046E63E = {
-						CreatedOnToolsVersion = 13.0;
-						LastSwiftMigration = 1300;
+						CreatedOnToolsVersion = 13.1;
+						LastSwiftMigration = 1310;
 					};
 				};
 			};
@@ -696,7 +706,7 @@
 			);
 			mainGroup = DD86D53323D11B3E0046E63E;
 			packageReferences = (
-				DD29532E2728E1A90096A94E /* XCRemoteSwiftPackageReference "gyb" */,
+				DD02B88F27489CF5007F5569 /* XCRemoteSwiftPackageReference "gyb" */,
 			);
 			productRefGroup = DD86D53E23D11B3E0046E63E /* Products */;
 			projectDirPath = "";
@@ -710,7 +720,7 @@
 				DD86D59323D11CA00046E63E /* Half tvOS Tests */,
 				DD86D5C323D11D140046E63E /* Half watchOS */,
 				DD48BC93270E0DE800D842BC /* Half watchOS Tests */,
-				DD29532F2728E25A0096A94E /* Generate Sources */,
+				DD02B86527488D3C007F5569 /* Generate Sources */,
 				DD86D56423D11C4B0046E63E /* Run SwiftLint */,
 				DD2FBC27258BE8BB00DB3211 /* XCFramework */,
 			);
@@ -729,7 +739,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD29535F2728E3430096A94E /* Half.swift.gyb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -744,7 +753,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD2953602728E3430096A94E /* Half.swift.gyb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -759,7 +767,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD2953612728E3430096A94E /* Half.swift.gyb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -774,14 +781,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD2953622728E3430096A94E /* Half.swift.gyb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		DD2953332728E25E0096A94E /* Generate Sources */ = {
+		DD02B86927488D4C007F5569 /* Generate Sources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -833,7 +839,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+			shellScript = "if (echo \"$SKIP_SWIFTLINT\" | grep -iq \"^YES$\"); then\n    echo \"SKIP_SWIFTLINT=YES | Skipping SwiftLint\"\nelse\n    if which swiftlint >/dev/null; then\n        swiftlint\n    else\n        echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\n    fi\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -842,10 +848,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD2953822728E3850096A94E /* CHalfTests.swift in Sources */,
-				DD29538A2728E3850096A94E /* Half+CodingTests.swift in Sources */,
-				DD2953922728E3850096A94E /* FunctionsTests.swift in Sources */,
-				DD29538E2728E3850096A94E /* HalfTests.swift in Sources */,
+				DD02B87C27488DD2007F5569 /* CHalfTests.swift in Sources */,
+				DD02B88327488DE3007F5569 /* FunctionsTests.swift in Sources */,
+				DD02B88B27488DE3007F5569 /* Half+CodingTests.swift in Sources */,
+				DD02B88727488DE3007F5569 /* HalfTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -853,14 +859,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD29535B2728E3430096A94E /* Half@swift-4.2.swift in Sources */,
-				DD2953672728E3430096A94E /* fp_extend.cpp in Sources */,
-				DD29536F2728E3430096A94E /* half.c in Sources */,
-				DD29534F2728E3420096A94E /* Half.swift in Sources */,
-				DD29534B2728E3420096A94E /* Half+Coding.swift in Sources */,
-				DD2953572728E3430096A94E /* Half@swift-4.0.swift in Sources */,
-				DD2953532728E3430096A94E /* Functions.swift in Sources */,
-				DD29536B2728E3430096A94E /* fp_trunc.cpp in Sources */,
+				DD02B83527488CFF007F5569 /* Half.swift in Sources */,
+				DD02B86127488D14007F5569 /* half.c in Sources */,
+				DD02B85927488D14007F5569 /* fp_extend.cpp in Sources */,
+				DD02B84927488CFF007F5569 /* Half+Coding.swift in Sources */,
+				DD02B89127492C9E007F5569 /* Half@swift-4.2.swift in Sources */,
+				DD3BB7212731B47100DB55F8 /* Half.docc in Sources */,
+				DD02B85D27488D14007F5569 /* fp_trunc.cpp in Sources */,
+				DD02B89027492C9E007F5569 /* Half@swift-4.0.swift in Sources */,
+				DD02B84127488CFF007F5569 /* Functions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -868,10 +875,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD29537F2728E3850096A94E /* CHalfTests.swift in Sources */,
-				DD2953872728E3850096A94E /* Half+CodingTests.swift in Sources */,
-				DD29538F2728E3850096A94E /* FunctionsTests.swift in Sources */,
-				DD29538B2728E3850096A94E /* HalfTests.swift in Sources */,
+				DD02B87927488DD2007F5569 /* CHalfTests.swift in Sources */,
+				DD02B88027488DE3007F5569 /* FunctionsTests.swift in Sources */,
+				DD02B88827488DE3007F5569 /* Half+CodingTests.swift in Sources */,
+				DD02B88427488DE3007F5569 /* HalfTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -879,14 +886,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD29535C2728E3430096A94E /* Half@swift-4.2.swift in Sources */,
-				DD2953682728E3430096A94E /* fp_extend.cpp in Sources */,
-				DD2953702728E3430096A94E /* half.c in Sources */,
-				DD2953502728E3420096A94E /* Half.swift in Sources */,
-				DD29534C2728E3420096A94E /* Half+Coding.swift in Sources */,
-				DD2953582728E3430096A94E /* Half@swift-4.0.swift in Sources */,
-				DD2953542728E3430096A94E /* Functions.swift in Sources */,
-				DD29536C2728E3430096A94E /* fp_trunc.cpp in Sources */,
+				DD02B83627488CFF007F5569 /* Half.swift in Sources */,
+				DD02B86227488D14007F5569 /* half.c in Sources */,
+				DD02B85A27488D14007F5569 /* fp_extend.cpp in Sources */,
+				DD02B84A27488CFF007F5569 /* Half+Coding.swift in Sources */,
+				DD02B89327492C9E007F5569 /* Half@swift-4.2.swift in Sources */,
+				DD3BB7222731B47100DB55F8 /* Half.docc in Sources */,
+				DD02B85E27488D14007F5569 /* fp_trunc.cpp in Sources */,
+				DD02B89227492C9E007F5569 /* Half@swift-4.0.swift in Sources */,
+				DD02B84227488CFF007F5569 /* Functions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -894,10 +902,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD2953802728E3850096A94E /* CHalfTests.swift in Sources */,
-				DD2953882728E3850096A94E /* Half+CodingTests.swift in Sources */,
-				DD2953902728E3850096A94E /* FunctionsTests.swift in Sources */,
-				DD29538C2728E3850096A94E /* HalfTests.swift in Sources */,
+				DD02B87A27488DD2007F5569 /* CHalfTests.swift in Sources */,
+				DD02B88127488DE3007F5569 /* FunctionsTests.swift in Sources */,
+				DD02B88927488DE3007F5569 /* Half+CodingTests.swift in Sources */,
+				DD02B88527488DE3007F5569 /* HalfTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -905,14 +913,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD29535D2728E3430096A94E /* Half@swift-4.2.swift in Sources */,
-				DD2953692728E3430096A94E /* fp_extend.cpp in Sources */,
-				DD2953712728E3430096A94E /* half.c in Sources */,
-				DD2953512728E3420096A94E /* Half.swift in Sources */,
-				DD29534D2728E3420096A94E /* Half+Coding.swift in Sources */,
-				DD2953592728E3430096A94E /* Half@swift-4.0.swift in Sources */,
-				DD2953552728E3430096A94E /* Functions.swift in Sources */,
-				DD29536D2728E3430096A94E /* fp_trunc.cpp in Sources */,
+				DD02B83727488CFF007F5569 /* Half.swift in Sources */,
+				DD02B86327488D14007F5569 /* half.c in Sources */,
+				DD02B85B27488D14007F5569 /* fp_extend.cpp in Sources */,
+				DD02B84B27488CFF007F5569 /* Half+Coding.swift in Sources */,
+				DD02B89527492C9F007F5569 /* Half@swift-4.2.swift in Sources */,
+				DD3BB7232731B47200DB55F8 /* Half.docc in Sources */,
+				DD02B85F27488D14007F5569 /* fp_trunc.cpp in Sources */,
+				DD02B89427492C9F007F5569 /* Half@swift-4.0.swift in Sources */,
+				DD02B84327488CFF007F5569 /* Functions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -920,10 +929,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD2953812728E3850096A94E /* CHalfTests.swift in Sources */,
-				DD2953892728E3850096A94E /* Half+CodingTests.swift in Sources */,
-				DD2953912728E3850096A94E /* FunctionsTests.swift in Sources */,
-				DD29538D2728E3850096A94E /* HalfTests.swift in Sources */,
+				DD02B87B27488DD2007F5569 /* CHalfTests.swift in Sources */,
+				DD02B88227488DE3007F5569 /* FunctionsTests.swift in Sources */,
+				DD02B88A27488DE3007F5569 /* Half+CodingTests.swift in Sources */,
+				DD02B88627488DE3007F5569 /* HalfTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -931,39 +940,40 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD29535E2728E3430096A94E /* Half@swift-4.2.swift in Sources */,
-				DD29536A2728E3430096A94E /* fp_extend.cpp in Sources */,
-				DD2953722728E3430096A94E /* half.c in Sources */,
-				DD2953522728E3420096A94E /* Half.swift in Sources */,
-				DD29534E2728E3420096A94E /* Half+Coding.swift in Sources */,
-				DD29535A2728E3430096A94E /* Half@swift-4.0.swift in Sources */,
-				DD2953562728E3430096A94E /* Functions.swift in Sources */,
-				DD29536E2728E3430096A94E /* fp_trunc.cpp in Sources */,
+				DD02B83827488CFF007F5569 /* Half.swift in Sources */,
+				DD02B86427488D14007F5569 /* half.c in Sources */,
+				DD02B85C27488D14007F5569 /* fp_extend.cpp in Sources */,
+				DD02B84C27488CFF007F5569 /* Half+Coding.swift in Sources */,
+				DD02B89727492C9F007F5569 /* Half@swift-4.2.swift in Sources */,
+				DD3BB7242731B47200DB55F8 /* Half.docc in Sources */,
+				DD02B86027488D14007F5569 /* fp_trunc.cpp in Sources */,
+				DD02B89627492C9F007F5569 /* Half@swift-4.0.swift in Sources */,
+				DD02B84427488CFF007F5569 /* Functions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		DD2953352728E2A30096A94E /* PBXTargetDependency */ = {
+		DD02B86B27488D64007F5569 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DD29532F2728E25A0096A94E /* Generate Sources */;
-			targetProxy = DD2953342728E2A30096A94E /* PBXContainerItemProxy */;
+			target = DD02B86527488D3C007F5569 /* Generate Sources */;
+			targetProxy = DD02B86A27488D64007F5569 /* PBXContainerItemProxy */;
 		};
-		DD2953372728E2A70096A94E /* PBXTargetDependency */ = {
+		DD02B86D27488D68007F5569 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DD29532F2728E25A0096A94E /* Generate Sources */;
-			targetProxy = DD2953362728E2A70096A94E /* PBXContainerItemProxy */;
+			target = DD02B86527488D3C007F5569 /* Generate Sources */;
+			targetProxy = DD02B86C27488D68007F5569 /* PBXContainerItemProxy */;
 		};
-		DD2953392728E2AA0096A94E /* PBXTargetDependency */ = {
+		DD02B86F27488D6B007F5569 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DD29532F2728E25A0096A94E /* Generate Sources */;
-			targetProxy = DD2953382728E2AA0096A94E /* PBXContainerItemProxy */;
+			target = DD02B86527488D3C007F5569 /* Generate Sources */;
+			targetProxy = DD02B86E27488D6B007F5569 /* PBXContainerItemProxy */;
 		};
-		DD29533B2728E2AD0096A94E /* PBXTargetDependency */ = {
+		DD02B87127488D6F007F5569 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DD29532F2728E25A0096A94E /* Generate Sources */;
-			targetProxy = DD29533A2728E2AD0096A94E /* PBXContainerItemProxy */;
+			target = DD02B86527488D3C007F5569 /* Generate Sources */;
+			targetProxy = DD02B87027488D6F007F5569 /* PBXContainerItemProxy */;
 		};
 		DD48BC9A270E0DE800D842BC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1008,7 +1018,7 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		DD2953312728E25A0096A94E /* Debug */ = {
+		DD02B86727488D3C007F5569 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -1017,7 +1027,7 @@
 			};
 			name = Debug;
 		};
-		DD2953322728E25A0096A94E /* Release */ = {
+		DD02B86827488D3C007F5569 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -1071,14 +1081,14 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Plists/TestProjectTests-Info.plist";
+				INFOPLIST_FILE = "Plists/HalfTests-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.somerandomiosdev.testprojecttests;
-				PRODUCT_NAME = TestProjectTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.somerandomiosdev.halftests;
+				PRODUCT_NAME = HalfTests;
 				SDKROOT = watchos;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -1237,6 +1247,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.somerandomiosdev.half;
 				PRODUCT_NAME = Half;
+				RUN_DOCUMENTATION_COMPILER = YES;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -1263,6 +1274,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.somerandomiosdev.half;
 				PRODUCT_NAME = Half;
+				RUN_DOCUMENTATION_COMPILER = YES;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,6";
@@ -1341,6 +1353,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.somerandomiosdev.half;
 				PRODUCT_NAME = Half;
+				RUN_DOCUMENTATION_COMPILER = YES;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1368,6 +1381,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.somerandomiosdev.half;
 				PRODUCT_NAME = Half;
+				RUN_DOCUMENTATION_COMPILER = YES;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -1436,6 +1450,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.somerandomiosdev.half;
 				PRODUCT_NAME = Half;
+				RUN_DOCUMENTATION_COMPILER = YES;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1463,6 +1478,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.somerandomiosdev.half;
 				PRODUCT_NAME = Half;
+				RUN_DOCUMENTATION_COMPILER = YES;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -1533,6 +1549,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.somerandomiosdev.half;
 				PRODUCT_NAME = Half;
+				RUN_DOCUMENTATION_COMPILER = YES;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1561,6 +1578,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.somerandomiosdev.half;
 				PRODUCT_NAME = Half;
+				RUN_DOCUMENTATION_COMPILER = YES;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -1571,11 +1589,11 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DD2953302728E25A0096A94E /* Build configuration list for PBXAggregateTarget "Generate Sources" */ = {
+		DD02B86627488D3C007F5569 /* Build configuration list for PBXAggregateTarget "Generate Sources" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DD2953312728E25A0096A94E /* Debug */,
-				DD2953322728E25A0096A94E /* Release */,
+				DD02B86727488D3C007F5569 /* Debug */,
+				DD02B86827488D3C007F5569 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1682,12 +1700,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		DD29532E2728E1A90096A94E /* XCRemoteSwiftPackageReference "gyb" */ = {
+		DD02B88F27489CF5007F5569 /* XCRemoteSwiftPackageReference "gyb" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SomeRandomiOSDev/gyb";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 0.1.0;
+				minimumVersion = 0.1.1;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

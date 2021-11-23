@@ -1,0 +1,92 @@
+name: Swift Package
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - '**'
+    tags-ignore:
+      - '**'
+    paths-ignore:
+      - '.github/**' # Ignore all files under '.github'
+      - '!.github/workflows/swift-package.yml' # Except for this workflow
+      - '.gitignore'
+      - '.remarkrc'
+      - '.swiftlint.yml'
+      - 'Documentation/**'
+      - 'LICENSE'
+      - 'README.md'
+      - 'Half.podspec'
+
+jobs:
+  build:
+    strategy:
+      matrix:
+        os: [macOS-11, ubuntu-latest]
+
+    name: Build
+    runs-on: ${{ matrix.os }}
+    env:
+      LOGSDIR: /tmp/.half.swiftpm/Logs/Build
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v2
+
+    - name: Setup Environment
+      run: |
+        mkdir -p "$LOGSDIR"
+
+    - name: Build
+      run: |
+        swift --version | tee "$LOGSDIR/Build.log"
+        swift build --verbose | tee -a "$LOGSDIR/Build.log"
+
+    - name: Upload Logs
+      uses: actions/upload-artifact@v2
+      if: always()
+      with:
+        name: BuildLogs-${{ runner.os }}
+        path: ${{ env.LOGSDIR }}/*.log
+
+  test:
+    strategy:
+      matrix:
+        os: [macOS-11, ubuntu-latest]
+
+    name: Test
+    runs-on: ${{ matrix.os }}
+    needs: build
+    env:
+      LOGSDIR: /tmp/.half.swiftpm/Logs/Test
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v2
+
+    - name: Setup Environment
+      run: |
+        mkdir -p "$LOGSDIR"
+
+    - name: Test
+      run: |
+        swift test --verbose --enable-code-coverage | tee "$LOGSDIR/Test.log"
+
+    - name: Generate Code Coverage File
+      if: ${{ runner.os == 'macOS' && github.event_name == 'push' && github.ref == 'refs/heads/main' }}
+      run: |
+        xcrun llvm-cov export --format=lcov --instr-profile=".build/debug/codecov/default.profdata" ".build/debug/HalfPackageTests.xctest/Contents/MacOS/HalfPackageTests" > "./codecov.lcov"
+
+    - name: Upload Code Coverage
+      if: ${{ runner.os == 'macOS' && github.event_name == 'push' && github.ref == 'refs/heads/main' }}
+      uses: codecov/codecov-action@v2
+      with:
+        token: ${{ secrets.CODECOV_TOKEN }}
+        file: ./codecov.lcov
+        verbose: true
+
+    - name: Upload Logs
+      uses: actions/upload-artifact@v2
+      if: always()
+      with:
+        name: TestLogs-${{ runner.os }}
+        path: ${{ env.LOGSDIR }}/*.log

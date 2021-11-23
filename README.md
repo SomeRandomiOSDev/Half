@@ -8,12 +8,13 @@
 ![Linux](https://img.shields.io/badge/platform-linux-lightgrey)
 [![Code Coverage](https://codecov.io/gh/SomeRandomiOSDev/Half/branch/master/graph/badge.svg)](https://codecov.io/gh/SomeRandomiOSDev/Half)
 
-![Carthage](https://github.com/SomeRandomiOSDev/Half/workflows/Carthage/badge.svg)
-![Cocoapods](https://github.com/SomeRandomiOSDev/Half/workflows/Cocoapods/badge.svg)
-![Swift Package](https://github.com/SomeRandomiOSDev/Half/workflows/Swift%20Package/badge.svg)
-![SwiftLint](https://github.com/SomeRandomiOSDev/Half/actions/workflows/swiftlint.yml/badge.svg)
-![XCFramework](https://github.com/SomeRandomiOSDev/Half/actions/workflows/xcframework.yml/badge.svg)
-![Xcode Project](https://github.com/SomeRandomiOSDev/Half/workflows/Xcode%20Project/badge.svg)
+[![Carthage](https://github.com/SomeRandomiOSDev/Half/actions/workflows/carthage.yml/badge.svg)](https://github.com/SomeRandomiOSDev/Half/actions/workflows/carthage.yml)
+[![Cocoapods](https://github.com/SomeRandomiOSDev/Half/actions/workflows/cocoapods.yml/badge.svg)](https://github.com/SomeRandomiOSDev/Half/actions/workflows/cocoapods.yml)
+[![Documentation](https://github.com/SomeRandomiOSDev/Half/actions/workflows/documentation.yml/badge.svg)](https://github.com/SomeRandomiOSDev/Half/actions/workflows/documentation.yml)
+[![Swift Package](https://github.com/SomeRandomiOSDev/Half/actions/workflows/swift-package.yml/badge.svg)](https://github.com/SomeRandomiOSDev/Half/actions/workflows/swift-package.yml)
+[![SwiftLint](https://github.com/SomeRandomiOSDev/Half/actions/workflows/swiftlint.yml/badge.svg)](https://github.com/SomeRandomiOSDev/Half/actions/workflows/swiftlint.yml)
+[![XCFramework](https://github.com/SomeRandomiOSDev/Half/actions/workflows/xcframework.yml/badge.svg)](https://github.com/SomeRandomiOSDev/Half/actions/workflows/xcframework.yml)
+[![Xcode Project](https://github.com/SomeRandomiOSDev/Half/actions/workflows/xcodebuild.yml/badge.svg)](https://github.com/SomeRandomiOSDev/Half/actions/workflows/xcodebuild.yml)
 
 **Half** is a lightweight framework containing a Swift implementation for a half-precision floating point type for iOS, macOS, tvOS, and watchOS.
 
@@ -58,7 +59,11 @@ let squareRoot = sqrt(value)
 
 ## NOTE
 
-* [[SE-0277]](https://github.com/apple/swift-evolution/blob/master/proposals/0277-float16.md) added support for a native `Float16` type starting with Swift 5.3, therefore, this library is no longer recommended for projects using Swift 5.3 or later. 
+* [[SE-0277]](https://github.com/apple/swift-evolution/blob/master/proposals/0277-float16.md) added support for a native `Float16` type starting with Swift 5.3, therefore, this library is no longer recommended for projects using Swift 5.3 or later and this will likely be deprecated sometime in the future.
+
+## Contributing
+
+Whether it's submitting a feature request, reporting a bug, or writing code yourself, all contributions to this library are welcome! Please see [CONTRIBUTING](.github/CONTRIBUTING.md) for more information on how you can contribute.
 
 ## Author
 

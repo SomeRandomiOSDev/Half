@@ -2,7 +2,7 @@
 //  Half+CodingTests.swift
 //  Half
 //
-//  Copyright © 2020 SomeRandomiOSDev. All rights reserved.
+//  Copyright © 2021 SomeRandomiOSDev. All rights reserved.
 //
 
 @testable import Half
@@ -101,6 +101,7 @@ class HalfCodingTests: XCTestCase {
 
             XCTAssertEqual(decoded.int, simple.int)
             XCTAssertTrue(decoded.half.isNaN)
+            XCTAssertFalse(decoded.half.isSignalingNaN)
         }
         do {
             let simple = Simple(half: .signalingNaN, int: 0)
@@ -118,6 +119,7 @@ class HalfCodingTests: XCTestCase {
 
             XCTAssertEqual(decoded.int, simple.int)
             XCTAssertTrue(decoded.half.isNaN)
+            XCTAssertFalse(decoded.half.isSignalingNaN) // Encoding/Decoding converts a signaling NaN to a non-signaling NaN
         }
     }
 
