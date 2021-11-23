@@ -8,6 +8,7 @@ jobs:
     name: Publish CocoaPods
     runs-on: macOS-11
     env:
+      LOGSDIR: /tmp/.half.cocoapods/Logs
       COCOAPODS_TRUNK_TOKEN: ${{ secrets.COCOAPODS_TRUNK_TOKEN }}
 
     steps:
@@ -19,6 +20,17 @@ jobs:
       with:
         version: latest
 
+    - name: Setup Environment
+      run: |
+        mkdir -p "$LOGSDIR"
+
     - name: Publish CocoaPod
       run: |
-        pod trunk push Half.podspec
+        pod trunk push Half.podspec --verbose 2>&1 | tee "$LOGSDIR/CocoaPods.log"
+
+    - name: Upload Logs
+      uses: actions/upload-artifact@v2
+      if: always()
+      with:
+        name: Logs
+        path: ${{ env.LOGSDIR }}/*.log

@@ -58,6 +58,7 @@ opt_in_rules:
 reporter: "xcode"
 
 excluded:
+  - .build
   - Pods
   - Carthage
   - Tests/LinuxMain.swift

@@ -1,0 +1,38 @@
+name: Documentation
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - '**'
+    tags-ignore:
+      - '**'
+    paths:
+      - '.github/workflows/documentation.yml'
+      - '**.swift' # DocC only considers Swift files
+      - 'Documentation/Half.docc/**'
+
+jobs:
+  build:
+    name: Build Documentation
+    runs-on: macOS-11
+    env:
+      LOGSDIR: /tmp/.half.documentation/Logs
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v2
+
+    - name: Setup Environment
+      run: |
+        mkdir -p "$LOGSDIR"
+
+    - name: Build Documentation
+      run: |
+        xcodebuild docbuild -project "Half.xcodeproj" -scheme "Half" -destination "generic/platform=iOS Simulator" SKIP_SWIFTLINT=YES ARCHS="x86_64" 2>&1 | tee "$LOGSDIR/build.log"
+
+    - name: Upload Logs
+      uses: actions/upload-artifact@v2
+      if: always()
+      with:
+        name: Logs
+        path: ${{ env.LOGSDIR }}/*.log

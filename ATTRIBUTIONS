@@ -1,4 +1,4 @@
-Half is heavily based off of the structure and implementation of the Float, Double, and Float80 structures defined in the Swift Standard library. Code found on GitHub: apple/swift/stdlib/public/core/FloatingPointTypes.swift.gyb
+Half is heavily based off of the structure and implementation of the Float16, Float, Double, and Float80 structures defined in the Swift Standard library. Code found on GitHub: https://github.com/apple/swift/stdlib/public/core/FloatingPointTypes.swift.gyb
 
 https://github.com/apple/swift
 --------------------------------------------------

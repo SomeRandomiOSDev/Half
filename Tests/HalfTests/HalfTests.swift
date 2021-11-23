@@ -2,7 +2,7 @@
 //  HalfTests.swift
 //  HalfTests
 //
-//  Copyright © 2020 SomeRandomiOSDev. All rights reserved.
+//  Copyright © 2021 SomeRandomiOSDev. All rights reserved.
 //
 
 @testable import Half
@@ -109,20 +109,20 @@ class HalfTests: XCTestCase {
 #if !(os(Windows) || os(Android)) && (arch(i386) || arch(x86_64))
         for nan in [Float80.nan, .signalingNaN] {
             XCTAssertTrue(Half(nan).isNaN)
-            XCTAssertEqual(Half(nan).isSignalingNaN, nan.isSignalingNaN)
+            XCTAssertFalse(Half(nan).isSignalingNaN) // Initializing a floating-point with a signaling NaN converts it to a non-signaling NaN
             binaryFloatingPoint(nan) { XCTAssertTrue($0.isNaN); XCTAssertTrue($1.isNaN); XCTAssertEqual($0.isSignalingNaN, $1.isSignalingNaN) }
             exactBinaryFloatingPoint(nan, shouldFail: false) { XCTAssertTrue($0.isNaN); XCTAssertTrue($1.isNaN); XCTAssertEqual($0.isSignalingNaN, $1.isSignalingNaN) }
         }
 #endif
         for nan in [Double.nan, .signalingNaN] {
             XCTAssertTrue(Half(nan).isNaN)
-            XCTAssertEqual(Half(nan).isSignalingNaN, nan.isSignalingNaN)
+            XCTAssertFalse(Half(nan).isSignalingNaN) // Initializing a floating-point with a signaling NaN converts it to a non-signaling NaN
             binaryFloatingPoint(nan) { XCTAssertTrue($0.isNaN); XCTAssertTrue($1.isNaN); XCTAssertEqual($0.isSignalingNaN, $1.isSignalingNaN) }
             exactBinaryFloatingPoint(nan, shouldFail: false) { XCTAssertTrue($0.isNaN); XCTAssertTrue($1.isNaN); XCTAssertEqual($0.isSignalingNaN, $1.isSignalingNaN) }
         }
         for nan in [Float.nan, .signalingNaN] {
             XCTAssertTrue(Half(nan).isNaN)
-            XCTAssertEqual(Half(nan).isSignalingNaN, nan.isSignalingNaN)
+            XCTAssertFalse(Half(nan).isSignalingNaN) // Initializing a floating-point with a signaling NaN converts it to a non-signaling NaN
             binaryFloatingPoint(nan) { XCTAssertTrue($0.isNaN); XCTAssertTrue($1.isNaN); XCTAssertEqual($0.isSignalingNaN, $1.isSignalingNaN) }
             exactBinaryFloatingPoint(nan, shouldFail: false) { XCTAssertTrue($0.isNaN); XCTAssertTrue($1.isNaN); XCTAssertEqual($0.isSignalingNaN, $1.isSignalingNaN) }
         }

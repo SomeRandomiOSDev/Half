@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 #
-# xcframework.sh
+# findproject.sh
+# Copyright © 2021 SomeRandomiOSDev. All rights reserved.
+#
 # Usage example: ./findproject.sh --project-name <project_name>
 
 # Set Script Variables
@@ -23,7 +25,7 @@ function printhelp() {
     HELP+="                the working directory is searched for a Xcode project.\n"
 
     IFS='%'
-    echo -e $HELP 1>&2
+    echo -e "$HELP" 1>&2
     unset IFS
 
     exit $EXIT_CODE
@@ -47,6 +49,7 @@ while [[ $# -gt 0 ]]; do
         echo -e "Unknown argument: $1\n" 1>&2
         EXIT_CODE=1
         printhelp
+        ;;
     esac
 done
 
