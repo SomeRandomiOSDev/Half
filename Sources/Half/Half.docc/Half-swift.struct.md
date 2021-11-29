@@ -21,7 +21,7 @@
 
 ### Converting with No Loss of Precision
 
-These initializers result in nil if the value passed can't be represented without any loss of precision.
+These initializers result in `nil` if the value passed can't be represented without any loss of precision.
 
 - ``init(exactly:)-6m48t``
 - ``init(exactly:)-5u1uj``
@@ -107,7 +107,6 @@ These initializers result in nil if the value passed can't be represented withou
 - ``init(bitPattern:)``
 - ``init(sign:exponentBitPattern:significandBitPattern:)``
 - ``init(nan:signaling:)``
-- ``Half/half_t``
 
 ### Querying a Half's State
 

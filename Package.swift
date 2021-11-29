@@ -1,4 +1,4 @@
-// swift-tools-version:5.0
+// swift-tools-version:5.5
 import PackageDescription
 
 let package = Package(
@@ -19,7 +19,7 @@ let package = Package(
         .target(name: "CHalf"),
         .testTarget(name: "CHalfTests", dependencies: ["CHalf", "Half"]),
 
-        .target(name: "Half", dependencies: ["CHalf"]),
+        .target(name: "Half", dependencies: ["CHalf"], exclude: ["Half.swift.gyb"]),
         .testTarget(name: "HalfTests", dependencies: ["Half"])
     ],
 
