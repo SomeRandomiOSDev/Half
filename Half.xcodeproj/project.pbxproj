@@ -211,8 +211,9 @@
 		DD02B88C27488FAE007F5569 /* Package@swift-4.0.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Package@swift-4.0.swift"; sourceTree = "<group>"; };
 		DD02B88D27488FAE007F5569 /* Package@swift-4.2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Package@swift-4.2.swift"; sourceTree = "<group>"; };
 		DD02B88E27489027007F5569 /* ATTRIBUTIONS */ = {isa = PBXFileReference; lastKnownFileType = text; path = ATTRIBUTIONS; sourceTree = "<group>"; };
+		DD02B8CE27551396007F5569 /* Package@swift-5.0.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Package@swift-5.0.swift"; sourceTree = "<group>"; };
 		DD17A9F9257744BC00D30599 /* scripts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = scripts; sourceTree = "<group>"; };
-		DD3BB7202731ADDA00DB55F8 /* Half.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Half.docc; sourceTree = "<group>"; };
+		DD3BB7202731ADDA00DB55F8 /* Half.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; name = Half.docc; path = Sources/Half/Half.docc; sourceTree = "<group>"; };
 		DD438A452742CFD900F0A1F6 /* .remarkrc */ = {isa = PBXFileReference; explicitFileType = text.json; path = .remarkrc; sourceTree = "<group>"; };
 		DD438A462742D18A00F0A1F6 /* Plists */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Plists; sourceTree = "<group>"; };
 		DD48BC94270E0DE800D842BC /* HalfTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HalfTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -341,7 +342,7 @@
 			children = (
 				DD3BB7202731ADDA00DB55F8 /* Half.docc */,
 			);
-			path = Documentation;
+			name = Documentation;
 			sourceTree = "<group>";
 		};
 		DD48BC9E270E0F1300D842BC /* Test Plans */ = {
@@ -420,6 +421,7 @@
 				DD17A9F9257744BC00D30599 /* scripts */,
 				DD86D5E023D22DB90046E63E /* Half.podspec */,
 				DD86D5DF23D22DB90046E63E /* Package.swift */,
+				DD02B8CE27551396007F5569 /* Package@swift-5.0.swift */,
 				DD02B88D27488FAE007F5569 /* Package@swift-4.2.swift */,
 				DD02B88C27488FAE007F5569 /* Package@swift-4.0.swift */,
 				DDB1DE5C2405EEE300C20FED /* codecov.yml */,
