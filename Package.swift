@@ -1,14 +1,14 @@
-// swift-tools-version:5.5
+// swift-tools-version:5.7
 import PackageDescription
 
 let package = Package(
     name: "Half",
 
     platforms: [
-        .iOS("9.0"),
+        .iOS("11.0"),
         .macOS("10.10"),
-        .tvOS("9.0"),
-        .watchOS("2.0")
+        .tvOS("11.0"),
+        .watchOS("4.0")
     ],
 
     products: [

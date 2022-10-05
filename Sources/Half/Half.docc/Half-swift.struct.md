@@ -13,8 +13,8 @@
 - ``init(_:)-303gr``
 - ``init(_:)-27j5y``
 - ``init(_:)-sx6z``
-- ``init(_:)-93ytu``
-- ``init(_:)-77sk``
+- ``init(_:)-7en2n``
+- ``init(_:)-7dq13``
 - ``init(sign:exponent:significand:)``
 - ``init(signOf:magnitudeOf:)``
 - ``init(_:)-5317f``
@@ -147,4 +147,4 @@ These initializers result in `nil` if the value passed can't be represented with
 - ``write(to:)``
 - ``hashValue``
 
-<!-- Copyright (c) 2021 SomeRandomiOSDev. All Rights Reserved. -->
+<!-- Copyright (c) 2022 SomeRandomiOSDev. All Rights Reserved. -->

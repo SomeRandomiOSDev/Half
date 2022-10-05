@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #
 # xcframework.sh
-# Copyright © 2021 SomeRandomiOSDev. All rights reserved.
+# Copyright © 2022 SomeRandomiOSDev. All rights reserved.
 #
 # Usage example: ./xcframework.sh --output <some_path>/<name>.xcframework
 

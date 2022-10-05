@@ -2,7 +2,7 @@
 //  Functions.swift
 //  Half
 //
-//  Copyright © 2021 SomeRandomiOSDev. All rights reserved.
+//  Copyright © 2022 SomeRandomiOSDev. All rights reserved.
 //
 
 #if os(Linux)
