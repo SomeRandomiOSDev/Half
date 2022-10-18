@@ -293,7 +293,7 @@ for PLATFORM in "iOS" "iOS Simulator" "Mac Catalyst" "macOS" "tvOS" "tvOS Simula
 
         "watchOS")
         SCHEME="${PROJECT_NAME} watchOS"
-        ARCHS="arm64_32 armv7k"
+        ARCHS="arm64 arm64_32 armv7k"
         ARCHIVE="watchos"
         ;;
 
