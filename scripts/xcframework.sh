@@ -258,12 +258,12 @@ for PLATFORM in "iOS" "iOS Simulator" "Mac Catalyst" "macOS" "tvOS" "tvOS Simula
 
     case "$PLATFORM" in
         "iOS")
-        ARCHS="armv7 armv7s arm64 arm64e"
+        ARCHS="arm64 arm64e"
         ARCHIVE="iphoneos"
         ;;
 
         "iOS Simulator")
-        ARCHS="i386 x86_64 arm64"
+        ARCHS="x86_64 arm64"
         ARCHIVE="iphonesimulator"
         ;;
 
@@ -299,7 +299,7 @@ for PLATFORM in "iOS" "iOS Simulator" "Mac Catalyst" "macOS" "tvOS" "tvOS Simula
 
         "watchOS Simulator")
         SCHEME="${PROJECT_NAME} watchOS"
-        ARCHS="i386 x86_64 arm64"
+        ARCHS="x86_64 arm64"
         ARCHIVE="watchsimulator"
         ;;
     esac
