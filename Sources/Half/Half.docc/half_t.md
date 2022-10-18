@@ -2,4 +2,4 @@
 
 A C structure for representing the low-level structure used for a half-precision floating-point value.
 
-<!-- Copyright (c) 2021 SomeRandomiOSDev. All Rights Reserved. -->
+<!-- Copyright (c) 2022 SomeRandomiOSDev. All Rights Reserved. -->

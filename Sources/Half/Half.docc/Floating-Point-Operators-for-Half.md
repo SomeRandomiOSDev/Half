@@ -38,4 +38,4 @@ Perform arithmetic and bitwise operations or compare values.
 - ``Half/Half/...(_:)-1tjn1``
 - ``Half/Half/...(_:)-4kfvw``
 
-<!-- Copyright (c) 2021 SomeRandomiOSDev. All Rights Reserved. -->
+<!-- Copyright (c) 2022 SomeRandomiOSDev. All Rights Reserved. -->

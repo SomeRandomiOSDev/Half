@@ -43,4 +43,4 @@ Functions provided by this library with custom implementations for the ``Half/Ha
 - ``tanh(_:)``
 - ``tgamma(_:)``
 
-<!-- Copyright (c) 2021 SomeRandomiOSDev. All Rights Reserved. -->
+<!-- Copyright (c) 2022 SomeRandomiOSDev. All Rights Reserved. -->
