@@ -5,12 +5,6 @@
 //  Copyright © 2022 SomeRandomiOSDev. All rights reserved.
 //
 
-#if os(Linux)
-import Glibc
-#else
-import Darwin
-#endif
-
 // Implmentation of public functions found in swift/stdlib/public/Platform for Half precision.
 //
 // For the sake of simplicity, we'll implement these functions by casting up the
