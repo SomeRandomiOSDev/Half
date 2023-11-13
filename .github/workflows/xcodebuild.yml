@@ -39,7 +39,7 @@ jobs:
         xcode-version: ${{ matrix.xcode }}
 
     - name: Checkout Code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
 
     - name: Setup Environment
       run: |
@@ -63,7 +63,7 @@ jobs:
         xcodebuild -project "Half.xcodeproj" -scheme "Half" -testPlan "HalfTests" -destination "platform=iOS Simulator,name=$IOS_SIM" -configuration Debug RUN_DOCUMENTATION_COMPILER=NO SKIP_SWIFTLINT=YES ONLY_ACTIVE_ARCH=YES test 2>&1 | tee "$LOGSDIR/test-ios.log"
 
     - name: Upload Logs
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       if: always()
       with:
         name: iOSBuildLogs
@@ -87,7 +87,7 @@ jobs:
         xcode-version: ${{ matrix.xcode }}
 
     - name: Checkout Code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
 
     - name: Setup Environment
       run: |
@@ -102,7 +102,7 @@ jobs:
         xcodebuild -project "Half.xcodeproj" -scheme "Half" -testPlan "HalfTests" -destination "platform=macOS,variant=Mac Catalyst" -configuration Debug RUN_DOCUMENTATION_COMPILER=NO SKIP_SWIFTLINT=YES ONLY_ACTIVE_ARCH=YES test 2>&1 | tee "$LOGSDIR/test-maccatalyst.log"
 
     - name: Upload Logs
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       if: always()
       with:
         name: MacCatalystBuildLogs
@@ -126,7 +126,7 @@ jobs:
         xcode-version: ${{ matrix.xcode }}
 
     - name: Checkout Code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
 
     - name: Setup Environment
       run: |
@@ -141,7 +141,7 @@ jobs:
         xcodebuild -project "Half.xcodeproj" -scheme "Half macOS" -testPlan "Half macOS Tests" -configuration Debug RUN_DOCUMENTATION_COMPILER=NO SKIP_SWIFTLINT=YES ONLY_ACTIVE_ARCH=YES test 2>&1 | tee "$LOGSDIR/test-macos.log"
 
     - name: Upload Logs
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       if: always()
       with:
         name: macOSBuildLogs
@@ -165,7 +165,7 @@ jobs:
         xcode-version: ${{ matrix.xcode }}
 
     - name: Checkout Code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
 
     - name: Setup Environment
       run: |
@@ -189,7 +189,7 @@ jobs:
         xcodebuild -project "Half.xcodeproj" -scheme "Half tvOS" -testPlan "Half tvOS Tests" -destination "platform=tvOS Simulator,name=$TVOS_SIM" -configuration Debug RUN_DOCUMENTATION_COMPILER=NO SKIP_SWIFTLINT=YES ONLY_ACTIVE_ARCH=YES test 2>&1 | tee "$LOGSDIR/test-tvos.log"
 
     - name: Upload Logs
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       if: always()
       with:
         name: tvOSBuildLogs
@@ -213,7 +213,7 @@ jobs:
         xcode-version: ${{ matrix.xcode }}
 
     - name: Checkout Code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
 
     - name: Setup Environment
       run: |
@@ -237,7 +237,7 @@ jobs:
         xcodebuild -project "Half.xcodeproj" -scheme "Half watchOS" -testPlan "Half watchOS Tests" -destination "platform=watchOS Simulator,name=$WATCHOS_SIM" -configuration Debug RUN_DOCUMENTATION_COMPILER=NO SKIP_SWIFTLINT=YES ONLY_ACTIVE_ARCH=YES test 2>&1 | tee "$LOGSDIR/test-watchos.log"
 
     - name: Upload Logs
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       if: always()
       with:
         name: watchOSBuildLogs

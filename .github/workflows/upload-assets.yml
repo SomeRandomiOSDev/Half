@@ -22,7 +22,7 @@ jobs:
         xcode-version: ${{ matrix.xcode }}
 
     - name: Checkout Code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
 
     - name: Setup Environment
       run: |
@@ -64,7 +64,7 @@ jobs:
         asset_content_type: application/gzip
 
     - name: Upload Logs
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       if: always()
       with:
         name: XCFrameworkLogs
@@ -90,7 +90,7 @@ jobs:
         xcode-version: ${{ matrix.xcode }}
 
     - name: Checkout Code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
 
     - name: Setup Environment
       run: |
@@ -135,7 +135,7 @@ jobs:
         asset_content_type: application/gzip
 
     - name: Upload Logs
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       if: always()
       with:
         name: DocumentationLogs

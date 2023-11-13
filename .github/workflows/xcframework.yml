@@ -39,7 +39,7 @@ jobs:
         xcode-version: ${{ matrix.xcode }}
 
     - name: Checkout Code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
 
     - name: Setup Environment
       run: |
@@ -51,7 +51,7 @@ jobs:
         ./scripts/xcframework.sh --build-dir "${TMPDIR}" -- RUN_DOCUMENTATION_COMPILER=NO SKIP_SWIFTLINT=YES
 
     - name: Upload Logs
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       if: always()
       with:
         name: BuildLogs

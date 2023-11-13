@@ -5,9 +5,9 @@ let package = Package(
     name: "Half",
 
     platforms: [
-        .iOS("11.0"),
-        .macOS("10.10"),
-        .tvOS("11.0"),
+        .iOS("12.0"),
+        .macOS("10.13"),
+        .tvOS("12.0"),
         .watchOS("4.0")
     ],
 

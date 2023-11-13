@@ -38,7 +38,7 @@ jobs:
         xcode-version: ${{ matrix.xcode }}
 
     - name: Checkout Code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
 
     - name: Setup Environment
       run: |
@@ -63,7 +63,7 @@ jobs:
         ./scripts/carthage.sh update --log-path "$LOGSDIR/Build.log"
 
     - name: Upload Logs
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       if: always()
       with:
         name: BuildLog

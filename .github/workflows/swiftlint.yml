@@ -28,7 +28,7 @@ jobs:
         xcode-version: ${{ matrix.xcode }}
 
     - name: Checkout Code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
 
     - name: Run SwiftLint
       run: |

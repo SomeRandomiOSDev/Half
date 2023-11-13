@@ -37,7 +37,7 @@ jobs:
         xcode-version: ${{ matrix.xcode }}
 
     - name: Checkout Code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
 
     - name: Setup Environment
       run: |
@@ -49,7 +49,7 @@ jobs:
         swift build --verbose | tee -a "$LOGSDIR/Build.log"
 
     - name: Upload Logs
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       if: always()
       with:
         name: BuildLogs-${{ runner.os }}
@@ -75,7 +75,7 @@ jobs:
         xcode-version: ${{ matrix.xcode }}
 
     - name: Checkout Code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
 
     - name: Setup Environment
       run: |
@@ -99,7 +99,7 @@ jobs:
         verbose: true
 
     - name: Upload Logs
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       if: always()
       with:
         name: TestLogs-${{ runner.os }}

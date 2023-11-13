@@ -30,7 +30,7 @@ jobs:
         xcode-version: ${{ matrix.xcode }}
 
     - name: Checkout Code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
 
     - name: Setup Environment
       run: |
@@ -41,7 +41,7 @@ jobs:
         xcodebuild docbuild -project "Half.xcodeproj" -scheme "Half" -destination "generic/platform=iOS Simulator" SKIP_SWIFTLINT=YES ARCHS="x86_64" 2>&1 | tee "$LOGSDIR/build.log"
 
     - name: Upload Logs
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       if: always()
       with:
         name: Logs
