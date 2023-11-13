@@ -33,7 +33,8 @@ jobs:
       LOGSDIR: /tmp/.half.xcodebuild/iOS/Logs
 
     steps:
-    - uses: maxim-lobanov/setup-xcode@v1
+    - name: Select Xcode Version
+      uses: maxim-lobanov/setup-xcode@v1
       with:
         xcode-version: ${{ matrix.xcode }}
 
@@ -80,7 +81,8 @@ jobs:
       LOGSDIR: /tmp/.half.xcodebuild/macCatalyst/Logs
 
     steps:
-    - uses: maxim-lobanov/setup-xcode@v1
+    - name: Select Xcode Version
+      uses: maxim-lobanov/setup-xcode@v1
       with:
         xcode-version: ${{ matrix.xcode }}
 
@@ -118,7 +120,8 @@ jobs:
       LOGSDIR: /tmp/.half.xcodebuild/macOS/Logs
 
     steps:
-    - uses: maxim-lobanov/setup-xcode@v1
+    - name: Select Xcode Version
+      uses: maxim-lobanov/setup-xcode@v1
       with:
         xcode-version: ${{ matrix.xcode }}
 
@@ -156,7 +159,8 @@ jobs:
       LOGSDIR: /tmp/.half.xcodebuild/tvOS/Logs
 
     steps:
-    - uses: maxim-lobanov/setup-xcode@v1
+    - name: Select Xcode Version
+      uses: maxim-lobanov/setup-xcode@v1
       with:
         xcode-version: ${{ matrix.xcode }}
 
@@ -203,7 +207,8 @@ jobs:
       LOGSDIR: /tmp/.half.xcodebuild/watchOS/Logs
 
     steps:
-    - uses: maxim-lobanov/setup-xcode@v1
+    - name: Select Xcode Version
+      uses: maxim-lobanov/setup-xcode@v1
       with:
         xcode-version: ${{ matrix.xcode }}
 

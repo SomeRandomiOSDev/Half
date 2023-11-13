@@ -30,7 +30,9 @@ jobs:
       LOGSDIR: /tmp/.half.swiftpm/Logs/Build
 
     steps:
-    - uses: maxim-lobanov/setup-xcode@v1
+    - name: Select Xcode Version
+      if: ${{ runner.os == 'macOS' }}
+      uses: maxim-lobanov/setup-xcode@v1
       with:
         xcode-version: ${{ matrix.xcode }}
 
@@ -66,7 +68,9 @@ jobs:
       LOGSDIR: /tmp/.half.swiftpm/Logs/Test
 
     steps:
-    - uses: maxim-lobanov/setup-xcode@v1
+    - name: Select Xcode Version
+      if: ${{ runner.os == 'macOS' }}
+      uses: maxim-lobanov/setup-xcode@v1
       with:
         xcode-version: ${{ matrix.xcode }}
 

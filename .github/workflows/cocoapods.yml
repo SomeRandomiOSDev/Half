@@ -33,7 +33,8 @@ jobs:
       LINT_TYPE: ${{ matrix.linttype }}
 
     steps:
-    - uses: maxim-lobanov/setup-xcode@v1
+    - name: Select Xcode Version
+      uses: maxim-lobanov/setup-xcode@v1
       with:
         xcode-version: ${{ matrix.xcode }}
 
