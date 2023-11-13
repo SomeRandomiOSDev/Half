@@ -1,4 +1,4 @@
- : Xcode Project
+name: Xcode Project
 defaults:
   run:
     shell: bash -eo pipefail {0}
