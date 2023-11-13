@@ -5,9 +5,9 @@ let package = Package(
     name: "Half",
 
     platforms: [
-        .iOS("11.0"),
-        .macOS("10.10"),
-        .tvOS("11.0"),
+        .iOS("12.0"),
+        .macOS("10.13"),
+        .tvOS("12.0"),
         .watchOS("4.0")
     ],
 
@@ -19,9 +19,7 @@ let package = Package(
         .target(name: "CHalf"),
         .testTarget(name: "CHalfTests", dependencies: ["CHalf", "Half"]),
 
-        .target(name: "Half", dependencies: ["CHalf"], exclude: ["Half.swift.gyb"]),
+        .target(name: "Half", dependencies: ["CHalf"]),
         .testTarget(name: "HalfTests", dependencies: ["Half"])
-    ],
-
-    swiftLanguageVersions: [.version("4"), .version("4.2"), .version("5")]
+    ]
 )
