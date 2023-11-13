@@ -23,14 +23,20 @@ jobs:
     strategy:
       matrix:
         linttype: [Dynamic, Static]
+        os: [macOS-13]
+        xcode: ['15.0']
 
     name: Lint
-    runs-on: macOS-11
+    runs-on: ${{ matrix.os }}
     env:
       LOGSDIR: /tmp/.half.cocoapods/Logs/${{ matrix.linttype }}
       LINT_TYPE: ${{ matrix.linttype }}
 
     steps:
+    - uses: maxim-lobanov/setup-xcode@v1
+      with:
+        xcode-version: ${{ matrix.xcode }}
+
     - name: Checkout Code
       uses: actions/checkout@v2
 

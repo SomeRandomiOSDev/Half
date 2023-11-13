@@ -1,6 +1,5 @@
 # Half
 
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/d30d31c29f17449481b97a04610ff5b9)](https://app.codacy.com/app/SomeRandomiOSDev/Half?utm_source=github.com&utm_medium=referral&utm_content=SomeRandomiOSDev/Half&utm_campaign=Badge_Grade_Dashboard)
 [![License MIT](https://img.shields.io/cocoapods/l/Half.svg)](https://cocoapods.org/pods/Half)
 [![CocoaPods Compatible](https://img.shields.io/cocoapods/v/Half.svg)](https://cocoapods.org/pods/Half) 
 [![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage) 

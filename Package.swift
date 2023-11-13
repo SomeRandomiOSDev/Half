@@ -19,9 +19,7 @@ let package = Package(
         .target(name: "CHalf"),
         .testTarget(name: "CHalfTests", dependencies: ["CHalf", "Half"]),
 
-        .target(name: "Half", dependencies: ["CHalf"], exclude: ["Half.swift.gyb"]),
+        .target(name: "Half", dependencies: ["CHalf"]),
         .testTarget(name: "HalfTests", dependencies: ["Half"])
-    ],
-
-    swiftLanguageVersions: [.version("4"), .version("4.2"), .version("5")]
+    ]
 )

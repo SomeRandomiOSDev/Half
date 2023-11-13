@@ -171,6 +171,8 @@ elif [ "${OUTPUT##*.}" != "xcframework" ]; then
     fi
 fi
 
+mkdir -p "$(dirname "${OUTPUT}")"
+
 if [ -z ${CONFIGURATION+x} ]; then
     CONFIGURATION="Release"
 fi
@@ -293,7 +295,7 @@ for PLATFORM in "iOS" "iOS Simulator" "Mac Catalyst" "macOS" "tvOS" "tvOS Simula
 
         "watchOS")
         SCHEME="${PROJECT_NAME} watchOS"
-        ARCHS="arm64 arm64_32 armv7k"
+        ARCHS="arm64 arm64e arm64_32 armv7k"
         ARCHIVE="watchos"
         ;;
 
@@ -328,19 +330,19 @@ if [[ -d "${OUTPUT}" ]]; then
     rm -rf "${OUTPUT}"
 fi
 
-ARGUMENTS=(-create-xcframework -output "${OUTPUT}")
+ARGUMENTS=(-create-xcframework -output "$(readlink -f "$(dirname "${OUTPUT}")")/$(basename "${OUTPUT}")")
 
 for ARCHIVE in ${BUILD_DIR}/*.xcarchive; do
-    ARGUMENTS=(${ARGUMENTS[@]} -framework "${ARCHIVE}/Products/Library/Frameworks/${PROJECT_NAME}.framework")
+    ARGUMENTS=(${ARGUMENTS[@]} -framework "$(readlink -f "${ARCHIVE}/Products/Library/Frameworks/${PROJECT_NAME}.framework")")
 
     if [ "$EXCLUDE_DSYMS" != "1" ]; then
         if [[ -d "${ARCHIVE}/dSYMs/${PROJECT_NAME}.framework.dSYM" ]]; then
-            ARGUMENTS=(${ARGUMENTS[@]} -debug-symbols "${ARCHIVE}/dSYMs/${PROJECT_NAME}.framework.dSYM")
+            ARGUMENTS=(${ARGUMENTS[@]} -debug-symbols "$(readlink -f "${ARCHIVE}/dSYMs/${PROJECT_NAME}.framework.dSYM")")
         fi
 
         if [[ -d "${ARCHIVE}/BCSymbolMaps" ]]; then
             for SYMBOLMAP in ${ARCHIVE}/BCSymbolMaps/*.bcsymbolmap; do
-                ARGUMENTS=(${ARGUMENTS[@]} -debug-symbols "${SYMBOLMAP}")
+                ARGUMENTS=(${ARGUMENTS[@]} -debug-symbols "$(readlink -f "${SYMBOLMAP}")")
             done
         fi
     fi
@@ -353,6 +355,7 @@ echo -e "$("$SCRIPTS_DIR/printformat.sh" "foreground:blue" "***") Generating fin
 LOG="$(createlogfile "create-xcframework")"
 ERROR_MESSAGE="$(errormessage "$LOG")"
 
+echo xcodebuild "${ARGUMENTS[@]}"
 xcodebuild "${ARGUMENTS[@]}"
 checkresult $? "$ERROR_MESSAGE"
 

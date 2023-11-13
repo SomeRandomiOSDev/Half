@@ -5,12 +5,21 @@ on:
 
 jobs:
   xcframework:
+    strategy:
+      matrix:
+        os: [macOS-13]
+        xcode: ['15.0']
+
     name: Upload XCFramework Assets
-    runs-on: macOS-11
+    runs-on: ${{ matrix.os }}
     env:
       TMPDIR: /tmp/.half.assets-xcframework.build
 
     steps:
+    - uses: maxim-lobanov/setup-xcode@v1
+      with:
+        xcode-version: ${{ matrix.xcode }}
+
     - name: Checkout Code
       uses: actions/checkout@v2
 
@@ -63,12 +72,21 @@ jobs:
 
 
   documentation:
+    strategy:
+      matrix:
+        os: [macOS-13]
+        xcode: ['15.0']
+
     name: Upload Documentation Assets
-    runs-on: macOS-11
+    runs-on: ${{ matrix.os }}
     env:
       TMPDIR: /tmp/.half.assets-documentation.build
 
     steps:
+    - uses: maxim-lobanov/setup-xcode@v1
+      with:
+        xcode-version: ${{ matrix.xcode }}
+
     - name: Checkout Code
       uses: actions/checkout@v2
 
