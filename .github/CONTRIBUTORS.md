@@ -4,9 +4,7 @@
 
 I would like to give a special thanks to all of the people below who have contributed to this project and to all of those who will contribute to it moving forward.
 
-> None so far; you could be the first! See the section below on how to contribute.
->
-> To the first person contributing to this project, please remove this block and replace it with your information using the following format: `- [Your Name](https://github.com/YourGitHubUsername)`
+- [Dave Abrahams](https://github.com/dabrahams)
 
 ## I would like to join this list! How can I help the project?
 

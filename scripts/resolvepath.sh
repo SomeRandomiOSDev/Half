@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env bash -e -o pipefail
 #
 # resolvepath.sh
 # Copyright © 2022 SomeRandomiOSDev. All rights reserved.
