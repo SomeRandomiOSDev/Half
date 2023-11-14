@@ -6,36 +6,36 @@ Perform arithmetic and bitwise operations or compare values.
 
 ### Arithmetic
 
-- ``Half/Half/+(_:_:)``
-- ``Half/Half/-(_:_:)``
-- ``Half/Half/*(_:_:)``
-- ``Half/Half//(_:_:)``
+- ``Half-swift.struct/+(_:_:)``
+- ``Half-swift.struct/-(_:_:)``
+- ``Half-swift.struct/*(_:_:)``
+- <doc://com.somerandomiosdev.half/documentation/Half/Half//(_:_:)>
 
 ### Arithmetic with Assignment
 
-- ``Half/Half/+=(_:_:)-75r0k``
-- ``Half/Half/-=(_:_:)-9q37z``
-- ``Half/Half/*=(_:_:)``
-- ``Half/Half//=(_:_:)``
+- ``Half-swift.struct/+=(_:_:)-75r0k``
+- ``Half-swift.struct/-=(_:_:)``
+- ``Half-swift.struct/*=(_:_:)``
+- <doc://com.somerandomiosdev.half/documentation/Half/Half//=(_:_:)>
 
 ### Comparison
 
-- ``Half/Half/==(_:_:)-5s308``
-- ``Half/Half/!=(_:_:)``
-- ``Half/Half/_(_:_:)-6mxe4``
-- ``Half/Half/_=(_:_:)-8rfdq``
-- ``Half/Half/_(_:_:)-6lwhi``
-- ``Half/Half/_=(_:_:)-6vpuz``
+- ``Half-swift.struct/==(_:_:)-5s308``
+- ``Half-swift.struct/!=(_:_:)``
+- ``Half-swift.struct/<(_:_:)-6mxe4``
+- ``Half-swift.struct/<=(_:_:)-8rfdq``
+- ``Half-swift.struct/>(_:_:)-6lwhi``
+- ``Half-swift.struct/>=(_:_:)-6vpuz``
 
 ### Negation
 
-- ``Half/Half/-(_:)-7binx``
-- ``Half/Half/+(_:)``
+- ``Half-swift.struct/-(_:)``
+- ``Half-swift.struct/+(_:)``
 
 ### Range Expressions
 
-- ``Half/Half/.._(_:)``
-- ``Half/Half/...(_:)-1tjn1``
-- ``Half/Half/...(_:)-4kfvw``
+- ``Half-swift.struct/..<(_:)``
+- ``Half-swift.struct/...(_:)-1tjn1``
+- ``Half-swift.struct/...(_:)-4kfvw``
 
-<!-- Copyright (c) 2022 SomeRandomiOSDev. All Rights Reserved. -->
+<!-- Copyright (c) 2023 SomeRandomiOSDev. All Rights Reserved. -->

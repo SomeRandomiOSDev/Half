@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #
 # versions.sh
-# Copyright © 2022 SomeRandomiOSDev. All rights reserved.
+# Copyright © 2023 SomeRandomiOSDev. All rights reserved.
 #
 # Usage example: ./versions.sh "1.4.15" "1.7.0"
 

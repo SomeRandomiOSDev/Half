@@ -2,7 +2,7 @@
 //  half.c
 //  Half
 //
-//  Copyright © 2022 SomeRandomiOSDev. All rights reserved.
+//  Copyright © 2023 SomeRandomiOSDev. All rights reserved.
 //
 
 #include "half.h"
@@ -63,7 +63,7 @@ HALF_FUNC half_t _half_mul(const half_t lhs, const half_t rhs) { return HALF_FRO
 HALF_FUNC half_t _half_div(const half_t lhs, const half_t rhs) { return HALF_FROM_FP16(FP16_FROM_HALF(lhs) / FP16_FROM_HALF(rhs)); }
 HALF_FUNC half_t _half_fma(const half_t val, const half_t lhs, const half_t rhs) { return HALF_FROM_FP16(FP16_FROM_HALF(val) + (FP16_FROM_HALF(lhs) * FP16_FROM_HALF(rhs))); }
 
-HALF_FUNC half_t _half_neg(const half_t val)  { return HALF_FROM_FP16(0.0 - FP16_FROM_HALF(val)); }
+HALF_FUNC half_t _half_neg(const half_t val)  { return HALF_FROM_RAW(RAW_FROM_HALF(val) ^ 0x8000); } // flip the sign bit
 HALF_FUNC half_t _half_abs(const half_t val)  { return HALF_FROM_RAW(RAW_FROM_HALF(val) & 0x7FFF); } // clear sign bit
 HALF_FUNC half_t _half_sqrt(const half_t val) { return _half_from(sqrt((float)FP16_FROM_HALF(val))); }
 

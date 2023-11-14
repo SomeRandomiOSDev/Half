@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #
 # carthage.sh
-# Copyright © 2022 SomeRandomiOSDev. All rights reserved.
+# Copyright © 2023 SomeRandomiOSDev. All rights reserved.
 #
 # Usage example: ./carthage.sh build --platform iOS
 #
