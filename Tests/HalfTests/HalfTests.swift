@@ -2,7 +2,7 @@
 //  HalfTests.swift
 //  HalfTests
 //
-//  Copyright © 2022 SomeRandomiOSDev. All rights reserved.
+//  Copyright © 2023 SomeRandomiOSDev. All rights reserved.
 //
 
 @testable import Half
@@ -503,3 +503,5 @@ extension HalfTests: TextOutputStream {
         XCTAssertEqual(string, "2.5")
     }
 }
+
+// swiftlint:enable function_body_length

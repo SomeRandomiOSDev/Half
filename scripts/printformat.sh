@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #
 # printformat.sh
-# Copyright © 2022 SomeRandomiOSDev. All rights reserved.
+# Copyright © 2023 SomeRandomiOSDev. All rights reserved.
 #
 # Usage example: ./formatstring.sh "forground:red;bold" "Hello, World"
 #

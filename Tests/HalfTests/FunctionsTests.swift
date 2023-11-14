@@ -2,7 +2,7 @@
 //  FunctionsTests.swift
 //  Half
 //
-//  Copyright © 2022 SomeRandomiOSDev. All rights reserved.
+//  Copyright © 2023 SomeRandomiOSDev. All rights reserved.
 //
 
 @testable import Half

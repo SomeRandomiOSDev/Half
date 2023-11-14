@@ -127,7 +127,7 @@ These initializers result in `nil` if the value passed can't be represented with
 
 ### Creating a Range
 
-- ``.._(_:_:)``
+- ``..<(_:_:)``
 - ``...(_:_:)``
 
 ### Describing a Half
@@ -147,4 +147,4 @@ These initializers result in `nil` if the value passed can't be represented with
 - ``write(to:)``
 - ``hashValue``
 
-<!-- Copyright (c) 2022 SomeRandomiOSDev. All Rights Reserved. -->
+<!-- Copyright (c) 2023 SomeRandomiOSDev. All Rights Reserved. -->

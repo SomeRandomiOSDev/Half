@@ -12,4 +12,4 @@ Swift Half-Precision Floating Point
 
 - <doc:Standard-Library-Functions>
 
-<!-- Copyright (c) 2022 SomeRandomiOSDev. All Rights Reserved. -->
+<!-- Copyright (c) 2023 SomeRandomiOSDev. All Rights Reserved. -->

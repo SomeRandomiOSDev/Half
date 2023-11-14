@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #
 # findproject.sh
-# Copyright © 2022 SomeRandomiOSDev. All rights reserved.
+# Copyright © 2023 SomeRandomiOSDev. All rights reserved.
 #
 # Usage example: ./findproject.sh --project-name <project_name>
 

@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #
 # workflowtests.sh
-# Copyright © 2022 SomeRandomiOSDev. All rights reserved.
+# Copyright © 2023 SomeRandomiOSDev. All rights reserved.
 #
 # Usage example: ./workflowtests.sh --no-clean
 
