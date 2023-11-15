@@ -28,10 +28,19 @@
 #define HALF_FUNC HALF_CONST
 #define HALF_OFUNC HALF_FUNC __attribute__((__overloadable__))
 
+// Copied from <Foundation/NSObjCRuntime.h> since that header cannot be imported
+#if !defined(NS_SWIFT_SENDABLE)
+#   if defined(__SWIFT_ATTR_SUPPORTS_SENDABLE_DECLS) && __SWIFT_ATTR_SUPPORTS_SENDABLE_DECLS
+#       define NS_SWIFT_SENDABLE __attribute__((swift_attr("@Sendable")))
+#   else
+#       define NS_SWIFT_SENDABLE
+#   endif
+#endif // #if !defined(NS_SWIFT_SENDABLE)
+
 typedef union {
     uint16_t _bits;
     __fp16 _fp;
-} __attribute__((packed)) half_t;
+} __attribute__((packed)) NS_SWIFT_SENDABLE half_t;
 
 EXTERN_C HALF_FUNC half_t _half_zero(void);
 EXTERN_C HALF_FUNC half_t _half_epsilon(void);

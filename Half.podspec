@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "Half"
-  s.version      = "1.4.1"
+  s.version      = "1.4.2"
   s.summary      = "Swift Half-Precision Floating Point"
   s.description  = <<-DESC
                    A lightweight framework containing a Swift implementation for a half-precision floating point type for iOS, macOS, tvOS, and watchOS.
@@ -17,8 +17,9 @@ Pod::Spec.new do |s|
   s.tvos.deployment_target    = '12.0'
   s.watchos.deployment_target = '4.0'
 
-  s.source_files      = 'Sources/**/*.{swift,h,c}'
-  s.swift_versions    = ['5.0']
-  s.cocoapods_version = '>= 1.7.3'
+  s.source_files        = 'Sources/**/*.{swift,h,c}'
+  s.pod_target_xcconfig = { 'SWIFT_STRICT_CONCURRENCY' => 'complete' }
+  s.swift_versions      = ['5.0']
+  s.cocoapods_version   = '>= 1.7.3'
 
 end

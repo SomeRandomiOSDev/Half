@@ -13,12 +13,10 @@ import CHalf
 import CoreGraphics.CGBase
 #endif // #if os(iOS) || os(macOS) || os(tvOS) || os(watchOS)
 
-#if swift(>=5.0)
 // MARK: - Half Definition
 
-#if swift(>=5.1)
 /// A half-precision, floating-point value type.
-@frozen public struct Half {
+@frozen public struct Half: Sendable {
 
     // MARK: Public Properties
 
@@ -36,27 +34,6 @@ import CoreGraphics.CGBase
         self._value = _value
     }
 }
-#else
-/// A half-precision, floating-point value type.
-public struct Half {
-
-    // MARK: Public Properties
-
-    public var _value: half_t
-
-    // MARK: Initialization
-
-    @_transparent
-    public init() {
-        self._value = _half_zero()
-    }
-
-    @_transparent
-    public init(_ _value: half_t) {
-        self._value = _value
-    }
-}
-#endif
 
 // MARK: - Half Extension
 
@@ -1984,4 +1961,3 @@ extension Half: CustomPlaygroundDisplayConvertible {
         return Float(self)
     }
 }
-#endif // #if swift(>=5.0)
