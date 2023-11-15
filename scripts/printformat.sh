@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env bash -e -o pipefail
 #
 # printformat.sh
 # Copyright © 2023 SomeRandomiOSDev. All rights reserved.
