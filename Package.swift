@@ -1,4 +1,4 @@
-// swift-tools-version:5.7
+// swift-tools-version:5.8
 import PackageDescription
 
 let package = Package(
@@ -17,9 +17,27 @@ let package = Package(
 
     targets: [
         .target(name: "CHalf"),
-        .testTarget(name: "CHalfTests", dependencies: ["CHalf", "Half"]),
+        .testTarget(
+            name: "CHalfTests",
+            dependencies: ["CHalf", "Half"],
+            swiftSettings: [
+                .enableExperimentalFeature("StrictConcurrency")
+            ]
+        ),
 
-        .target(name: "Half", dependencies: ["CHalf"]),
-        .testTarget(name: "HalfTests", dependencies: ["Half"])
+        .target(
+            name: "Half",
+            dependencies: ["CHalf"],
+            swiftSettings: [
+                .enableExperimentalFeature("StrictConcurrency")
+            ]
+        ),
+        .testTarget(
+            name: "HalfTests",
+            dependencies: ["Half"],
+            swiftSettings: [
+                .enableExperimentalFeature("StrictConcurrency")
+            ]
+        )
     ]
 )
